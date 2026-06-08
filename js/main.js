@@ -261,7 +261,7 @@ function setHeaderHero() {
     phoneIcon.className = 'fa-solid fa-phone text-xs text-white';
     bookBtn.className = 'px-5 py-2.5 sm:px-6 sm:py-2.5 rounded-full glass-button text-white text-sm tracking-wide active:scale-95 transition-all duration-300';
     logo.src = 'images/transparent-logo1.webp';
-    if (brandText) brandText.className = 'text-white font-bold tracking-tight text-lg sm:text-xl leading-none whitespace-nowrap';
+    if (brandText) brandText.className = 'text-white font-bold tracking-tight text-sm sm:text-xl leading-none whitespace-nowrap';
 }
 
 function setHeaderLight() {
@@ -288,7 +288,7 @@ function setHeaderLight() {
     phoneIcon.className = 'fa-solid fa-phone text-xs text-black';
     bookBtn.className = 'px-5 py-2.5 sm:px-6 sm:py-2.5 rounded-full bg-[#5896F6] hover:bg-[#5896F6] text-white text-sm tracking-wide active:scale-95 transition-all duration-300';
     logo.src = 'images/transparent-logo2.webp';
-    if (brandText) brandText.className = 'text-slate-900 font-bold tracking-tight text-lg sm:text-xl leading-none whitespace-nowrap';
+    if (brandText) brandText.className = 'text-slate-900 font-bold tracking-tight text-sm sm:text-xl leading-none whitespace-nowrap';
 }
 
 function setHeaderDark() {
@@ -315,7 +315,7 @@ function setHeaderDark() {
     phoneIcon.className = 'fa-solid fa-phone text-xs text-white';
     bookBtn.className = 'px-5 py-2.5 sm:px-6 sm:py-2.5 rounded-full bg-white text-black text-sm tracking-wide active:scale-95 transition-all duration-300';
     logo.src = 'images/transparent-logo1.webp';
-    if (brandText) brandText.className = 'text-white font-bold tracking-tight text-lg sm:text-xl leading-none whitespace-nowrap';
+    if (brandText) brandText.className = 'text-white font-bold tracking-tight text-sm sm:text-xl leading-none whitespace-nowrap';
 }
 
 function handleHeaderScroll() {
@@ -344,7 +344,7 @@ window.addEventListener('load', function () {
     setTimeout(initScrollReveal, 200);
     setTimeout(initServiceReveal, 300);
     setTimeout(initCommercialReveal, 400);
-
+    setTimeout(initReviewReveal, 350);
     setTimeout(renderGallery, 100);
 });
 
@@ -360,6 +360,72 @@ function initScrollReveal() {
         card.style.zIndex = data.current + 1;
         card.style.marginTop = data.current > 0 ? '-' + Math.round(card.offsetHeight * 0.55) + 'px' : '0';
     });
+}
+
+function initReviewReveal() {
+    var section = document.getElementById('reviews-section');
+    var cards = section.querySelectorAll('.process-card');
+    if (!section || !cards.length) return;
+
+    registerSectionSteps(2, cards.length, function(data) {
+        activateReview(data.current + 1);
+    });
+}
+
+function activateReview(activeId) {
+    for (var i = 1; i <= 5; i++) {
+        var card = document.getElementById('review-card-' + i);
+        if (!card) continue;
+        var stepNum = card.querySelector('.step-num');
+        var title = card.querySelector('h3');
+        var description = card.querySelector('p');
+        var illustration = card.querySelector('.illustration-container');
+        var treeOverlay = card.querySelector('.tree-silhouette');
+        var bottomIcon = card.querySelector('.bottom-icon-container');
+        var textBlock = card.querySelector('.text-block');
+        var stars = card.querySelector('.text-block .flex.gap-1');
+        var readLink = card.querySelector('.text-block a');
+
+        if (i === activeId) {
+            card.classList.remove('bg-[#F5F5F7]', 'text-[#3A3A3C]', 'hover:bg-slate-200', 'hover:shadow-lg', 'hover:-translate-y-1');
+            card.classList.add('bg-[#5197E9]', 'text-white', 'shadow-lg', 'shadow-blue-500/10');
+            stepNum.classList.remove('text-[#8E8E93]');
+            stepNum.classList.add('text-blue-50/90');
+            title.classList.remove('text-slate-800', 'text-lg', 'md:text-xl');
+            title.classList.add('text-white', 'text-2xl');
+            if (description) description.classList.remove('hidden');
+            if (stars) stars.classList.remove('hidden');
+            if (readLink) readLink.classList.remove('hidden');
+            textBlock.classList.remove('md:translate-y-4');
+            textBlock.classList.add('translate-y-0');
+            illustration.classList.remove('h-0', 'opacity-0', 'scale-75');
+            illustration.classList.add('h-24', 'opacity-100', 'scale-100');
+            if (treeOverlay) treeOverlay.classList.remove('opacity-0');
+            if (treeOverlay) treeOverlay.classList.add('opacity-20');
+            if (bottomIcon) {
+                bottomIcon.classList.add('opacity-0', 'scale-75', 'h-0');
+            }
+        } else {
+            card.classList.remove('bg-[#5197E9]', 'text-white', 'shadow-lg', 'shadow-blue-500/10');
+            card.classList.add('bg-[#F5F5F7]', 'text-[#3A3A3C]', 'hover:bg-slate-200', 'hover:shadow-lg', 'hover:-translate-y-1');
+            stepNum.classList.remove('text-blue-50/90');
+            stepNum.classList.add('text-[#8E8E93]');
+            title.classList.remove('text-white', 'text-2xl');
+            title.classList.add('text-slate-800', 'text-lg', 'md:text-xl');
+            if (description) description.classList.add('hidden');
+            if (stars) stars.classList.add('hidden');
+            if (readLink) readLink.classList.add('hidden');
+            textBlock.classList.remove('translate-y-0');
+            textBlock.classList.add('md:translate-y-4');
+            illustration.classList.remove('h-24', 'opacity-100', 'scale-100');
+            illustration.classList.add('h-0', 'opacity-0', 'scale-75');
+            if (treeOverlay) treeOverlay.classList.remove('opacity-20');
+            if (treeOverlay) treeOverlay.classList.add('opacity-0');
+            if (bottomIcon) {
+                bottomIcon.classList.remove('opacity-0', 'scale-75', 'h-0');
+            }
+        }
+    }
 }
 
 function initServiceReveal() {
@@ -942,7 +1008,7 @@ function registerSectionSteps(index, totalSteps, advanceFn) {
 
     function setHeaderForSection(index) {
         if (index === 0 || index === 7) { setHeaderHero(); if (index === 7) { var mi = document.getElementById('menu-icon'); if (mi) mi.className = 'fa-solid fa-bars-staggered text-lg text-white'; } return; }
-        if (index === 2 || index === 4 || index === 6 || index === 8) { setHeaderDark(); return; }
+        if (index === 4 || index === 6 || index === 8) { setHeaderDark(); return; }
         setHeaderLight();
     }
 

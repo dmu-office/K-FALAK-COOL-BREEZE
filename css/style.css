@@ -326,7 +326,7 @@ body {
     content: '';
     position: absolute;
     bottom: 0;
-    left: -2rem;
+    left: 0;
     right: 0;
     height: 1px;
     background-color: rgba(24, 24, 27, 0.8);
@@ -397,28 +397,11 @@ body {
     position: relative;
     z-index: 1;
 }
-.review-card {
-    transition: all 0.3s ease;
-    cursor: pointer;
+.process-card {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.review-card:hover {
-    background-color: #3b82f6 !important;
-    color: white !important;
-    box-shadow: 0 25px 50px -12px rgba(59, 130, 246, 0.25) !important;
-    transform: translateY(-0.5rem) !important;
-    border-color: transparent !important;
-}
-.review-card:hover .review-name {
-    color: #1e293b !important;
-}
-.review-card:hover .review-text {
-    color: #eff6ff !important;
-}
-.review-card:hover .review-hover-show {
-    display: flex !important;
-}
-.review-hover-show {
-    display: none;
+.process-card:hover {
+    box-shadow: 0 8px 25px -8px rgba(0,0,0,0.08);
 }
 @media (max-width: 768px) {
     #hero-bg-image-layer {

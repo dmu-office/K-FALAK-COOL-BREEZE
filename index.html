@@ -23,9 +23,9 @@
                 <i id="menu-icon" class="fa-solid fa-bars-staggered text-lg"></i>
             </button>
 
-            <a href="#" class="absolute left-1/2 -translate-x-1/2 flex items-center gap-0.5 sm:gap-1">
-                <img id="header-logo" src="images/transparent-logo1.webp" alt="Falak Cool Breeze" class="h-12 sm:h-14 w-auto">
-                <span id="header-brand-text" class="text-white font-bold tracking-tight text-lg sm:text-xl leading-none whitespace-nowrap">K Falak Cool Breeze</span>
+            <a href="#" class="absolute left-1/2 -translate-x-1/2 flex items-center gap-0">
+                <img id="header-logo" src="images/transparent-logo1.webp" alt="Falak Cool Breeze" class="h-14 sm:h-16 w-auto -mr-4">
+                <span id="header-brand-text" class="text-white font-bold tracking-tight text-sm sm:text-xl leading-none whitespace-nowrap">K Falak Cool Breeze</span>
             </a>
 
             <div class="flex items-center gap-2 sm:gap-3">
@@ -90,16 +90,16 @@
     </div>
 
     <!-- About Us + Team Section -->
-    <section id="services-overview" class="w-full bg-white min-h-screen section-snap">
+    <section id="services-overview" class="w-full bg-white section-snap">
         <div class="w-full px-6 sm:px-12 max-w-[1400px] mx-auto pt-8 lg:pt-12 pb-0">
 
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-10 gap-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div class="flex items-center gap-2">
                     <span class="w-1.5 h-1.5 rounded-full bg-[#5896F6]"></span>
                     <span class="text-xs font-extrabold uppercase tracking-[0.25em] text-[#5896F6]">About Us</span>
                 </div>
 
-                <div class="flex flex-col items-start pt-10 sm:pt-16 -translate-x-6 sm:-translate-x-32">
+                <div class="flex flex-col items-start pt-10 sm:pt-16 sm:-translate-x-32">
                     <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-950 leading-[1.05] md:leading-[1.02]">
                         Team For Cool,
                     </h1>
@@ -149,8 +149,8 @@
     </section>
 
     <!-- Reviews Section -->
-    <section id="reviews-section" class="w-full bg-white min-h-screen section-snap">
-        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto pt-20 lg:pt-24 pb-20 relative">
+    <section id="reviews-section" class="w-full bg-white section-snap">
+        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto pt-20 lg:pt-28 pb-20 relative">
 
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start mb-16 relative z-10">
                 <div class="lg:col-span-4 flex items-center gap-2 pt-2">
@@ -163,155 +163,145 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 relative z-10 mb-6" id="reviews-grid">
-                <!-- Card 1: Sarah M. -->
-                <div class="review-card relative group rounded-3xl p-6 transition-all duration-300 cursor-pointer flex flex-col justify-between overflow-hidden min-h-[360px] select-none bg-white border border-slate-200/60 shadow-sm">
-                    <div class="space-y-1">
-                        <div class="flex justify-between items-center">
-                            <span class="text-xs font-semibold tracking-wider text-slate-400 review-text">01.</span>
-                            <span class="p-1.5 rounded-full bg-slate-100 text-slate-500"><i class="fa-solid fa-user text-xs"></i></span>
-                        </div>
+            <!-- 5-Card Grid -->
+            <div id="reviews-grid" class="grid grid-cols-1 md:grid-cols-5 gap-4 relative z-10 mb-4">
+
+                <!-- Card 1: SARAH M. -->
+                <div onclick="activateReview(1)" id="review-card-1" class="process-card relative overflow-hidden rounded-sm cursor-pointer p-8 flex flex-col justify-between min-h-[320px] md:h-[420px] bg-[#F5F5F7] text-[#3A3A3C] hover:bg-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all">
+                    <div class="z-10">
+                        <span class="step-num text-xs font-semibold tracking-widest text-[#8E8E93] uppercase">01. SARAH M.</span>
                     </div>
-                    <div class="my-8 flex flex-col items-center justify-center h-24">
-                        <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 text-xl font-bold">S</div>
-                        <div class="flex gap-0.5 mt-2">
+                    <div class="illustration-container z-10 my-auto flex flex-col justify-center h-0 opacity-0 scale-75 overflow-hidden transition-all duration-500">
+                        <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center text-white text-2xl font-bold">S</div>
+                    </div>
+                    <div class="text-block z-10 transition-all duration-500 transform translate-y-0 md:translate-y-4">
+                        <h3 class="text-lg md:text-xl font-semibold tracking-tight text-slate-800 transition-colors mb-2 leading-tight">Quick & Professional</h3>
+                        <p class="text-sm text-white leading-relaxed font-light hidden transition-opacity duration-500">Very professional team. Arrived on time and completed the job perfectly. Highly recommend!</p>
+                        <div class="flex gap-1 mt-2 hidden">
                             <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                             <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                             <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                             <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                             <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                         </div>
-                    </div>
-                    <div class="space-y-2 mt-auto">
-                        <h3 class="text-lg font-bold text-slate-800 review-name">Sarah M.</h3>
-                        <p class="text-xs leading-relaxed text-slate-400 review-text">Very professional team. Arrived on time and completed the job perfectly. Highly recommend!</p>
                     </div>
                 </div>
 
-                <!-- Card 2: Ahmed K. -->
-                <div class="review-card relative group rounded-3xl p-6 transition-all duration-300 cursor-pointer flex flex-col justify-between overflow-hidden min-h-[360px] select-none bg-white border border-slate-200/60 shadow-sm">
-                    <div class="space-y-1">
-                        <div class="flex justify-between items-center">
-                            <span class="text-xs font-semibold tracking-wider text-slate-400 review-text">02.</span>
-                            <span class="p-1.5 rounded-full bg-slate-100 text-slate-500"><i class="fa-solid fa-user text-xs"></i></span>
-                        </div>
+                <!-- Card 2: AHMED K. -->
+                <div onclick="activateReview(2)" id="review-card-2" class="process-card relative overflow-hidden rounded-sm cursor-pointer p-8 flex flex-col justify-between min-h-[320px] md:h-[420px] bg-[#F5F5F7] text-[#3A3A3C] hover:bg-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all">
+                    <div class="z-10">
+                        <span class="step-num text-xs font-semibold tracking-widest text-[#8E8E93] uppercase">02. AHMED K.</span>
                     </div>
-                    <div class="my-8 flex flex-col items-center justify-center h-24">
-                        <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 text-xl font-bold">A</div>
-                        <div class="flex gap-0.5 mt-2">
+                    <div class="illustration-container z-10 my-auto flex flex-col justify-center h-0 opacity-0 scale-75 overflow-hidden transition-all duration-500">
+                        <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center text-white text-2xl font-bold">A</div>
+                    </div>
+                    <div class="text-block z-10 transition-all duration-500 transform translate-y-0 md:translate-y-4">
+                        <h3 class="text-lg md:text-xl font-semibold tracking-tight text-slate-800 transition-colors mb-2 leading-tight">Fair & Skilled</h3>
+                        <p class="text-sm text-white leading-relaxed font-light hidden transition-opacity duration-500">Best AC repair service in town. Fair prices and great workmanship. Fixed my AC in under 2 hours!</p>
+                        <div class="flex gap-1 mt-2 hidden">
                             <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                             <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                             <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                             <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                             <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                         </div>
-                    </div>
-                    <div class="space-y-2 mt-auto">
-                        <h3 class="text-lg font-bold text-slate-800 review-name">Ahmed K.</h3>
-                        <p class="text-xs leading-relaxed text-slate-400 review-text">Best AC repair service in town. Fair prices and great workmanship. Fixed my AC in under 2 hours!</p>
                     </div>
                 </div>
 
-                <!-- Card 3: Fatima S. -->
-                <div class="review-card relative group rounded-3xl p-6 transition-all duration-300 cursor-pointer flex flex-col justify-between overflow-hidden min-h-[360px] select-none bg-white border border-slate-200/60 shadow-sm">
-                    <div class="space-y-1">
-                        <div class="flex justify-between items-center">
-                            <span class="text-xs font-semibold tracking-wider text-slate-400 review-text">03.</span>
-                            <span class="p-1.5 rounded-full bg-slate-100 text-slate-500"><i class="fa-solid fa-user text-xs"></i></span>
-                        </div>
+                <!-- Card 3: FATIMA S. -->
+                <div onclick="activateReview(3)" id="review-card-3" class="process-card relative overflow-hidden rounded-sm cursor-pointer p-8 flex flex-col justify-between min-h-[320px] md:h-[420px] bg-[#F5F5F7] text-[#3A3A3C] hover:bg-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all">
+                    <div class="z-10">
+                        <span class="step-num text-xs font-semibold tracking-widest text-[#8E8E93] uppercase">03. FATIMA S.</span>
                     </div>
-                    <div class="my-8 flex flex-col items-center justify-center h-24">
-                        <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 text-xl font-bold">F</div>
-                        <div class="flex gap-0.5 mt-2">
+                    <div class="illustration-container z-10 my-auto flex flex-col justify-center h-0 opacity-0 scale-75 overflow-hidden transition-all duration-500">
+                        <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center text-white text-2xl font-bold">F</div>
+                    </div>
+                    <div class="text-block z-10 transition-all duration-500 transform translate-y-0 md:translate-y-4">
+                        <h3 class="text-lg md:text-xl font-semibold tracking-tight text-slate-800 transition-colors mb-2 leading-tight">Always Reliable</h3>
+                        <p class="text-sm text-white leading-relaxed font-light hidden transition-opacity duration-500">I have been using their services for years. Always reliable, trustworthy, and responsive to emergency calls.</p>
+                        <div class="flex gap-1 mt-2 hidden">
                             <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                             <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                             <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                             <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                             <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                         </div>
-                    </div>
-                    <div class="space-y-2 mt-auto">
-                        <h3 class="text-lg font-bold text-slate-800 review-name">Fatima S.</h3>
-                        <p class="text-xs leading-relaxed text-slate-400 review-text">I have been using their services for years. Always reliable, trustworthy, and responsive to emergency calls.</p>
                     </div>
                 </div>
 
-                <!-- Card 4: John D. -->
-                <div class="review-card relative group rounded-3xl p-6 transition-all duration-300 cursor-pointer flex flex-col justify-between overflow-hidden min-h-[360px] select-none bg-white border border-slate-200/60 shadow-sm">
-                    <div class="space-y-1">
-                        <div class="flex justify-between items-center">
-                            <span class="text-xs font-semibold tracking-wider text-slate-400 review-text">04.</span>
-                            <span class="p-1.5 rounded-full bg-slate-100 text-slate-500"><i class="fa-solid fa-user text-xs"></i></span>
-                        </div>
+                <!-- Card 4: JOHN D. -->
+                <div onclick="activateReview(4)" id="review-card-4" class="process-card relative overflow-hidden rounded-sm cursor-pointer p-8 flex flex-col justify-between min-h-[320px] md:h-[420px] bg-[#F5F5F7] text-[#3A3A3C] hover:bg-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all">
+                    <div class="z-10">
+                        <span class="step-num text-xs font-semibold tracking-widest text-[#8E8E93] uppercase">04. JOHN D.</span>
                     </div>
-                    <div class="my-8 flex flex-col items-center justify-center h-24">
-                        <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 text-xl font-bold">J</div>
-                        <div class="flex gap-0.5 mt-2">
+                    <div class="illustration-container z-10 my-auto flex flex-col justify-center h-0 opacity-0 scale-75 overflow-hidden transition-all duration-500">
+                        <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center text-white text-2xl font-bold">J</div>
+                    </div>
+                    <div class="text-block z-10 transition-all duration-500 transform translate-y-0 md:translate-y-4">
+                        <h3 class="text-lg md:text-xl font-semibold tracking-tight text-slate-800 transition-colors mb-2 leading-tight">Excellent Service</h3>
+                        <p class="text-sm text-white leading-relaxed font-light hidden transition-opacity duration-500">Excellent service! They helped me with my refrigerator repair. Quick response and affordable rates.</p>
+                        <div class="flex gap-1 mt-2 hidden">
                             <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                             <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                             <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                             <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                             <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                         </div>
-                    </div>
-                    <div class="space-y-2 mt-auto">
-                        <h3 class="text-lg font-bold text-slate-800 review-name">John D.</h3>
-                        <p class="text-xs leading-relaxed text-slate-400 review-text">Excellent service! They helped me with my refrigerator repair. Quick response and affordable rates.</p>
                     </div>
                 </div>
 
-                <!-- Card 5: Overall Rating -->
-                <div class="review-card review-card-last relative group rounded-3xl p-6 transition-all duration-300 cursor-pointer flex flex-col justify-between overflow-hidden min-h-[360px] select-none bg-white border border-slate-200/60 shadow-sm">
-                    <div class="space-y-1">
-                        <div class="flex justify-between items-center">
-                            <span class="text-xs font-semibold tracking-wider text-slate-400 review-text">05. OVERALL</span>
-                            <span class="p-1.5 rounded-full bg-slate-100 text-slate-500"><i class="fa-solid fa-star text-xs"></i></span>
-                        </div>
+                <!-- Card 5: OVERALL -->
+                <div onclick="activateReview(5)" id="review-card-5" class="process-card relative overflow-hidden rounded-sm cursor-pointer p-8 flex flex-col justify-between min-h-[320px] md:h-[420px] bg-[#F5F5F7] text-[#3A3A3C] hover:bg-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all">
+                    <div class="z-10">
+                        <span class="step-num text-xs font-semibold tracking-widest text-[#8E8E93] uppercase">05. OVERALL</span>
                     </div>
-                    <div class="my-8 flex flex-col items-center justify-center h-24">
-                        <span class="text-5xl font-black text-slate-900 review-name">4.9</span>
-                        <div class="flex gap-0.5 mt-1">
+                    <div class="illustration-container z-10 my-auto flex flex-col justify-center h-0 opacity-0 scale-75 overflow-hidden transition-all duration-500">
+                        <span class="text-4xl font-black text-white">4.9</span>
+                    </div>
+                    <div class="text-block z-10 transition-all duration-500 transform translate-y-0 md:translate-y-4">
+                        <h3 class="text-lg md:text-xl font-semibold tracking-tight text-slate-800 transition-colors mb-2 leading-tight">Exceptional</h3>
+                        <p class="text-sm text-white leading-relaxed font-light hidden transition-opacity duration-500">Rated excellent by 166+ happy customers. We take pride in delivering top-quality repair services.</p>
+                        <div class="flex gap-1 mt-2 hidden">
                             <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                             <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                             <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                             <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                             <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                         </div>
-                        <span class="text-xs text-slate-400 mt-1 review-text">(166 reviews)</span>
-                    </div>
-                    <div class="space-y-2 mt-auto">
-                        <h3 class="text-lg font-bold text-slate-800 review-name">Exceptional Service</h3>
-                        <p class="text-xs leading-relaxed text-slate-400 review-text">Rated excellent by our customers. We take pride in delivering top-quality repair services every time.</p>
-                        <a href="https://www.google.com/maps/place/K+Falak+Cool+Breeze/@33.6231875,73.0644876,17z/data=!4m8!3m7!1s0x38df9580e2466ce3:0xf3b6250df421b433!8m2!3d33.6231875!4d73.0670625!9m1!1b1!16s%2Fg%2F11kqwlp8sg?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="review-hover-show mt-3 w-full items-center justify-center gap-1 bg-white hover:bg-blue-50 text-blue-600 text-xs font-bold py-2 px-3 rounded-xl transition-all shadow-md active:scale-95">
-                            Read All Reviews
-                            <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        <a href="https://www.google.com/maps/place/K+Falak+Cool+Breeze/@33.6231875,73.0644876,17z/data=!4m8!3m7!1s0x38df9580e2466ce3:0xf3b6250df421b433!8m2!3d33.6231875!4d73.0670625!9m1!1b1!16s%2Fg%2F11kqwlp8sg?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="mt-2 text-xs flex items-center gap-1 text-white font-bold hover:underline hidden transition-opacity">
+                            Read All Reviews <i class="fa-solid fa-chevron-right text-[10px]"></i>
                         </a>
                     </div>
                 </div>
+
             </div>
 
-            <div class="relative z-10 mt-2">
+            <div class="text-center relative z-10 pt-4">
+                <span class="text-xs font-black uppercase tracking-[0.25em] text-[#5896F6]">Our Partners</span>
+            </div>
+
+            <div class="relative z-10 mt-0">
                 <div class="overflow-hidden" style="width: 100vw; margin-left: calc(-50vw + 50%);">
                     <div class="marquee-track-right flex items-center py-0">
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
                             <img src="images/bravo-transparent.webp" alt="Bravo" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
                         </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
                             <img src="images/afit-transparent.webp" alt="Afit" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
                         </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
                             <img src="images/shams-transparent.webp" alt="Shams" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
                         </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
                             <img src="images/ffc-transparent.webp" alt="FFC" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
                         </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
                             <img src="images/jazeera-transparent.webp" alt="Jazeera" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
                         </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
                             <img src="images/icecream-transparent.webp" alt="Ice Cream" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
                         </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
                             <img src="images/faiz-ul-islam-transparent.webp" alt="Faiz ul Islam" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
                         </div>
                         <div class="flex-shrink-0 flex items-center justify-center w-36 h-36 md:w-44 md:h-44 mx-4 transition-all duration-500 group">
@@ -320,29 +310,29 @@
                         <div class="flex-shrink-0 flex items-center justify-center w-36 h-36 md:w-44 md:h-44 mx-4 transition-all duration-500 group">
                             <img src="images/paco-transparent.webp" alt="Paco" class="w-24 h-24 md:w-28 md:h-28 object-contain transition-all duration-500">
                         </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
                             <img src="images/engro-foods-transparent.webp" alt="Engro Foods" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
                         </div>
                         <!-- Duplicate -->
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
                             <img src="images/bravo-transparent.webp" alt="Bravo" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
                         </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
                             <img src="images/afit-transparent.webp" alt="Afit" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
                         </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
                             <img src="images/shams-transparent.webp" alt="Shams" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
                         </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
                             <img src="images/ffc-transparent.webp" alt="FFC" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
                         </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
                             <img src="images/jazeera-transparent.webp" alt="Jazeera" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
                         </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
                             <img src="images/icecream-transparent.webp" alt="Ice Cream" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
                         </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
                             <img src="images/faiz-ul-islam-transparent.webp" alt="Faiz ul Islam" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
                         </div>
                         <div class="flex-shrink-0 flex items-center justify-center w-36 h-36 md:w-44 md:h-44 mx-4 transition-all duration-500 group">
@@ -351,7 +341,7 @@
                         <div class="flex-shrink-0 flex items-center justify-center w-36 h-36 md:w-44 md:h-44 mx-4 transition-all duration-500 group">
                             <img src="images/paco-transparent.webp" alt="Paco" class="w-24 h-24 md:w-28 md:h-28 object-contain transition-all duration-500">
                         </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
                             <img src="images/engro-foods-transparent.webp" alt="Engro Foods" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
                         </div>
                     </div>
@@ -360,9 +350,9 @@
 
         </div>
     </section>
-    <section id="home-appliances-section" class="w-full bg-white min-h-screen section-snap">
-        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto pt-36 lg:pt-44 pb-16 lg:pb-20 relative">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 xl:gap-20 items-center">
+    <section id="home-appliances-section" class="w-full bg-white section-snap">
+        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto pt-16 lg:pt-44 pb-16 lg:pb-20 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-14 xl:gap-20 items-center">
 
                 <!-- Left Column: Appliance Cluster Showcase -->
                 <div class="lg:col-span-6 xl:col-span-5 flex flex-col h-full relative px-2 sm:px-6">
@@ -372,10 +362,10 @@
                     </div>
 
                     <div id="service-images" class="relative w-full h-auto mt-4">
-                        <img src="images/service.webp" data-card="0" alt="Diagnostics &amp; Repairs" class="srv-img active w-full h-[300px] sm:h-[420px] lg:h-[600px] object-contain rounded-lg">
-                        <img src="images/service-3.webp" data-card="1" alt="Installation &amp; Replacement" class="srv-img w-full h-[300px] sm:h-[420px] lg:h-[600px] object-contain rounded-lg absolute inset-0">
-                        <img src="images/service-1.webp" data-card="2" alt="Fully Automatic Washing Machine" class="srv-img w-full h-[300px] sm:h-[420px] lg:h-[600px] object-contain rounded-lg absolute inset-0">
-                        <img src="images/service-2.webp" data-card="3" alt="Non Frost Refrigerator" class="srv-img w-full h-[300px] sm:h-[420px] lg:h-[600px] object-contain rounded-lg absolute inset-0">
+                        <img src="images/service.webp" data-card="0" alt="Diagnostics &amp; Repairs" class="srv-img active w-full h-[200px] sm:h-[420px] lg:h-[600px] object-contain rounded-lg">
+                        <img src="images/service-3.webp" data-card="1" alt="Installation &amp; Replacement" class="srv-img w-full h-[200px] sm:h-[420px] lg:h-[600px] object-contain rounded-lg absolute inset-0">
+                        <img src="images/service-1.webp" data-card="2" alt="Fully Automatic Washing Machine" class="srv-img w-full h-[200px] sm:h-[420px] lg:h-[600px] object-contain rounded-lg absolute inset-0">
+                        <img src="images/service-2.webp" data-card="3" alt="Non Frost Refrigerator" class="srv-img w-full h-[200px] sm:h-[420px] lg:h-[600px] object-contain rounded-lg absolute inset-0">
                     </div>
 
                 </div>
@@ -459,8 +449,8 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="testimonials-section" class="w-full bg-black overflow-hidden min-h-screen section-snap">
-        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto pt-20 lg:pt-24 pb-20 relative">
+    <section id="testimonials-section" class="w-full bg-black overflow-hidden section-snap">
+        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto pt-12 lg:pt-24 pb-20 relative">
 
             <div class="absolute top-[20%] left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#5896F6]/10 blur-[150px] rounded-full pointer-events-none ambient-glow z-0"></div>
 
@@ -479,7 +469,7 @@
                 <div id="testimonial-scroller" class="w-full flex gap-6 overflow-x-auto snap-x snap-mandatory pb-8 pt-2 no-scrollbar scroll-smooth">
 
                     <!-- Card 1: AC-Outdoor Repair -->
-                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start bg-[#121215] border border-zinc-800/50 rounded-2xl overflow-hidden flex flex-col hover:border-zinc-700 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
+                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start bg-[#121215] border border-zinc-800/50 rounded-none overflow-hidden flex flex-col hover:border-zinc-700 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
                         <div class="relative w-full aspect-[4/3] bg-zinc-950 overflow-hidden">
                             <div class="grid grid-cols-2 grid-rows-2 gap-1 w-full h-full">
                                 <img src="images/gallery-1.webp" alt="AC Repair 1" class="w-full h-full object-cover row-span-2" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=AC+1'">
@@ -503,7 +493,7 @@
                     </div>
 
                     <!-- Card 2: Condensing Unit -->
-                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start bg-[#121215] border border-zinc-800/50 rounded-2xl overflow-hidden flex flex-col hover:border-zinc-700 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
+                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start bg-[#121215] border border-zinc-800/50 rounded-none overflow-hidden flex flex-col hover:border-zinc-700 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
                         <div class="relative w-full aspect-[4/3] bg-zinc-950 overflow-hidden">
                             <div class="grid grid-cols-2 gap-1 w-full h-full">
                                 <img src="images/gallery-4.webp" alt="Condensing Unit 1" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=Cond+1'">
@@ -526,7 +516,7 @@
                     </div>
 
                     <!-- Card 3: Cold Room Plant -->
-                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start bg-[#121215] border border-zinc-800/50 rounded-2xl overflow-hidden flex flex-col hover:border-zinc-700 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
+                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start bg-[#121215] border border-zinc-800/50 rounded-none overflow-hidden flex flex-col hover:border-zinc-700 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
                         <div class="relative w-full aspect-[4/3] bg-zinc-950 overflow-hidden">
                             <div class="grid grid-cols-2 grid-rows-2 gap-1 w-full h-full">
                                 <img src="images/gallery-6.webp" alt="Cold Room 1" class="w-full h-full object-cover row-span-2" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=CR+1'">
@@ -550,7 +540,7 @@
                     </div>
 
                     <!-- Card 4: Mini Cold Room -->
-                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start bg-[#121215] border border-zinc-800/50 rounded-2xl overflow-hidden flex flex-col hover:border-zinc-700 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
+                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start bg-[#121215] border border-zinc-800/50 rounded-none overflow-hidden flex flex-col hover:border-zinc-700 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
                         <div class="relative w-full aspect-[4/3] bg-zinc-950 overflow-hidden">
                             <div class="grid grid-cols-2 gap-1 w-full h-full">
                                 <img src="images/gallery-9.webp" alt="Mini Cold Room 1" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=MCR+1'">
@@ -573,7 +563,7 @@
                     </div>
 
                     <!-- Card 5: Bitzer Refrigeration Plant -->
-                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start bg-[#121215] border border-zinc-800/50 rounded-2xl overflow-hidden flex flex-col hover:border-zinc-700 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
+                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start bg-[#121215] border border-zinc-800/50 rounded-none overflow-hidden flex flex-col hover:border-zinc-700 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
                         <div class="relative w-full aspect-[4/3] bg-zinc-950 overflow-hidden">
                             <div class="grid grid-cols-2 gap-1 w-full h-full">
                                 <img src="images/gallery-11.webp" alt="Bitzer 1" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=Bitz+1'">
@@ -596,7 +586,7 @@
                     </div>
 
                     <!-- Card 6: Fridge Plant -->
-                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start bg-[#121215] border border-zinc-800/50 rounded-2xl overflow-hidden flex flex-col hover:border-zinc-700 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
+                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start bg-[#121215] border border-zinc-800/50 rounded-none overflow-hidden flex flex-col hover:border-zinc-700 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
                         <div class="relative w-full aspect-[4/3] bg-zinc-950 overflow-hidden">
                             <div class="grid grid-cols-2 grid-rows-2 gap-1 w-full h-full">
                                 <img src="images/gallery-13.webp" alt="Fridge Plant 1" class="w-full h-full object-cover row-span-2" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=FP+1'">
@@ -620,7 +610,7 @@
                     </div>
 
                     <!-- Card 7: Cooling Coil -->
-                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start bg-[#121215] border border-zinc-800/50 rounded-2xl overflow-hidden flex flex-col hover:border-zinc-700 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
+                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start bg-[#121215] border border-zinc-800/50 rounded-none overflow-hidden flex flex-col hover:border-zinc-700 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
                         <div class="relative w-full aspect-[4/3] bg-zinc-950 overflow-hidden">
                             <div class="grid grid-cols-2 gap-1 w-full h-full">
                                 <img src="images/gallery-16.webp" alt="Cooling Coil 1" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=CC+1'">
@@ -643,7 +633,7 @@
                     </div>
 
                     <!-- Card 8: Bitzer Plants -->
-                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start bg-[#121215] border border-zinc-800/50 rounded-2xl overflow-hidden flex flex-col hover:border-zinc-700 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
+                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start bg-[#121215] border border-zinc-800/50 rounded-none overflow-hidden flex flex-col hover:border-zinc-700 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
                         <div class="relative w-full aspect-[4/3] bg-zinc-950 overflow-hidden">
                             <div class="grid grid-cols-2 gap-1 w-full h-full">
                                 <img src="images/gallery-18.webp" alt="Bitzer Plant 1" class="w-full h-full object-cover self-end translate-y-[-25%]" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=BP+1'">
@@ -681,8 +671,8 @@
     </section>
 
     <!-- Commercial Appliances Section -->
-    <section id="commercial-appliances-section" class="w-full bg-white min-h-screen section-snap">
-        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto pt-32 lg:pt-36 pb-20 relative">
+    <section id="commercial-appliances-section" class="w-full bg-white section-snap">
+        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto pt-16 lg:pt-36 pb-20 relative">
             <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
 
                 <!-- Left Column: Services list -->
@@ -764,10 +754,10 @@
                 <!-- Right Column: Image -->
                 <div class="lg:col-span-6 xl:col-span-5 flex flex-col h-full relative pr-2 sm:pr-4 lg:pr-6 xl:pr-12">
                     <div id="com-service-images" class="relative w-full h-auto mt-4 max-w-full">
-                        <img src="images/service-4.webp" data-card="0" alt="Expert Installation" class="com-srv-img active w-full h-[300px] sm:h-[420px] lg:h-[600px] object-contain rounded-lg">
-                        <img src="images/service-7.webp" data-card="1" alt="Preventive Maintenance" class="com-srv-img w-full h-[300px] sm:h-[420px] lg:h-[600px] object-contain rounded-lg absolute inset-0">
-                        <img src="images/service-6.webp" data-card="2" alt="Quick Repair &amp; Support" class="com-srv-img w-full h-[300px] sm:h-[420px] lg:h-[600px] object-contain rounded-lg absolute inset-0">
-                        <img src="images/service-5.webp" data-card="3" alt="Cold Room" class="com-srv-img w-full h-[300px] sm:h-[420px] lg:h-[600px] object-contain rounded-lg absolute inset-0">
+                        <img src="images/service-4.webp" data-card="0" alt="Expert Installation" class="com-srv-img active w-full h-[200px] sm:h-[420px] lg:h-[600px] object-contain rounded-lg">
+                        <img src="images/service-7.webp" data-card="1" alt="Preventive Maintenance" class="com-srv-img w-full h-[200px] sm:h-[420px] lg:h-[600px] object-contain rounded-lg absolute inset-0">
+                        <img src="images/service-6.webp" data-card="2" alt="Quick Repair &amp; Support" class="com-srv-img w-full h-[200px] sm:h-[420px] lg:h-[600px] object-contain rounded-lg absolute inset-0">
+                        <img src="images/service-5.webp" data-card="3" alt="Cold Room" class="com-srv-img w-full h-[200px] sm:h-[420px] lg:h-[600px] object-contain rounded-lg absolute inset-0">
                     </div>
                 </div>
 
@@ -776,7 +766,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq-section" class="w-full bg-[#030304] overflow-hidden min-h-screen section-snap">
+    <section id="faq-section" class="w-full bg-[#030304] overflow-hidden section-snap">
         <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto pt-28 lg:pt-36 pb-20 relative">
 
             <div class="absolute top-[25%] left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-[#5896F6]/10 blur-[160px] rounded-full pointer-events-none ambient-glow z-0"></div>
@@ -796,7 +786,7 @@
 
                 <div class="accordion-item hover:bg-zinc-950/10 transition-colors group cursor-pointer" onclick="toggleAccordion(0)">
                     <div class="grid grid-cols-12 items-start pt-6 sm:pt-8 pb-4">
-                        <span class="col-span-2 sm:col-span-1 text-xs sm:text-sm font-medium text-zinc-600 pt-1 -ml-8 sm:-ml-16 md:-ml-48 transition-colors group-hover:text-zinc-400">01</span>
+                        <span class="col-span-2 sm:col-span-1 text-xs sm:text-sm font-medium text-zinc-600 pt-1 -ml-0 sm:-ml-16 md:-ml-48 transition-colors group-hover:text-zinc-400">01</span>
                         <div class="col-span-10 sm:col-span-11 lg:pl-[80px] xl:pl-[132px] flex items-start justify-between">
                             <div class="flex-grow pr-4">
                                 <h3 class="text-base sm:text-lg font-semibold text-zinc-100 transition-colors group-hover:text-white">Is there a service call fee?</h3>
@@ -813,7 +803,7 @@
 
                 <div class="accordion-item hover:bg-zinc-950/10 transition-colors group cursor-pointer" onclick="toggleAccordion(1)">
                     <div class="grid grid-cols-12 items-start pt-6 sm:pt-8 pb-4">
-                        <span class="col-span-2 sm:col-span-1 text-xs sm:text-sm font-medium text-zinc-600 pt-1 -ml-8 sm:-ml-16 md:-ml-48 transition-colors group-hover:text-zinc-400">02</span>
+                        <span class="col-span-2 sm:col-span-1 text-xs sm:text-sm font-medium text-zinc-600 pt-1 -ml-0 sm:-ml-16 md:-ml-48 transition-colors group-hover:text-zinc-400">02</span>
                         <div class="col-span-10 sm:col-span-11 lg:pl-[80px] xl:pl-[132px] flex items-start justify-between">
                             <div class="flex-grow pr-4">
                                 <h3 class="text-base sm:text-lg font-semibold text-zinc-100 transition-colors group-hover:text-white">Do you offer warranties?</h3>
@@ -830,7 +820,7 @@
 
                 <div class="accordion-item border-b border-zinc-900/80 hover:bg-zinc-950/10 transition-colors group cursor-pointer" onclick="toggleAccordion(2)">
                     <div class="grid grid-cols-12 items-start pt-6 sm:pt-8 pb-4">
-                        <span class="col-span-2 sm:col-span-1 text-xs sm:text-sm font-medium text-zinc-600 pt-1 -ml-8 sm:-ml-16 md:-ml-48 transition-colors group-hover:text-zinc-400">03</span>
+                        <span class="col-span-2 sm:col-span-1 text-xs sm:text-sm font-medium text-zinc-600 pt-1 -ml-0 sm:-ml-16 md:-ml-48 transition-colors group-hover:text-zinc-400">03</span>
                         <div class="col-span-10 sm:col-span-11 lg:pl-[80px] xl:pl-[132px] flex items-start justify-between">
                             <div class="flex-grow pr-4">
                                 <h3 class="text-base sm:text-lg font-semibold text-zinc-100 transition-colors group-hover:text-white">Do you offer regular maintenance?</h3>
@@ -847,7 +837,7 @@
 
                 <div class="accordion-item hover:bg-zinc-950/10 transition-colors group cursor-pointer" onclick="toggleAccordion(3)">
                     <div class="grid grid-cols-12 items-start pt-6 sm:pt-8 pb-4">
-                        <span class="col-span-2 sm:col-span-1 text-xs sm:text-sm font-medium text-zinc-600 pt-1 -ml-8 sm:-ml-16 md:-ml-48 transition-colors group-hover:text-zinc-400">04</span>
+                        <span class="col-span-2 sm:col-span-1 text-xs sm:text-sm font-medium text-zinc-600 pt-1 -ml-0 sm:-ml-16 md:-ml-48 transition-colors group-hover:text-zinc-400">04</span>
                         <div class="col-span-10 sm:col-span-11 lg:pl-[80px] xl:pl-[132px] flex items-start justify-between">
                             <div class="flex-grow pr-4">
                                 <h3 class="text-base sm:text-lg font-semibold text-zinc-100 transition-colors group-hover:text-white">Do you work on all AC brands?</h3>
@@ -908,9 +898,8 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="w-full bg-[#000000] min-h-screen flex flex-col text-white px-4 sm:px-6 md:px-8 section-snap">
-        <div class="flex-1"></div>
-        <div class="w-full px-0 grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 pb-12">
+    <footer class="w-full bg-[#000000] text-white px-4 sm:px-6 md:px-8 section-snap">
+        <div class="w-full px-0 grid grid-cols-1 md:grid-cols-12 gap-0 pt-12 lg:pt-16">
             <div class="md:col-span-3 space-y-5 px-4 sm:px-6 md:px-8">
                 <h4 class="text-[11px] font-bold text-zinc-500 uppercase tracking-widest">Quick Links</h4>
                 <ul class="space-y-3.5 text-sm sm:text-base font-medium">
@@ -939,11 +928,11 @@
         </div>
         <div class="w-full px-4 pt-0 pb-12 relative -mx-4 sm:-mx-6 md:-mx-8">
             <div class="flex flex-col items-center md:items-start gap-4">
-                <div class="flex items-center justify-start gap-3 sm:gap-4">
-                    <img src="images/transparent-logo1.webp" alt="Falak Cool Breeze" class="w-48 h-48 sm:w-56 sm:h-56 object-contain flex-shrink-0">
-                    <div class="leading-none select-none">
-                        <h2 class="text-4xl sm:text-5xl md:text-[3.25rem] font-black tracking-tight text-white leading-[1] uppercase">K Falak</h2>
-                        <h2 class="text-4xl sm:text-5xl md:text-[3.25rem] font-black tracking-tight text-white leading-[1] uppercase">Cool Breeze</h2>
+                <div class="flex items-center justify-start gap-0 sm:-ml-12">
+                    <img src="images/transparent-logo1.webp" alt="Falak Cool Breeze" class="w-[120px] h-[120px] sm:w-[280px] sm:h-[280px] object-contain flex-shrink-0 -mr-8">
+                    <div class="leading-none select-none sm:-ml-4">
+                        <h2 class="text-xl sm:text-5xl md:text-[3.25rem] font-black tracking-tight text-white leading-[1] uppercase">K Falak</h2>
+                        <h2 class="text-xl sm:text-5xl md:text-[3.25rem] font-black tracking-tight text-white leading-[1] uppercase">Cool Breeze</h2>
                     </div>
                 </div>
                 <div class="self-stretch border-t border-white/10 ml-8 md:ml-12 mr-0"></div>
@@ -1280,8 +1269,8 @@
     <div id="side-menu-drawer" class="fixed inset-y-0 left-0 w-80 z-50 bg-[#0a0b10]/95 backdrop-blur-xl border-r border-white/5 p-6 transform -translate-x-full transition-all duration-300 flex flex-col justify-between shadow-2xl">
         <div class="space-y-6">
             <div class="flex items-center justify-between pb-5 border-b border-white/5">
-                <div class="flex items-center gap-1.5 sm:gap-2">
-                    <img src="images/transparent-logo1.webp" alt="Falak Cool Breeze" class="w-14 h-14 sm:w-16 sm:h-16 object-contain">
+                <div class="flex items-center gap-0">
+                    <img src="images/transparent-logo1.webp" alt="Falak Cool Breeze" class="w-16 h-16 sm:w-20 sm:h-20 object-contain flex-shrink-0 -mr-4">
                     <span class="font-bold text-white text-sm sm:text-base tracking-tight">K Falak Cool Breeze</span>
                 </div>
                 <button onclick="toggleSideMenu()" class="w-9 h-9 rounded-full flex items-center justify-center bg-white/5 hover:bg-white/10 text-zinc-400 hover:text-white transition-all">
