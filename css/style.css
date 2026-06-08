@@ -397,6 +397,29 @@ body {
     position: relative;
     z-index: 1;
 }
+.review-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.review-card:hover {
+    background-color: #3b82f6 !important;
+    color: white !important;
+    box-shadow: 0 25px 50px -12px rgba(59, 130, 246, 0.25) !important;
+    transform: translateY(-0.5rem) !important;
+    border-color: transparent !important;
+}
+.review-card:hover .review-name {
+    color: #1e293b !important;
+}
+.review-card:hover .review-text {
+    color: #eff6ff !important;
+}
+.review-card:hover .review-hover-show {
+    display: flex !important;
+}
+.review-hover-show {
+    display: none;
+}
 @media (max-width: 768px) {
     #hero-bg-image-layer {
         position: absolute;

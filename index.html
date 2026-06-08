@@ -148,104 +148,214 @@
         </div>
     </section>
 
-    <!-- Clients Section -->
-    <section class="w-full bg-black overflow-hidden min-h-screen section-snap">
-        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto pt-24 lg:pt-32 pb-20 relative">
+    <!-- Reviews Section -->
+    <section id="reviews-section" class="w-full bg-white min-h-screen section-snap">
+        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto pt-20 lg:pt-24 pb-20 relative">
 
-            <div class="absolute top-[20%] left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#5896F6]/10 blur-[150px] rounded-full pointer-events-none ambient-glow z-0"></div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start mb-12 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start mb-16 relative z-10">
                 <div class="lg:col-span-4 flex items-center gap-2 pt-2">
-                    <span class="w-2.5 h-2.5 rounded-full bg-[#5896F6] shadow-[0_0_12px_rgba(88,150,246,0.6)]"></span>
-                    <p class="text-xs font-black uppercase tracking-[0.25em] text-[#5896F6]">Our Clients</p>
+                    <span class="w-2.5 h-2.5 rounded-full bg-blue-500 animate-pulse"></span>
+                    <p class="text-xs font-black uppercase tracking-[0.25em] text-blue-500">Testimonials</p>
                 </div>
                 <div class="lg:col-span-8 ml-0 lg:ml-16 xl:ml-28">
-                    <h1 class="text-3xl sm:text-5xl lg:text-[3.5rem] font-extrabold tracking-tight text-white mb-4 leading-[1.05]">Trusted By Leading Brands</h1>
-                    <p class="text-zinc-400 text-sm sm:text-base leading-relaxed max-w-[620px] font-normal">We take pride in our partnerships with Pakistan's most recognized brands across industries.</p>
+                    <h1 class="text-3xl sm:text-5xl lg:text-[3.5rem] font-extrabold tracking-tight text-slate-900 mb-4 leading-[1.05]">What Our Customers Say</h1>
+                    <p class="text-slate-500 text-sm sm:text-base leading-relaxed max-w-[620px] font-normal">Real reviews from real people who trust us with their cooling and appliance needs.</p>
                 </div>
             </div>
 
-            <div class="relative z-10 space-y-0">
-                <div class="overflow-hidden" style="width: 100vw; margin-left: calc(-50vw + 50%);">
-                    <div class="marquee-track-left flex items-center py-0">
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
-                            <img src="images/bravo-transparent.webp" alt="Bravo" class="w-36 h-36 md:w-44 md:h-44 object-contain opacity-60 group-hover:opacity-100 grayscale-[85%] transition-all duration-500">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 relative z-10 mb-6" id="reviews-grid">
+                <!-- Card 1: Sarah M. -->
+                <div class="review-card relative group rounded-3xl p-6 transition-all duration-300 cursor-pointer flex flex-col justify-between overflow-hidden min-h-[360px] select-none bg-white border border-slate-200/60 shadow-sm">
+                    <div class="space-y-1">
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs font-semibold tracking-wider text-slate-400 review-text">01.</span>
+                            <span class="p-1.5 rounded-full bg-slate-100 text-slate-500"><i class="fa-solid fa-user text-xs"></i></span>
                         </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
-                            <img src="images/afit-transparent.webp" alt="Afit" class="w-36 h-36 md:w-44 md:h-44 object-contain opacity-60 group-hover:opacity-100 grayscale-[85%] transition-all duration-500">
+                    </div>
+                    <div class="my-8 flex flex-col items-center justify-center h-24">
+                        <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 text-xl font-bold">S</div>
+                        <div class="flex gap-0.5 mt-2">
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
                         </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
-                            <img src="images/shams-transparent.webp" alt="Shams" class="w-36 h-36 md:w-44 md:h-44 object-contain opacity-60 group-hover:opacity-100 grayscale-[85%] transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
-                            <img src="images/ffc-transparent.webp" alt="FFC" class="w-36 h-36 md:w-44 md:h-44 object-contain opacity-60 group-hover:opacity-100 grayscale-[85%] transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
-                            <img src="images/jazeera-transparent.webp" alt="Jazeera" class="w-36 h-36 md:w-44 md:h-44 object-contain opacity-60 group-hover:opacity-100 grayscale-[85%] transition-all duration-500">
-                        </div>
-                        <!-- Duplicate -->
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
-                            <img src="images/bravo-transparent.webp" alt="Bravo" class="w-36 h-36 md:w-44 md:h-44 object-contain opacity-60 group-hover:opacity-100 grayscale-[85%] transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
-                            <img src="images/afit-transparent.webp" alt="Afit" class="w-36 h-36 md:w-44 md:h-44 object-contain opacity-60 group-hover:opacity-100 grayscale-[85%] transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
-                            <img src="images/shams-transparent.webp" alt="Shams" class="w-36 h-36 md:w-44 md:h-44 object-contain opacity-60 group-hover:opacity-100 grayscale-[85%] transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
-                            <img src="images/ffc-transparent.webp" alt="FFC" class="w-36 h-36 md:w-44 md:h-44 object-contain opacity-60 group-hover:opacity-100 grayscale-[85%] transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
-                            <img src="images/jazeera-transparent.webp" alt="Jazeera" class="w-36 h-36 md:w-44 md:h-44 object-contain opacity-60 group-hover:opacity-100 grayscale-[85%] transition-all duration-500">
-                        </div>
+                    </div>
+                    <div class="space-y-2 mt-auto">
+                        <h3 class="text-lg font-bold text-slate-800 review-name">Sarah M.</h3>
+                        <p class="text-xs leading-relaxed text-slate-400 review-text">Very professional team. Arrived on time and completed the job perfectly. Highly recommend!</p>
                     </div>
                 </div>
 
-                <div class="overflow-hidden -mt-2" style="width: 100vw; margin-left: calc(-50vw + 50%);">
+                <!-- Card 2: Ahmed K. -->
+                <div class="review-card relative group rounded-3xl p-6 transition-all duration-300 cursor-pointer flex flex-col justify-between overflow-hidden min-h-[360px] select-none bg-white border border-slate-200/60 shadow-sm">
+                    <div class="space-y-1">
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs font-semibold tracking-wider text-slate-400 review-text">02.</span>
+                            <span class="p-1.5 rounded-full bg-slate-100 text-slate-500"><i class="fa-solid fa-user text-xs"></i></span>
+                        </div>
+                    </div>
+                    <div class="my-8 flex flex-col items-center justify-center h-24">
+                        <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 text-xl font-bold">A</div>
+                        <div class="flex gap-0.5 mt-2">
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        </div>
+                    </div>
+                    <div class="space-y-2 mt-auto">
+                        <h3 class="text-lg font-bold text-slate-800 review-name">Ahmed K.</h3>
+                        <p class="text-xs leading-relaxed text-slate-400 review-text">Best AC repair service in town. Fair prices and great workmanship. Fixed my AC in under 2 hours!</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Fatima S. -->
+                <div class="review-card relative group rounded-3xl p-6 transition-all duration-300 cursor-pointer flex flex-col justify-between overflow-hidden min-h-[360px] select-none bg-white border border-slate-200/60 shadow-sm">
+                    <div class="space-y-1">
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs font-semibold tracking-wider text-slate-400 review-text">03.</span>
+                            <span class="p-1.5 rounded-full bg-slate-100 text-slate-500"><i class="fa-solid fa-user text-xs"></i></span>
+                        </div>
+                    </div>
+                    <div class="my-8 flex flex-col items-center justify-center h-24">
+                        <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 text-xl font-bold">F</div>
+                        <div class="flex gap-0.5 mt-2">
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        </div>
+                    </div>
+                    <div class="space-y-2 mt-auto">
+                        <h3 class="text-lg font-bold text-slate-800 review-name">Fatima S.</h3>
+                        <p class="text-xs leading-relaxed text-slate-400 review-text">I have been using their services for years. Always reliable, trustworthy, and responsive to emergency calls.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4: John D. -->
+                <div class="review-card relative group rounded-3xl p-6 transition-all duration-300 cursor-pointer flex flex-col justify-between overflow-hidden min-h-[360px] select-none bg-white border border-slate-200/60 shadow-sm">
+                    <div class="space-y-1">
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs font-semibold tracking-wider text-slate-400 review-text">04.</span>
+                            <span class="p-1.5 rounded-full bg-slate-100 text-slate-500"><i class="fa-solid fa-user text-xs"></i></span>
+                        </div>
+                    </div>
+                    <div class="my-8 flex flex-col items-center justify-center h-24">
+                        <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 text-xl font-bold">J</div>
+                        <div class="flex gap-0.5 mt-2">
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        </div>
+                    </div>
+                    <div class="space-y-2 mt-auto">
+                        <h3 class="text-lg font-bold text-slate-800 review-name">John D.</h3>
+                        <p class="text-xs leading-relaxed text-slate-400 review-text">Excellent service! They helped me with my refrigerator repair. Quick response and affordable rates.</p>
+                    </div>
+                </div>
+
+                <!-- Card 5: Overall Rating -->
+                <div class="review-card review-card-last relative group rounded-3xl p-6 transition-all duration-300 cursor-pointer flex flex-col justify-between overflow-hidden min-h-[360px] select-none bg-white border border-slate-200/60 shadow-sm">
+                    <div class="space-y-1">
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs font-semibold tracking-wider text-slate-400 review-text">05. OVERALL</span>
+                            <span class="p-1.5 rounded-full bg-slate-100 text-slate-500"><i class="fa-solid fa-star text-xs"></i></span>
+                        </div>
+                    </div>
+                    <div class="my-8 flex flex-col items-center justify-center h-24">
+                        <span class="text-5xl font-black text-slate-900 review-name">4.9</span>
+                        <div class="flex gap-0.5 mt-1">
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        </div>
+                        <span class="text-xs text-slate-400 mt-1 review-text">(166 reviews)</span>
+                    </div>
+                    <div class="space-y-2 mt-auto">
+                        <h3 class="text-lg font-bold text-slate-800 review-name">Exceptional Service</h3>
+                        <p class="text-xs leading-relaxed text-slate-400 review-text">Rated excellent by our customers. We take pride in delivering top-quality repair services every time.</p>
+                        <a href="https://www.google.com/maps/place/K+Falak+Cool+Breeze/@33.6231875,73.0644876,17z/data=!4m8!3m7!1s0x38df9580e2466ce3:0xf3b6250df421b433!8m2!3d33.6231875!4d73.0670625!9m1!1b1!16s%2Fg%2F11kqwlp8sg?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="review-hover-show mt-3 w-full items-center justify-center gap-1 bg-white hover:bg-blue-50 text-blue-600 text-xs font-bold py-2 px-3 rounded-xl transition-all shadow-md active:scale-95">
+                            Read All Reviews
+                            <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative z-10 mt-2">
+                <div class="overflow-hidden" style="width: 100vw; margin-left: calc(-50vw + 50%);">
                     <div class="marquee-track-right flex items-center py-0">
                         <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
-                            <img src="images/icecream-transparent.webp" alt="Ice Cream" class="w-36 h-36 md:w-44 md:h-44 object-contain opacity-60 group-hover:opacity-100 grayscale-[85%] transition-all duration-500">
+                            <img src="images/bravo-transparent.webp" alt="Bravo" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
                         </div>
                         <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
-                            <img src="images/faiz-ul-islam-transparent.webp" alt="Faiz ul Islam" class="w-36 h-36 md:w-44 md:h-44 object-contain opacity-60 group-hover:opacity-100 grayscale-[85%] transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-36 h-36 md:w-44 md:h-44 mx-4 transition-all duration-500 group">
-                            <img src="images/coffee-transparent.webp" alt="Coffee Bean" class="w-24 h-24 md:w-28 md:h-28 object-contain opacity-60 group-hover:opacity-100 grayscale-[85%] transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-36 h-36 md:w-44 md:h-44 mx-4 transition-all duration-500 group">
-                            <img src="images/paco-transparent.webp" alt="Paco" class="w-24 h-24 md:w-28 md:h-28 object-contain opacity-60 group-hover:opacity-100 grayscale-[85%] transition-all duration-500">
+                            <img src="images/afit-transparent.webp" alt="Afit" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
                         </div>
                         <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
-                            <img src="images/engro-foods-transparent.webp" alt="Engro Foods" class="w-36 h-36 md:w-44 md:h-44 object-contain opacity-60 group-hover:opacity-100 grayscale-[85%] transition-all duration-500">
+                            <img src="images/shams-transparent.webp" alt="Shams" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                            <img src="images/ffc-transparent.webp" alt="FFC" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                            <img src="images/jazeera-transparent.webp" alt="Jazeera" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                            <img src="images/icecream-transparent.webp" alt="Ice Cream" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                            <img src="images/faiz-ul-islam-transparent.webp" alt="Faiz ul Islam" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-36 h-36 md:w-44 md:h-44 mx-4 transition-all duration-500 group">
+                            <img src="images/coffee-transparent.webp" alt="Coffee Bean" class="w-24 h-24 md:w-28 md:h-28 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-36 h-36 md:w-44 md:h-44 mx-4 transition-all duration-500 group">
+                            <img src="images/paco-transparent.webp" alt="Paco" class="w-24 h-24 md:w-28 md:h-28 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                            <img src="images/engro-foods-transparent.webp" alt="Engro Foods" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
                         </div>
                         <!-- Duplicate -->
                         <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
-                            <img src="images/icecream-transparent.webp" alt="Ice Cream" class="w-36 h-36 md:w-44 md:h-44 object-contain opacity-60 group-hover:opacity-100 grayscale-[85%] transition-all duration-500">
+                            <img src="images/bravo-transparent.webp" alt="Bravo" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
                         </div>
                         <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
-                            <img src="images/faiz-ul-islam-transparent.webp" alt="Faiz ul Islam" class="w-36 h-36 md:w-44 md:h-44 object-contain opacity-60 group-hover:opacity-100 grayscale-[85%] transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-36 h-36 md:w-44 md:h-44 mx-4 transition-all duration-500 group">
-                            <img src="images/coffee-transparent.webp" alt="Coffee Bean" class="w-24 h-24 md:w-28 md:h-28 object-contain opacity-60 group-hover:opacity-100 grayscale-[85%] transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-36 h-36 md:w-44 md:h-44 mx-4 transition-all duration-500 group">
-                            <img src="images/paco-transparent.webp" alt="Paco" class="w-24 h-24 md:w-28 md:h-28 object-contain opacity-60 group-hover:opacity-100 grayscale-[85%] transition-all duration-500">
+                            <img src="images/afit-transparent.webp" alt="Afit" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
                         </div>
                         <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
-                            <img src="images/engro-foods-transparent.webp" alt="Engro Foods" class="w-36 h-36 md:w-44 md:h-44 object-contain opacity-60 group-hover:opacity-100 grayscale-[85%] transition-all duration-500">
+                            <img src="images/shams-transparent.webp" alt="Shams" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                            <img src="images/ffc-transparent.webp" alt="FFC" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                            <img src="images/jazeera-transparent.webp" alt="Jazeera" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                            <img src="images/icecream-transparent.webp" alt="Ice Cream" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                            <img src="images/faiz-ul-islam-transparent.webp" alt="Faiz ul Islam" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-36 h-36 md:w-44 md:h-44 mx-4 transition-all duration-500 group">
+                            <img src="images/coffee-transparent.webp" alt="Coffee Bean" class="w-24 h-24 md:w-28 md:h-28 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-36 h-36 md:w-44 md:h-44 mx-4 transition-all duration-500 group">
+                            <img src="images/paco-transparent.webp" alt="Paco" class="w-24 h-24 md:w-28 md:h-28 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 h-52 md:w-60 md:h-60 mx-4 transition-all duration-500 group">
+                            <img src="images/engro-foods-transparent.webp" alt="Engro Foods" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6 relative z-10">
-                <button onclick="navigateToWhatsApp('Assalam-o-Alaikum! I want to book a repair service for my appliance. Please assist.')" class="px-8 py-4 rounded-full bg-white hover:bg-[#5896F6] hover:text-white text-slate-900 font-bold text-sm tracking-wide transition-all duration-300 shadow-xl active:scale-95">
-                    Book a Repair
-                </button>
-                <a href="javascript:void(0)" onclick="navigateToWhatsApp('Assalam-o-Alaikum! I would like to get in touch regarding your services.')" class="px-8 py-4 rounded-full border border-zinc-700 hover:border-[#5896F6]/50 hover:bg-white/5 text-white font-semibold text-sm tracking-wide transition-all duration-300 active:scale-95">
-                    Contact Us
-                </a>
             </div>
 
         </div>
@@ -1187,6 +1297,10 @@
                 <a href="#services-overview" onclick="setActiveNavLink(this); toggleSideMenu(); smoothScrollToServices(event)" class="flex items-center gap-3.5 px-5 py-3.5 rounded-xl text-zinc-300 hover:text-white font-medium text-base hover:bg-white/5 transition-all">
                     <span class="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center"><i class="fa-solid fa-info-circle text-zinc-500 text-sm"></i></span>
                     About
+                </a>
+                <a href="#reviews-section" onclick="setActiveNavLink(this); toggleSideMenu()" class="flex items-center gap-3.5 px-5 py-3.5 rounded-xl text-zinc-300 hover:text-white font-medium text-base hover:bg-white/5 transition-all">
+                    <span class="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center"><i class="fa-solid fa-star text-zinc-500 text-sm"></i></span>
+                    Testimonials
                 </a>
                 <a href="#home-appliances-section" onclick="setActiveNavLink(this); toggleSideMenu()" class="flex items-center gap-3.5 px-5 py-3.5 rounded-xl text-zinc-300 hover:text-white font-medium text-base hover:bg-white/5 transition-all">
                     <span class="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center"><i class="fa-solid fa-tools text-zinc-500 text-sm"></i></span>
