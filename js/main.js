@@ -18,10 +18,10 @@ function setActiveNavLink(link) {
     var nav = link.closest('nav');
     if (!nav) return;
     var links = nav.querySelectorAll('a');
-    var inactiveLinkClass = 'flex items-center gap-3.5 px-5 py-3.5 rounded-xl text-zinc-300 hover:text-white font-medium text-base hover:bg-white/5 transition-all';
-    var activeLinkClass = 'flex items-center gap-3.5 px-5 py-3.5 rounded-xl text-white font-semibold text-base bg-[#5896F6]/10 border border-[#5896F6]/20 hover:bg-[#5896F6]/20 transition-all';
-    var inactiveSpanClass = 'w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center';
-    var activeSpanClass = 'w-9 h-9 rounded-lg bg-[#5896F6]/20 flex items-center justify-center';
+    var inactiveLinkClass = 'flex items-center gap-3.5 px-5 py-3.5 text-zinc-300 hover:text-white font-medium text-base hover:bg-white/5 transition-all';
+    var activeLinkClass = 'flex items-center gap-3.5 px-5 py-3.5 text-white font-semibold text-base bg-[#5896F6]/10 border border-[#5896F6]/20 hover:bg-[#5896F6]/20 transition-all';
+    var inactiveSpanClass = 'w-9 h-9 bg-white/5 flex items-center justify-center';
+    var activeSpanClass = 'w-9 h-9 bg-[#5896F6]/20 flex items-center justify-center';
     for (var i = 0; i < links.length; i++) {
         var a = links[i];
         var span = a.querySelector('span');
@@ -248,7 +248,6 @@ function setHeaderHero() {
     var phoneIcon = document.getElementById('phone-icon');
     var bookBtn = document.getElementById('book-repair-btn');
     var logo = document.getElementById('header-logo');
-    var brandText = document.getElementById('header-brand-text');
 
     header.classList.remove('bg-white/90', 'bg-black/90', 'shadow-sm');
     header.classList.remove('backdrop-blur-md');
@@ -260,8 +259,7 @@ function setHeaderHero() {
     phoneBtn.className = 'hidden md:flex items-center gap-2.5 px-4 py-2.5 rounded-full glass-button text-sm font-medium text-slate-200 hover:text-cyan-400';
     phoneIcon.className = 'fa-solid fa-phone text-xs text-white';
     bookBtn.className = 'px-5 py-2.5 sm:px-6 sm:py-2.5 rounded-full glass-button text-white text-sm tracking-wide active:scale-95 transition-all duration-300';
-    logo.src = 'images/transparent-logo1.webp';
-    if (brandText) brandText.className = 'text-white font-bold tracking-tight text-sm sm:text-xl leading-none whitespace-nowrap';
+    logo.src = 'images/transparent-logo1.png';
 }
 
 function setHeaderLight() {
@@ -275,7 +273,6 @@ function setHeaderLight() {
     var phoneIcon = document.getElementById('phone-icon');
     var bookBtn = document.getElementById('book-repair-btn');
     var logo = document.getElementById('header-logo');
-    var brandText = document.getElementById('header-brand-text');
 
     header.classList.remove('bg-black/90');
     header.classList.add('bg-white/90', 'backdrop-blur-md', 'shadow-sm');
@@ -287,8 +284,7 @@ function setHeaderLight() {
     phoneBtn.className = 'hidden md:flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-white border border-slate-200 text-sm font-medium text-slate-700 hover:text-slate-900';
     phoneIcon.className = 'fa-solid fa-phone text-xs text-black';
     bookBtn.className = 'px-5 py-2.5 sm:px-6 sm:py-2.5 rounded-full bg-[#5896F6] hover:bg-[#5896F6] text-white text-sm tracking-wide active:scale-95 transition-all duration-300';
-    logo.src = 'images/transparent-logo2.webp';
-    if (brandText) brandText.className = 'text-slate-900 font-bold tracking-tight text-sm sm:text-xl leading-none whitespace-nowrap';
+    logo.src = 'images/transparent-logo2.png';
 }
 
 function setHeaderDark() {
@@ -302,7 +298,6 @@ function setHeaderDark() {
     var phoneIcon = document.getElementById('phone-icon');
     var bookBtn = document.getElementById('book-repair-btn');
     var logo = document.getElementById('header-logo');
-    var brandText = document.getElementById('header-brand-text');
 
     header.classList.remove('bg-white/90', 'shadow-sm');
     header.classList.add('bg-black/90', 'backdrop-blur-md');
@@ -312,10 +307,10 @@ function setHeaderDark() {
     menuBtn.className = 'w-12 h-12 flex items-center justify-center rounded-full border border-zinc-700 bg-transparent text-white hover:bg-zinc-800/50 transition-all active:scale-95';
     menuIcon.className = 'fa-solid fa-bars-staggered text-lg text-white';
     phoneBtn.className = 'hidden md:flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-black border border-zinc-700 text-sm font-medium text-white hover:text-white';
+
     phoneIcon.className = 'fa-solid fa-phone text-xs text-white';
     bookBtn.className = 'px-5 py-2.5 sm:px-6 sm:py-2.5 rounded-full bg-white text-black text-sm tracking-wide active:scale-95 transition-all duration-300';
-    logo.src = 'images/transparent-logo1.webp';
-    if (brandText) brandText.className = 'text-white font-bold tracking-tight text-sm sm:text-xl leading-none whitespace-nowrap';
+    logo.src = 'images/transparent-logo1.png';
 }
 
 function handleHeaderScroll() {
@@ -353,12 +348,24 @@ function initScrollReveal() {
     var cards = document.querySelectorAll('.stat-card');
     if (!section || !cards.length) return;
 
+    if (window.innerWidth < 640) {
+        cards.forEach(function(c) { c.classList.add('visible'); });
+        return;
+    }
+
     registerSectionSteps(1, cards.length, function(data) {
-        var card = cards[data.current];
-        if (!card) return;
-        card.classList.add('visible');
-        card.style.zIndex = data.current + 1;
-        card.style.marginTop = data.current > 0 ? '-' + Math.round(card.offsetHeight * 0.55) + 'px' : '0';
+        for (var i = 0; i < cards.length; i++) {
+            var card = cards[i];
+            if (i <= data.current) {
+                card.classList.add('visible');
+                card.style.zIndex = i + 1;
+                card.style.marginTop = i > 0 ? '-' + Math.round(card.offsetHeight * 0.55) + 'px' : '0';
+            } else {
+                card.classList.remove('visible');
+                card.style.zIndex = '';
+                card.style.marginTop = '';
+            }
+        }
     });
 }
 
@@ -367,12 +374,37 @@ function initReviewReveal() {
     var cards = section.querySelectorAll('.process-card');
     if (!section || !cards.length) return;
 
+    if (window.innerWidth < 640) {
+        for (var i = 1; i <= cards.length; i++) {
+            var card = document.getElementById('review-card-' + i);
+            if (!card) continue;
+            card.classList.remove('bg-[#F5F5F7]', 'text-[#3A3A3C]', 'hover:bg-slate-200', 'hover:shadow-lg', 'hover:-translate-y-1');
+            card.classList.add('bg-[#5197E9]', 'text-white', 'shadow-lg', 'shadow-blue-500/10');
+            var stepNum = card.querySelector('.step-num');
+            if (stepNum) { stepNum.classList.remove('text-[#8E8E93]'); stepNum.classList.add('text-blue-50/90'); }
+            var title = card.querySelector('h3');
+            if (title) { title.classList.remove('text-slate-800', 'text-lg', 'md:text-xl'); title.classList.add('text-white', 'text-2xl'); }
+            var description = card.querySelector('p');
+            if (description) description.classList.remove('hidden');
+            var stars = card.querySelector('.text-block .flex.gap-1');
+            if (stars) stars.classList.remove('hidden');
+            var readLink = card.querySelector('.text-block a');
+            if (readLink) readLink.classList.remove('hidden');
+            var textBlock = card.querySelector('.text-block');
+            if (textBlock) { textBlock.classList.remove('md:translate-y-4'); textBlock.classList.add('translate-y-0'); }
+            var illustration = card.querySelector('.illustration-container');
+            if (illustration) { illustration.classList.remove('h-0', 'opacity-0', 'scale-75'); illustration.classList.add('h-24', 'opacity-100', 'scale-100'); }
+        }
+        return;
+    }
+
     registerSectionSteps(2, cards.length, function(data) {
         activateReview(data.current + 1);
     });
 }
 
 function activateReview(activeId) {
+    if (sectionStepData[2]) sectionStepData[2].current = activeId - 1;
     for (var i = 1; i <= 5; i++) {
         var card = document.getElementById('review-card-' + i);
         if (!card) continue;
@@ -436,19 +468,18 @@ function initServiceReveal() {
 
     var currentActive = 0;
 
-    registerSectionSteps(3, cards.length, function(data) {
-        currentActive = data.current;
-        cards.forEach(function(c) { c.classList.remove('expanded'); });
-        var card = cards[currentActive];
-        if (card) card.classList.add('expanded');
-        images.forEach(function(img) {
-            var cardIdx = parseInt(img.getAttribute('data-card'));
-            img.classList.toggle('active', cardIdx === currentActive);
-        });
-    });
-
     cards.forEach(function (card) {
         var idx = parseInt(card.getAttribute('data-card-index'));
+        card.addEventListener('click', function () {
+            if (sectionStepData[3]) sectionStepData[3].current = idx;
+            cards.forEach(function(c) { c.classList.remove('expanded'); });
+            card.classList.add('expanded');
+            currentActive = idx;
+            images.forEach(function (img) {
+                var cardIdx = parseInt(img.getAttribute('data-card'));
+                img.classList.toggle('active', cardIdx === idx);
+            });
+        });
         card.addEventListener('mouseenter', function () {
             images.forEach(function (img) {
                 var cardIdx = parseInt(img.getAttribute('data-card'));
@@ -460,6 +491,21 @@ function initServiceReveal() {
                 var cardIdx = parseInt(img.getAttribute('data-card'));
                 img.classList.toggle('active', cardIdx === currentActive);
             });
+        });
+    });
+
+    if (window.innerWidth < 640) {
+        return;
+    }
+
+    registerSectionSteps(3, cards.length, function(data) {
+        currentActive = data.current;
+        cards.forEach(function(c) { c.classList.remove('expanded'); });
+        var card = cards[currentActive];
+        if (card) card.classList.add('expanded');
+        images.forEach(function(img) {
+            var cardIdx = parseInt(img.getAttribute('data-card'));
+            img.classList.toggle('active', cardIdx === currentActive);
         });
     });
 }
@@ -472,19 +518,18 @@ function initCommercialReveal() {
 
     var currentActive = 0;
 
-    registerSectionSteps(5, cards.length, function(data) {
-        currentActive = data.current;
-        cards.forEach(function(c) { c.classList.remove('expanded'); });
-        var card = cards[currentActive];
-        if (card) card.classList.add('expanded');
-        images.forEach(function(img) {
-            var cardIdx = parseInt(img.getAttribute('data-card'));
-            img.classList.toggle('active', cardIdx === currentActive);
-        });
-    });
-
     cards.forEach(function (card) {
         var idx = parseInt(card.getAttribute('data-card-index'));
+        card.addEventListener('click', function () {
+            if (sectionStepData[5]) sectionStepData[5].current = idx;
+            cards.forEach(function(c) { c.classList.remove('expanded'); });
+            card.classList.add('expanded');
+            currentActive = idx;
+            images.forEach(function (img) {
+                var cardIdx = parseInt(img.getAttribute('data-card'));
+                img.classList.toggle('active', cardIdx === idx);
+            });
+        });
         card.addEventListener('mouseenter', function () {
             images.forEach(function (img) {
                 var cardIdx = parseInt(img.getAttribute('data-card'));
@@ -496,6 +541,21 @@ function initCommercialReveal() {
                 var cardIdx = parseInt(img.getAttribute('data-card'));
                 img.classList.toggle('active', cardIdx === currentActive);
             });
+        });
+    });
+
+    if (window.innerWidth < 640) {
+        return;
+    }
+
+    registerSectionSteps(5, cards.length, function(data) {
+        currentActive = data.current;
+        cards.forEach(function(c) { c.classList.remove('expanded'); });
+        var card = cards[currentActive];
+        if (card) card.classList.add('expanded');
+        images.forEach(function(img) {
+            var cardIdx = parseInt(img.getAttribute('data-card'));
+            img.classList.toggle('active', cardIdx === currentActive);
         });
     });
 }

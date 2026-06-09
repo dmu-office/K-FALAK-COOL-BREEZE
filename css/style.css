@@ -145,6 +145,13 @@ body {
     transform: translateY(0);
 }
 
+@media (max-width: 639px) {
+    .stat-card {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @keyframes marquee-right {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
