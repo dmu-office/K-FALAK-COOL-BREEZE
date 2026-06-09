@@ -251,14 +251,14 @@ function setHeaderHero() {
 
     header.classList.remove('bg-white/90', 'bg-black/90', 'shadow-sm');
     header.classList.remove('backdrop-blur-md');
-    headerInner.classList.remove('py-4');
+    headerInner.classList.remove('py-4', 'py-5');
     headerInner.classList.add('py-6');
 
     menuBtn.className = 'w-12 h-12 flex items-center justify-center rounded-full glass-button text-slate-300 hover:text-white transition-all active:scale-95';
     menuIcon.className = 'fa-solid fa-bars-staggered text-lg text-slate-300';
     phoneBtn.className = 'hidden md:flex items-center gap-2.5 px-4 py-2.5 rounded-full glass-button text-sm font-medium text-slate-200 hover:text-cyan-400';
     phoneIcon.className = 'fa-solid fa-phone text-xs text-white';
-    bookBtn.className = 'px-5 py-2.5 sm:px-6 sm:py-2.5 rounded-full glass-button text-white text-sm tracking-wide active:scale-95 transition-all duration-300';
+    bookBtn.className = 'px-3 py-1.5 sm:px-6 sm:py-2.5 rounded-full glass-button text-white text-sm tracking-wide active:scale-95 transition-all duration-300';
     logo.src = 'images/transparent-logo1.webp';
 }
 
@@ -276,14 +276,14 @@ function setHeaderLight() {
 
     header.classList.remove('bg-black/90');
     header.classList.add('bg-white/90', 'backdrop-blur-md', 'shadow-sm');
-    headerInner.classList.remove('py-6');
-    headerInner.classList.add('py-4');
+    headerInner.classList.remove('py-4', 'py-6');
+    headerInner.classList.add('py-5');
 
     menuBtn.className = 'w-12 h-12 flex items-center justify-center rounded-full bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition-all active:scale-95';
     menuIcon.className = 'fa-solid fa-bars-staggered text-lg text-slate-700';
     phoneBtn.className = 'hidden md:flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-white border border-slate-200 text-sm font-medium text-slate-700 hover:text-slate-900';
     phoneIcon.className = 'fa-solid fa-phone text-xs text-black';
-    bookBtn.className = 'px-5 py-2.5 sm:px-6 sm:py-2.5 rounded-full bg-[#5896F6] hover:bg-[#5896F6] text-white text-sm tracking-wide active:scale-95 transition-all duration-300';
+    bookBtn.className = 'px-3 py-1.5 sm:px-6 sm:py-2.5 rounded-full bg-[#5896F6] hover:bg-[#5896F6] text-white text-sm tracking-wide active:scale-95 transition-all duration-300';
     logo.src = 'images/transparent-logo2.webp';
 }
 
@@ -301,15 +301,15 @@ function setHeaderDark() {
 
     header.classList.remove('bg-white/90', 'shadow-sm');
     header.classList.add('bg-black/90', 'backdrop-blur-md');
-    headerInner.classList.remove('py-6');
-    headerInner.classList.add('py-4');
+    headerInner.classList.remove('py-4', 'py-6');
+    headerInner.classList.add('py-5');
 
     menuBtn.className = 'w-12 h-12 flex items-center justify-center rounded-full border border-zinc-700 bg-transparent text-white hover:bg-zinc-800/50 transition-all active:scale-95';
     menuIcon.className = 'fa-solid fa-bars-staggered text-lg text-white';
     phoneBtn.className = 'hidden md:flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-black border border-zinc-700 text-sm font-medium text-white hover:text-white';
 
     phoneIcon.className = 'fa-solid fa-phone text-xs text-white';
-    bookBtn.className = 'px-5 py-2.5 sm:px-6 sm:py-2.5 rounded-full bg-white text-black text-sm tracking-wide active:scale-95 transition-all duration-300';
+    bookBtn.className = 'px-3 py-1.5 sm:px-6 sm:py-2.5 rounded-full bg-white text-black text-sm tracking-wide active:scale-95 transition-all duration-300';
     logo.src = 'images/transparent-logo1.webp';
 }
 

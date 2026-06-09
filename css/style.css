@@ -157,7 +157,6 @@ body {
 
 .marquee-track-right {
     display: flex;
-    gap: 5rem;
     width: fit-content;
     animation: marquee-right 80s linear infinite;
 }
