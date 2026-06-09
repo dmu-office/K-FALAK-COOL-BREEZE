@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en" class="overflow-x-hidden">
 <head>
@@ -1333,3 +1334,1363 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falak Cool Breeze - Premium Hero Section</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Plus Jakarta Sans & Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="selection:bg-cyan-500/30 selection:text-cyan-200">
+
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div id="header-inner" class="max-w-7xl mx-auto px-4 sm:px-8 py-6 flex items-center justify-between">
+            <button id="menu-toggle-btn" onclick="toggleSideMenu()" class="w-12 h-12 flex items-center justify-center rounded-full glass-button text-slate-300 hover:text-white transition-all active:scale-95" title="Menu Menu">
+                <i id="menu-icon" class="fa-solid fa-bars-staggered text-lg"></i>
+            </button>
+
+                <a href="#" class="absolute left-1/2 -translate-x-1/2 flex items-center justify-center">
+                    <img id="header-logo" src="images/transparent-logo1.png" alt="Falak Cool Breeze" class="h-16 sm:h-20 w-auto">
+                </a>
+
+            <div class="flex items-center gap-2 sm:gap-3">
+                <a id="header-phone-btn" href="tel:03455137257" class="hidden md:flex items-center gap-2.5 px-4 py-2.5 rounded-full glass-button text-sm font-medium text-slate-200 hover:text-cyan-400">
+                    <i id="phone-icon" class="fa-solid fa-phone text-xs text-white"></i>
+                    <span id="nav-phone-number">0345-5137257</span>
+                </a>
+
+                <button id="book-repair-btn" onclick="navigateToWhatsApp('Assalam-o-Alaikum! I want to book a repair service for my appliance. Please assist.')" class="px-5 py-2.5 sm:px-6 sm:py-2.5 rounded-full glass-button text-white text-sm tracking-wide active:scale-95 transition-all duration-300">
+                    Book a Repair
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Outer Layout Frame (hero) -->
+    <div class="relative min-h-screen flex flex-col justify-between section-snap bg-[#0b131e]">
+
+        <!-- Ambient glowing orbs -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none" style="clip-path: inset(0);">
+            <div class="absolute -top-[10%] -left-[10%] w-[60vw] h-[60vw] sm:w-[50vw] sm:h-[50vw] rounded-full bg-gradient-to-tr from-cyan-900/40 to-sky-950/20 blur-[120px] animate-ambient-1"></div>
+            <div class="absolute top-[20%] -right-[10%] w-[50vw] h-[50vw] sm:w-[40vw] sm:h-[40vw] rounded-full bg-gradient-to-br from-[#5896F6]/20 via-slate-900/0 to-cyan-950/30 blur-[140px] animate-ambient-2"></div>
+            <div class="absolute -bottom-[10%] left-[20%] w-[70vw] h-[40vw] sm:w-[60vw] sm:h-[30vw] rounded-full bg-slate-950 blur-[100px]"></div>
+        </div>
+
+        <!-- Background image layer (parallax via position: fixed) -->
+        <div id="hero-bg-image-layer" class="fixed inset-0 z-0 transition-all duration-700 bg-cover bg-[35%_center] sm:bg-center" style="background-image: url('images/hero.webp');">
+            <div id="bg-overlay-tint" class="absolute inset-0 bg-gradient-to-b from-slate-950/10 via-slate-950/5 to-slate-950/20 mix-blend-multiply transition-colors duration-500"></div>
+        </div>
+
+        <!-- Hero content -->
+        <div class="relative z-10 flex flex-col justify-between pt-20 flex-grow">
+
+        <main class="flex-grow flex items-center justify-center px-4 sm:px-6 md:px-8 py-12">
+            <div class="max-w-4xl mx-auto text-center flex flex-col items-center justify-center">
+
+                <h1 id="hero-main-title" class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.1] sm:leading-[1.15] max-w-4xl drop-shadow-xl">
+                    Pakistan's Trusted Cooling & Appliance Repairing Experts
+                </h1>
+
+                <p id="hero-sub-title" class="mt-6 text-base sm:text-lg md:text-xl text-slate-300 max-w-2xl leading-relaxed font-light drop-shadow">
+                    Same-day service. Certified technicians.<br>100% satisfaction guarantee.
+                </p>
+
+                <div class="mt-10 flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+                    <button onclick="navigateToWhatsApp('Assalam-o-Alaikum! I am interested in your cooling and repair services. Please guide me.')" class="group w-full sm:w-auto px-8 py-4 rounded-full bg-white text-slate-900 font-bold hover:bg-[#5896F6] hover:text-white transition-all duration-300 flex items-center justify-center gap-3 shadow-xl active:scale-95 text-base">
+                        <i class="fa-brands fa-whatsapp text-xl text-[#5896F6] group-hover:text-white transition-colors duration-300"></i>
+                        <span id="hero-btn-primary">WhatsApp Us Now</span>
+                    </button>
+
+                    <a href="#home-appliances-section" class="w-full sm:w-auto px-8 py-4 rounded-full glass-button text-slate-200 font-semibold hover:text-white flex items-center justify-center gap-2 text-base active:scale-95">
+                        <span id="hero-btn-secondary">Our Services</span>
+                    </a>
+                </div>
+
+
+
+            </div>
+        </main>
+
+        </div>
+    </div>
+
+    <!-- About Us + Team Section -->
+    <section id="services-overview" class="w-full bg-white lg:min-h-screen section-snap">
+        <div class="w-full px-6 sm:px-12 max-w-[1400px] mx-auto pt-8 lg:pt-12 pb-0">
+
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#5896F6]"></span>
+                    <span class="text-xs font-extrabold uppercase tracking-[0.25em] text-[#5896F6]">About Us</span>
+                </div>
+
+                <div class="flex flex-col items-start pt-12 sm:pt-16 sm:-translate-x-32">
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-950 leading-[1.05] md:leading-[1.02]">
+                        Team For Cool,
+                    </h1>
+                    <div class="flex items-center gap-3 mt-1">
+                        <span class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-950">Repairs</span>
+                        <div class="avatar-stack">
+                            <img class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover avatar-item" src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?auto=format&fit=crop&w=150&q=80" alt="Tech 1" onerror="this.src='https://placehold.co/100x100/eaeaea/555555?text=T1'">
+                            <img class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover avatar-item" src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&w=150&q=80" alt="Tech 2" onerror="this.src='https://placehold.co/100x100/eaeaea/555555?text=T2'">
+                            <img class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover avatar-item" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Tech 3" onerror="this.src='https://placehold.co/100x100/eaeaea/555555?text=T3'">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#5896F6] text-white flex items-center justify-center font-bold text-sm avatar-item">+20</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="stat-card pt-[1.7rem] pb-4 px-8 group grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-24 lg:gap-32 items-center" data-index="0">
+                    <span class="md:col-span-5 text-7xl sm:text-8xl lg:text-9xl font-semibold tracking-tight text-[#5896F6] select-none block transition-transform duration-300 group-hover:translate-x-1 -ml-2 md:-ml-4">23</span>
+                    <p class="md:col-span-7 text-xs sm:text-sm font-bold tracking-[0.2em] text-slate-500 uppercase leading-relaxed text-center md:text-left md:pl-8 lg:pl-12">
+                        Years keeping homes and businesses cool
+                    </p>
+                </div>
+
+                <div class="stat-card pt-[1.7rem] pb-4 px-8 group grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-24 lg:gap-32 items-center border-t border-slate-200" data-index="1">
+                    <span class="md:col-span-5 text-7xl sm:text-8xl lg:text-9xl font-semibold tracking-tight text-[#5896F6] select-none block transition-transform duration-300 group-hover:translate-x-1 -ml-2 md:-ml-4">10,000+</span>
+                    <p class="md:col-span-7 text-xs sm:text-sm font-bold tracking-[0.2em] text-slate-500 uppercase leading-relaxed text-center md:text-left md:pl-8 lg:pl-12">
+                        Satisfied customers across the region
+                    </p>
+                </div>
+
+                <div class="stat-card pt-[1.7rem] pb-4 px-8 group grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-24 lg:gap-32 items-center border-t border-slate-200" data-index="2">
+                    <span class="md:col-span-5 text-7xl sm:text-8xl lg:text-9xl font-semibold tracking-tight text-[#5896F6] select-none block transition-transform duration-300 group-hover:translate-x-1 -ml-2 md:-ml-4">4.9</span>
+                    <p class="md:col-span-7 text-xs sm:text-sm font-bold tracking-[0.2em] text-slate-500 uppercase leading-relaxed text-center md:text-left md:pl-8 lg:pl-12">
+                        Average service rating on Google
+                    </p>
+                </div>
+
+                <div class="stat-card pt-[1.7rem] pb-4 px-8 group grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-24 lg:gap-32 items-center border-t border-slate-200" data-index="3">
+                    <span class="md:col-span-5 text-7xl sm:text-8xl lg:text-9xl font-semibold tracking-tight text-[#5896F6] select-none block transition-transform duration-300 group-hover:translate-x-1 -ml-2 md:-ml-4">300</span>
+                    <p class="md:col-span-7 text-xs sm:text-sm font-bold tracking-[0.2em] text-slate-500 uppercase leading-relaxed text-center md:text-left md:pl-8 lg:pl-12">
+                        Successfully Delivered Projects
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews-section" class="w-full bg-white lg:min-h-screen section-snap">
+        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto pt-20 lg:pt-28 pb-4 relative">
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start mb-16 relative z-10">
+                <div class="lg:col-span-4 flex items-center gap-2 pt-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-blue-500 animate-pulse"></span>
+                    <p class="text-xs font-black uppercase tracking-[0.25em] text-blue-500">Testimonials</p>
+                </div>
+                <div class="lg:col-span-8 ml-0 lg:ml-16 xl:ml-28">
+                    <h1 class="text-3xl sm:text-5xl lg:text-[3.5rem] font-extrabold tracking-tight text-slate-900 mb-4 leading-[1.05]">What Our Customers Say</h1>
+                    <p class="text-slate-500 text-sm sm:text-base leading-relaxed max-w-[620px] font-normal">Real reviews from real people who trust us with their cooling and appliance needs.</p>
+                </div>
+            </div>
+
+            <!-- 5-Card Grid -->
+            <div id="reviews-grid" class="grid grid-cols-1 md:grid-cols-5 gap-4 relative z-10 mb-4">
+
+                <!-- Card 1: SARAH M. -->
+                <div onclick="activateReview(1)" id="review-card-1" class="process-card relative overflow-hidden rounded-sm cursor-pointer p-4 sm:p-8 flex flex-col justify-between min-h-[200px] sm:min-h-[320px] md:h-[420px] bg-[#F5F5F7] text-[#3A3A3C] hover:bg-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all">
+                    <div class="z-10">
+                        <span class="step-num text-xs font-semibold tracking-widest text-[#8E8E93] uppercase">01. SARAH M.</span>
+                    </div>
+                    <div class="illustration-container z-10 my-auto flex flex-col justify-center h-0 opacity-0 scale-75 overflow-hidden transition-all duration-500">
+                        <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center text-white text-2xl font-bold">S</div>
+                    </div>
+                    <div class="text-block z-10 transition-all duration-500 transform translate-y-0 md:translate-y-4">
+                        <h3 class="text-lg md:text-xl font-semibold tracking-tight text-slate-800 transition-colors mb-2 leading-tight">Quick & Professional</h3>
+                        <p class="text-sm text-white leading-relaxed font-light hidden transition-opacity duration-500">Very professional team. Arrived on time and completed the job perfectly. Highly recommend!</p>
+                        <div class="flex gap-1 mt-2 hidden">
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: AHMED K. -->
+                <div onclick="activateReview(2)" id="review-card-2" class="process-card relative overflow-hidden rounded-sm cursor-pointer p-4 sm:p-8 flex flex-col justify-between min-h-[200px] sm:min-h-[320px] md:h-[420px] bg-[#F5F5F7] text-[#3A3A3C] hover:bg-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all">
+                    <div class="z-10">
+                        <span class="step-num text-xs font-semibold tracking-widest text-[#8E8E93] uppercase">02. AHMED K.</span>
+                    </div>
+                    <div class="illustration-container z-10 my-auto flex flex-col justify-center h-0 opacity-0 scale-75 overflow-hidden transition-all duration-500">
+                        <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center text-white text-2xl font-bold">A</div>
+                    </div>
+                    <div class="text-block z-10 transition-all duration-500 transform translate-y-0 md:translate-y-4">
+                        <h3 class="text-lg md:text-xl font-semibold tracking-tight text-slate-800 transition-colors mb-2 leading-tight">Fair & Skilled</h3>
+                        <p class="text-sm text-white leading-relaxed font-light hidden transition-opacity duration-500">Best AC repair service in town. Fair prices and great workmanship. Fixed my AC in under 2 hours!</p>
+                        <div class="flex gap-1 mt-2 hidden">
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: FATIMA S. -->
+                <div onclick="activateReview(3)" id="review-card-3" class="process-card relative overflow-hidden rounded-sm cursor-pointer p-4 sm:p-8 flex flex-col justify-between min-h-[200px] sm:min-h-[320px] md:h-[420px] bg-[#F5F5F7] text-[#3A3A3C] hover:bg-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all">
+                    <div class="z-10">
+                        <span class="step-num text-xs font-semibold tracking-widest text-[#8E8E93] uppercase">03. FATIMA S.</span>
+                    </div>
+                    <div class="illustration-container z-10 my-auto flex flex-col justify-center h-0 opacity-0 scale-75 overflow-hidden transition-all duration-500">
+                        <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center text-white text-2xl font-bold">F</div>
+                    </div>
+                    <div class="text-block z-10 transition-all duration-500 transform translate-y-0 md:translate-y-4">
+                        <h3 class="text-lg md:text-xl font-semibold tracking-tight text-slate-800 transition-colors mb-2 leading-tight">Always Reliable</h3>
+                        <p class="text-sm text-white leading-relaxed font-light hidden transition-opacity duration-500">I have been using their services for years. Always reliable, trustworthy, and responsive to emergency calls.</p>
+                        <div class="flex gap-1 mt-2 hidden">
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: JOHN D. -->
+                <div onclick="activateReview(4)" id="review-card-4" class="process-card relative overflow-hidden rounded-sm cursor-pointer p-4 sm:p-8 flex flex-col justify-between min-h-[200px] sm:min-h-[320px] md:h-[420px] bg-[#F5F5F7] text-[#3A3A3C] hover:bg-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all">
+                    <div class="z-10">
+                        <span class="step-num text-xs font-semibold tracking-widest text-[#8E8E93] uppercase">04. JOHN D.</span>
+                    </div>
+                    <div class="illustration-container z-10 my-auto flex flex-col justify-center h-0 opacity-0 scale-75 overflow-hidden transition-all duration-500">
+                        <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center text-white text-2xl font-bold">J</div>
+                    </div>
+                    <div class="text-block z-10 transition-all duration-500 transform translate-y-0 md:translate-y-4">
+                        <h3 class="text-lg md:text-xl font-semibold tracking-tight text-slate-800 transition-colors mb-2 leading-tight">Excellent Service</h3>
+                        <p class="text-sm text-white leading-relaxed font-light hidden transition-opacity duration-500">Excellent service! They helped me with my refrigerator repair. Quick response and affordable rates.</p>
+                        <div class="flex gap-1 mt-2 hidden">
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: OVERALL -->
+                <div onclick="activateReview(5)" id="review-card-5" class="process-card relative overflow-hidden rounded-sm cursor-pointer p-4 sm:p-8 flex flex-col justify-between min-h-[200px] sm:min-h-[320px] md:h-[420px] bg-[#F5F5F7] text-[#3A3A3C] hover:bg-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all">
+                    <div class="z-10">
+                        <span class="step-num text-xs font-semibold tracking-widest text-[#8E8E93] uppercase">05. OVERALL</span>
+                    </div>
+                    <div class="illustration-container z-10 my-auto flex flex-col justify-center h-0 opacity-0 scale-75 overflow-hidden transition-all duration-500">
+                        <span class="text-4xl font-black text-white">4.9</span>
+                    </div>
+                    <div class="text-block z-10 transition-all duration-500 transform translate-y-0 md:translate-y-4">
+                        <h3 class="text-lg md:text-xl font-semibold tracking-tight text-slate-800 transition-colors mb-2 leading-tight">Exceptional</h3>
+                        <p class="text-sm text-white leading-relaxed font-light hidden transition-opacity duration-500">Rated excellent by 166+ happy customers. We take pride in delivering top-quality repair services.</p>
+                        <div class="flex gap-1 mt-2 hidden">
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                        </div>
+                        <a href="https://www.google.com/maps/place/K+Falak+Cool+Breeze/@33.6231875,73.0644876,17z/data=!4m8!3m7!1s0x38df9580e2466ce3:0xf3b6250df421b433!8m2!3d33.6231875!4d73.0670625!9m1!1b1!16s%2Fg%2F11kqwlp8sg?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="mt-2 text-xs flex items-center gap-1 text-white font-bold hover:underline hidden transition-opacity">
+                            Read All Reviews <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center relative z-10 pt-4">
+                <span class="text-xs font-black uppercase tracking-[0.25em] text-[#5896F6]">Our Partners</span>
+            </div>
+
+            <div class="relative z-10 mt-0">
+                <div class="overflow-hidden" style="width: 100vw; margin-left: calc(-50vw + 50%);">
+                    <div class="marquee-track-right flex items-center py-0">
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
+                            <img src="images/bravo-transparent.webp" alt="Bravo" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
+                            <img src="images/afit-transparent.webp" alt="Afit" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
+                            <img src="images/shams-transparent.webp" alt="Shams" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
+                            <img src="images/ffc-transparent.webp" alt="FFC" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
+                            <img src="images/jazeera-transparent.webp" alt="Jazeera" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
+                            <img src="images/icecream-transparent.webp" alt="Ice Cream" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
+                            <img src="images/faiz-ul-islam-transparent.webp" alt="Faiz ul Islam" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-36 h-36 md:w-44 md:h-44 mx-4 transition-all duration-500 group">
+                            <img src="images/coffee-transparent.webp" alt="Coffee Bean" class="w-24 h-24 md:w-28 md:h-28 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-36 h-36 md:w-44 md:h-44 mx-4 transition-all duration-500 group">
+                            <img src="images/paco-transparent.webp" alt="Paco" class="w-24 h-24 md:w-28 md:h-28 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
+                            <img src="images/engro-foods-transparent.webp" alt="Engro Foods" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                        <!-- Duplicate -->
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
+                            <img src="images/bravo-transparent.webp" alt="Bravo" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
+                            <img src="images/afit-transparent.webp" alt="Afit" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
+                            <img src="images/shams-transparent.webp" alt="Shams" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
+                            <img src="images/ffc-transparent.webp" alt="FFC" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
+                            <img src="images/jazeera-transparent.webp" alt="Jazeera" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
+                            <img src="images/icecream-transparent.webp" alt="Ice Cream" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
+                            <img src="images/faiz-ul-islam-transparent.webp" alt="Faiz ul Islam" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-36 h-36 md:w-44 md:h-44 mx-4 transition-all duration-500 group">
+                            <img src="images/coffee-transparent.webp" alt="Coffee Bean" class="w-24 h-24 md:w-28 md:h-28 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-36 h-36 md:w-44 md:h-44 mx-4 transition-all duration-500 group">
+                            <img src="images/paco-transparent.webp" alt="Paco" class="w-24 h-24 md:w-28 md:h-28 object-contain transition-all duration-500">
+                        </div>
+                        <div class="flex-shrink-0 flex items-center justify-center w-52 md:w-60 mx-4 transition-all duration-500 group">
+                            <img src="images/engro-foods-transparent.webp" alt="Engro Foods" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="home-appliances-section" class="w-full bg-white lg:min-h-screen section-snap">
+        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto pt-16 lg:pt-44 pb-16 lg:pb-4 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-14 xl:gap-20 items-center">
+
+                <!-- Left Column: Appliance Cluster Showcase -->
+                <div class="lg:col-span-6 xl:col-span-5 flex flex-col h-full relative px-2 sm:px-6">
+
+                    <div class="absolute -top-6 left-2 flex items-center gap-2">
+                        <p class="text-xs font-black uppercase tracking-[0.2em] text-[#5896F6] mb-2" id="services-tag-label">&bull; Our Services</p>
+                    </div>
+
+                    <div id="service-images" class="relative w-full h-auto mt-4">
+                        <img src="images/service.webp" data-card="0" alt="Diagnostics &amp; Repairs" class="srv-img active w-full h-[200px] sm:h-[420px] lg:h-[600px] object-contain rounded-lg">
+                        <img src="images/service-3.webp" data-card="1" alt="Installation &amp; Replacement" class="srv-img w-full h-[200px] sm:h-[420px] lg:h-[600px] object-contain rounded-lg absolute inset-0">
+                        <img src="images/service-1.webp" data-card="2" alt="Fully Automatic Washing Machine" class="srv-img w-full h-[200px] sm:h-[420px] lg:h-[600px] object-contain rounded-lg absolute inset-0">
+                        <img src="images/service-2.webp" data-card="3" alt="Non Frost Refrigerator" class="srv-img w-full h-[200px] sm:h-[420px] lg:h-[600px] object-contain rounded-lg absolute inset-0">
+                    </div>
+
+                </div>
+
+                <!-- Right Column: Services list -->
+                <div class="lg:col-span-6 xl:col-span-7 flex flex-col justify-center lg:pr-6 xl:pr-12 lg:pl-8 xl:pl-14">
+
+                    <div class="mb-8">
+                        <h1 class="text-4xl sm:text-5xl lg:text-[3.35rem] font-extrabold tracking-tight text-slate-950 mb-4">
+                            Home Appliances
+                        </h1>
+                        <p class="text-slate-500 text-sm sm:text-base leading-relaxed max-w-[400px]">
+                            Expert repair and maintenance for all home appliances &mdash; fast, reliable, and built to last.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4 max-w-[480px]" onmouseleave="resetApplianceGlow()">
+
+                        <!-- Service 1 -->
+                        <div id="srv-card-1" data-card-index="0" onmouseenter="focusAppliance('ac')" class="srv-card border-b border-slate-200 rounded-none bg-white p-4 sm:p-5 cursor-pointer">
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between gap-2">
+                                    <h3 class="text-base sm:text-lg font-bold text-slate-900" id="srv-title-1">Diagnostics &amp; Repairs</h3>
+                                        <button class="srv-arrow-btn w-8 h-8 rounded-full bg-slate-50 text-slate-400 flex items-center justify-center border border-slate-200 transition-colors">
+                                        <i class="fa-solid fa-arrow-right text-sm"></i>
+                                    </button>
+                                </div>
+                                <p class="text-xs sm:text-sm text-slate-500 mt-1 leading-relaxed srv-description transition-all duration-300 max-w-[380px]" id="srv-desc-1">
+                                    We find the issue fast and fix it on the first visit &mdash; no delays, no guesswork.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Service 2 -->
+                        <div id="srv-card-2" data-card-index="1" onmouseenter="focusAppliance('heater')" class="srv-card border-b border-slate-200 rounded-none bg-white p-4 sm:p-5 cursor-pointer">
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between gap-2">
+                                    <h3 class="text-base sm:text-lg font-bold text-slate-900" id="srv-title-2">Installation &amp; Replacement</h3>
+                                    <button class="srv-arrow-btn w-8 h-8 rounded-full bg-slate-50 text-slate-400 flex items-center justify-center border border-slate-200 transition-colors">
+                                        <i class="fa-solid fa-arrow-right text-sm"></i>
+                                    </button>
+                                </div>
+                                <p class="text-xs sm:text-sm text-slate-500 mt-1 leading-relaxed srv-description transition-all duration-300 max-w-[380px]" id="srv-desc-2">
+                                    Professional installation and genuine parts for long-lasting performance.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Service 3 -->
+                        <div id="srv-card-3" data-card-index="2" onmouseenter="focusAppliance('washer')" class="srv-card border-b border-slate-200 rounded-none bg-white p-4 sm:p-5 cursor-pointer">
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between gap-2">
+                                    <h3 class="text-base sm:text-lg font-bold text-slate-900" id="srv-title-3">Fully Automatic Washing Machine</h3>
+                                    <button class="srv-arrow-btn w-8 h-8 rounded-full bg-slate-50 text-slate-400 flex items-center justify-center border border-slate-200 transition-colors">
+                                        <i class="fa-solid fa-arrow-right text-sm"></i>
+                                    </button>
+                                </div>
+                                <p class="text-xs sm:text-sm text-slate-500 mt-1 leading-relaxed srv-description transition-all duration-300 max-w-[380px]" id="srv-desc-3">&star; Star Service</p>
+                            </div>
+                        </div>
+
+                        <!-- Service 4 -->
+                        <div id="srv-card-4" data-card-index="3" onmouseenter="focusAppliance('fridge')" class="srv-card border-b border-slate-200 rounded-none bg-white p-4 sm:p-5 cursor-pointer">
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between gap-2">
+                                    <h3 class="text-base sm:text-lg font-bold text-slate-900" id="srv-title-4">Non Frost Refrigerator</h3>
+                                    <button class="srv-arrow-btn w-8 h-8 rounded-full bg-slate-50 text-slate-400 flex items-center justify-center border border-slate-200 transition-colors">
+                                        <i class="fa-solid fa-arrow-right text-sm"></i>
+                                    </button>
+                                </div>
+                                <p class="text-xs sm:text-sm text-slate-500 mt-1 leading-relaxed srv-description transition-all duration-300 max-w-[380px]" id="srv-desc-4">&star; Star Service</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="testimonials-section" class="w-full bg-black overflow-hidden lg:min-h-screen section-snap">
+        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto pt-12 lg:pt-24 pb-4 relative">
+
+            <div class="absolute top-[20%] left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#5896F6]/10 blur-[150px] rounded-full pointer-events-none ambient-glow z-0"></div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start mb-14 relative z-10">
+                <div class="lg:col-span-4 flex items-center gap-2 pt-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#5896F6] shadow-[0_0_12px_rgba(88,150,246,0.6)]"></span>
+                    <p class="text-xs font-black uppercase tracking-[0.25em] text-[#5896F6]">Projects</p>
+                </div>
+                <div class="lg:col-span-8 ml-0 lg:ml-16 xl:ml-28">
+                    <h1 class="text-3xl sm:text-5xl lg:text-[3.5rem] font-extrabold tracking-tight text-white mb-4 leading-[1.05]">Look At Our Projects</h1>
+                    <p class="text-zinc-400 text-sm sm:text-base leading-relaxed max-w-[620px] font-normal">Every project reflects our commitment to quality. Browse through our completed work across residential and commercial services.</p>
+                </div>
+            </div>
+
+            <div class="relative w-full z-10">
+                <div id="testimonial-scroller" class="w-full flex gap-6 overflow-x-auto snap-x snap-mandatory pb-8 pt-2 no-scrollbar scroll-smooth">
+
+                    <!-- Card 1: AC-Outdoor Repair -->
+                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start bg-[#121215] border border-zinc-800/50 rounded-none overflow-hidden flex flex-col hover:border-zinc-700 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
+                        <div class="relative w-full aspect-[4/3] bg-zinc-950 overflow-hidden">
+                            <div class="grid grid-cols-2 grid-rows-2 gap-1 w-full h-full">
+                                <img src="images/gallery-1.webp" alt="AC Repair 1" class="w-full h-full object-cover row-span-2" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=AC+1'">
+                                <img src="images/gallery-2.webp" alt="AC Repair 2" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=AC+2'">
+                                <img src="images/gallery-3.webp" alt="AC Repair 3" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=AC+3'">
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#121215] via-transparent to-transparent"></div>
+                        </div>
+                        <div class="p-5 sm:p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-lg sm:text-xl font-extrabold text-[#5896F6] tracking-tight mb-2">AC-OUTDOOR</h3>
+                                <p class="text-zinc-300 text-sm sm:text-base leading-relaxed font-normal mb-4">Complete outdoor unit maintenance and gas refill for optimal cooling performance.</p>
+                            </div>
+                            <div class="flex items-center justify-between pt-4 border-t border-zinc-800/50">
+                                <span class="text-xs sm:text-sm font-bold tracking-wider text-white uppercase">&mdash; AHMED R.</span>
+                                <div class="flex gap-1 text-[11px] text-[#5896F6]">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Condensing Unit -->
+                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start bg-[#121215] border border-zinc-800/50 rounded-none overflow-hidden flex flex-col hover:border-zinc-700 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
+                        <div class="relative w-full aspect-[4/3] bg-zinc-950 overflow-hidden">
+                            <div class="grid grid-cols-2 gap-1 w-full h-full">
+                                <img src="images/gallery-4.webp" alt="Condensing Unit 1" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=Cond+1'">
+                                <img src="images/gallery-5.webp" alt="Condensing Unit 2" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=Cond+2'">
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#121215] via-transparent to-transparent"></div>
+                        </div>
+                        <div class="p-5 sm:p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-lg sm:text-xl font-extrabold text-[#5896F6] tracking-tight mb-2">CONDENSING UNIT</h3>
+                                <p class="text-zinc-300 text-sm sm:text-base leading-relaxed font-normal mb-4">Professional condensing unit installation and servicing for optimal cooling system performance.</p>
+                            </div>
+                            <div class="flex items-center justify-between pt-4 border-t border-zinc-800/50">
+                                <span class="text-xs sm:text-sm font-bold tracking-wider text-white uppercase">&mdash; SAAD K.</span>
+                                <div class="flex gap-1 text-[11px] text-[#5896F6]">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Cold Room Plant -->
+                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start bg-[#121215] border border-zinc-800/50 rounded-none overflow-hidden flex flex-col hover:border-zinc-700 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
+                        <div class="relative w-full aspect-[4/3] bg-zinc-950 overflow-hidden">
+                            <div class="grid grid-cols-2 grid-rows-2 gap-1 w-full h-full">
+                                <img src="images/gallery-6.webp" alt="Cold Room 1" class="w-full h-full object-cover row-span-2" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=CR+1'">
+                                <img src="images/gallery-7.webp" alt="Cold Room 2" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=CR+2'">
+                                <img src="images/gallery-8.webp" alt="Cold Room 3" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=CR+3'">
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#121215] via-transparent to-transparent"></div>
+                        </div>
+                        <div class="p-5 sm:p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-lg sm:text-xl font-extrabold text-[#5896F6] tracking-tight mb-2">COLD ROOM PLANT</h3>
+                                <p class="text-zinc-300 text-sm sm:text-base leading-relaxed font-normal mb-4">Complete cold room plant installation, maintenance, and temperature control system servicing.</p>
+                            </div>
+                            <div class="flex items-center justify-between pt-4 border-t border-zinc-800/50">
+                                <span class="text-xs sm:text-sm font-bold tracking-wider text-white uppercase">&mdash; FARHAN M.</span>
+                                <div class="flex gap-1 text-[11px] text-[#5896F6]">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Mini Cold Room -->
+                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start bg-[#121215] border border-zinc-800/50 rounded-none overflow-hidden flex flex-col hover:border-zinc-700 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
+                        <div class="relative w-full aspect-[4/3] bg-zinc-950 overflow-hidden">
+                            <div class="grid grid-cols-2 gap-1 w-full h-full">
+                                <img src="images/gallery-9.webp" alt="Mini Cold Room 1" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=MCR+1'">
+                                <img src="images/gallery-10.webp" alt="Mini Cold Room 2" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=MCR+2'">
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#121215] via-transparent to-transparent"></div>
+                        </div>
+                        <div class="p-5 sm:p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-lg sm:text-xl font-extrabold text-[#5896F6] tracking-tight mb-2">MINI COLD ROOM</h3>
+                                <p class="text-zinc-300 text-sm sm:text-base leading-relaxed font-normal mb-4">Compact cold room installation and maintenance for small-scale storage and commercial use.</p>
+                            </div>
+                            <div class="flex items-center justify-between pt-4 border-t border-zinc-800/50">
+                                <span class="text-xs sm:text-sm font-bold tracking-wider text-white uppercase">&mdash; BILAL A.</span>
+                                <div class="flex gap-1 text-[11px] text-[#5896F6]">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Bitzer Refrigeration Plant -->
+                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start bg-[#121215] border border-zinc-800/50 rounded-none overflow-hidden flex flex-col hover:border-zinc-700 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
+                        <div class="relative w-full aspect-[4/3] bg-zinc-950 overflow-hidden">
+                            <div class="grid grid-cols-2 gap-1 w-full h-full">
+                                <img src="images/gallery-11.webp" alt="Bitzer 1" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=Bitz+1'">
+                                <img src="images/gallery-12.webp" alt="Bitzer 2" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=Bitz+2'">
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#121215] via-transparent to-transparent"></div>
+                        </div>
+                        <div class="p-5 sm:p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-lg sm:text-xl font-extrabold text-[#5896F6] tracking-tight mb-2">BITZER REFRIGERATION PLANT</h3>
+                                <p class="text-zinc-300 text-sm sm:text-base leading-relaxed font-normal mb-4">Professional Bitzer refrigeration plant installation, servicing, and maintenance for industrial cooling.</p>
+                            </div>
+                            <div class="flex items-center justify-between pt-4 border-t border-zinc-800/50">
+                                <span class="text-xs sm:text-sm font-bold tracking-wider text-white uppercase">&mdash; TARIQ R.</span>
+                                <div class="flex gap-1 text-[11px] text-[#5896F6]">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Fridge Plant -->
+                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start bg-[#121215] border border-zinc-800/50 rounded-none overflow-hidden flex flex-col hover:border-zinc-700 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
+                        <div class="relative w-full aspect-[4/3] bg-zinc-950 overflow-hidden">
+                            <div class="grid grid-cols-2 grid-rows-2 gap-1 w-full h-full">
+                                <img src="images/gallery-13.webp" alt="Fridge Plant 1" class="w-full h-full object-cover row-span-2" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=FP+1'">
+                                <img src="images/gallery-14.webp" alt="Fridge Plant 2" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=FP+2'">
+                                <img src="images/gallery-15.webp" alt="Fridge Plant 3" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=FP+3'">
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#121215] via-transparent to-transparent"></div>
+                        </div>
+                        <div class="p-5 sm:p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-lg sm:text-xl font-extrabold text-[#5896F6] tracking-tight mb-2">FRIDGE PLANT</h3>
+                                <p class="text-zinc-300 text-sm sm:text-base leading-relaxed font-normal mb-4">Complete fridge plant installation, compressor maintenance, and cooling system optimization.</p>
+                            </div>
+                            <div class="flex items-center justify-between pt-4 border-t border-zinc-800/50">
+                                <span class="text-xs sm:text-sm font-bold tracking-wider text-white uppercase">&mdash; IMRAN H.</span>
+                                <div class="flex gap-1 text-[11px] text-[#5896F6]">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 7: Cooling Coil -->
+                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start bg-[#121215] border border-zinc-800/50 rounded-none overflow-hidden flex flex-col hover:border-zinc-700 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
+                        <div class="relative w-full aspect-[4/3] bg-zinc-950 overflow-hidden">
+                            <div class="grid grid-cols-2 gap-1 w-full h-full">
+                                <img src="images/gallery-16.webp" alt="Cooling Coil 1" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=CC+1'">
+                                <img src="images/gallery-17.webp" alt="Cooling Coil 2" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=CC+2'">
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#121215] via-transparent to-transparent"></div>
+                        </div>
+                        <div class="p-5 sm:p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-lg sm:text-xl font-extrabold text-[#5896F6] tracking-tight mb-2">COOLING COIL</h3>
+                                <p class="text-zinc-300 text-sm sm:text-base leading-relaxed font-normal mb-4">Cooling coil cleaning, repair, and replacement services for optimal heat exchange efficiency.</p>
+                            </div>
+                            <div class="flex items-center justify-between pt-4 border-t border-zinc-800/50">
+                                <span class="text-xs sm:text-sm font-bold tracking-wider text-white uppercase">&mdash; OMER F.</span>
+                                <div class="flex gap-1 text-[11px] text-[#5896F6]">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 8: Bitzer Plants -->
+                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start bg-[#121215] border border-zinc-800/50 rounded-none overflow-hidden flex flex-col hover:border-zinc-700 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
+                        <div class="relative w-full aspect-[4/3] bg-zinc-950 overflow-hidden">
+                            <div class="grid grid-cols-2 gap-1 w-full h-full">
+                                <img src="images/gallery-18.webp" alt="Bitzer Plant 1" class="w-full h-full object-cover self-end translate-y-[-25%]" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=BP+1'">
+                                <img src="images/gallery-19.webp" alt="Bitzer Plant 2" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x300/121215/ffffff?text=BP+2'">
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#121215] via-transparent to-transparent"></div>
+                        </div>
+                        <div class="p-5 sm:p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-lg sm:text-xl font-extrabold text-[#5896F6] tracking-tight mb-2">BITZER PLANTS</h3>
+                                <p class="text-zinc-300 text-sm sm:text-base leading-relaxed font-normal mb-4">Bitzer plant installation, diagnostics, and maintenance for industrial refrigeration systems.</p>
+                            </div>
+                            <div class="flex items-center justify-between pt-4 border-t border-zinc-800/50">
+                                <span class="text-xs sm:text-sm font-bold tracking-wider text-white uppercase">&mdash; NADEEM K.</span>
+                                <div class="flex gap-1 text-[11px] text-[#5896F6]">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div id="testimonials-arrows" class="mt-8 flex flex-col sm:flex-row items-center justify-end gap-6 relative z-10">
+                <div class="flex items-center gap-3">
+                    <button onclick="scrollTestimonials('left')" class="w-12 h-12 rounded-full border border-zinc-800 bg-zinc-900/50 hover:bg-zinc-800 hover:border-zinc-700 text-white transition-all flex items-center justify-center active:scale-90">
+                        <i class="fa-solid fa-arrow-left text-sm"></i>
+                    </button>
+                    <button onclick="scrollTestimonials('right')" class="w-12 h-12 rounded-full border border-zinc-800 bg-zinc-900/50 hover:bg-zinc-800 hover:border-zinc-700 text-white transition-all flex items-center justify-center active:scale-90">
+                        <i class="fa-solid fa-arrow-right text-sm"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Commercial Appliances Section -->
+    <section id="commercial-appliances-section" class="w-full bg-white lg:min-h-screen section-snap">
+        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto pt-16 lg:pt-36 pb-4 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+
+                <!-- Left Column: Services list -->
+                <div class="lg:col-span-6 xl:col-span-7 flex flex-col justify-center lg:pr-6 xl:pr-12">
+
+                    <div class="mb-8">
+                        <h1 class="text-4xl sm:text-5xl lg:text-[3.35rem] font-extrabold tracking-tight text-slate-950 mb-4">
+                            Commercial Appliances
+                        </h1>
+                        <p class="text-slate-500 text-sm sm:text-base leading-relaxed max-w-[400px]">
+                            Heavy-duty commercial appliance solutions for businesses &mdash; industrial kitchens, cold storage, and HVAC systems.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4 max-w-[480px]">
+
+                        <!-- Service 1 -->
+                        <div id="com-srv-card-1" data-card-index="0" class="srv-card border-b border-slate-200 rounded-none bg-white p-4 sm:p-5 cursor-pointer">
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between gap-2">
+                                    <h3 class="text-base sm:text-lg font-bold text-slate-900" id="com-srv-title-1">Expert Installation</h3>
+                                    <button class="srv-arrow-btn w-8 h-8 rounded-full bg-slate-50 text-slate-400 flex items-center justify-center border border-slate-200 transition-colors">
+                                        <i class="fa-solid fa-arrow-right text-sm"></i>
+                                    </button>
+                                </div>
+                                <p class="text-xs sm:text-sm text-slate-500 mt-1 leading-relaxed srv-description transition-all duration-300 max-w-[380px]" id="com-srv-desc-1">
+                                    Professional setup and commissioning of all commercial-grade appliances and systems.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Service 2 -->
+                        <div id="com-srv-card-2" data-card-index="1" class="srv-card border-b border-slate-200 rounded-none bg-white p-4 sm:p-5 cursor-pointer">
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between gap-2">
+                                    <h3 class="text-base sm:text-lg font-bold text-slate-900" id="com-srv-title-2">Preventive Maintenance</h3>
+                                    <button class="srv-arrow-btn w-8 h-8 rounded-full bg-slate-50 text-slate-400 flex items-center justify-center border border-slate-200 transition-colors">
+                                        <i class="fa-solid fa-arrow-right text-sm"></i>
+                                    </button>
+                                </div>
+                                <p class="text-xs sm:text-sm text-slate-500 mt-1 leading-relaxed srv-description transition-all duration-300 max-w-[380px]" id="com-srv-desc-2">
+                                    Scheduled inspections and tune-ups to prevent costly breakdowns and extend equipment life.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Service 3 -->
+                        <div id="com-srv-card-3" data-card-index="2" class="srv-card border-b border-slate-200 rounded-none bg-white p-4 sm:p-5 cursor-pointer">
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between gap-2">
+                                    <h3 class="text-base sm:text-lg font-bold text-slate-900" id="com-srv-title-3">Quick Repair &amp; Support</h3>
+                                    <button class="srv-arrow-btn w-8 h-8 rounded-full bg-slate-50 text-slate-400 flex items-center justify-center border border-slate-200 transition-colors">
+                                        <i class="fa-solid fa-arrow-right text-sm"></i>
+                                    </button>
+                                </div>
+                                <p class="text-xs sm:text-sm text-slate-500 mt-1 leading-relaxed srv-description transition-all duration-300 max-w-[380px]" id="com-srv-desc-3">
+                                    Emergency on-site repairs with rapid response for minimal business downtime.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Service 4 -->
+                        <div id="com-srv-card-4" data-card-index="3" class="srv-card border-b border-slate-200 rounded-none bg-white p-4 sm:p-5 cursor-pointer">
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between gap-2">
+                                    <h3 class="text-base sm:text-lg font-bold text-slate-900" id="com-srv-title-4">Cold Room</h3>
+                                    <button class="srv-arrow-btn w-8 h-8 rounded-full bg-slate-50 text-slate-400 flex items-center justify-center border border-slate-200 transition-colors">
+                                        <i class="fa-solid fa-arrow-right text-sm"></i>
+                                    </button>
+                                </div>
+                                <p class="text-xs sm:text-sm text-slate-500 mt-1 leading-relaxed srv-description transition-all duration-300 max-w-[380px]" id="com-srv-desc-4">&star; Star Service</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Right Column: Image -->
+                <div class="lg:col-span-6 xl:col-span-5 flex flex-col h-full relative pr-2 sm:pr-4 lg:pr-6 xl:pr-12">
+                    <div id="com-service-images" class="relative w-full h-auto mt-4 max-w-full">
+                        <img src="images/service-4.webp" data-card="0" alt="Expert Installation" class="com-srv-img active w-full h-[200px] sm:h-[420px] lg:h-[600px] object-contain rounded-lg">
+                        <img src="images/service-7.webp" data-card="1" alt="Preventive Maintenance" class="com-srv-img w-full h-[200px] sm:h-[420px] lg:h-[600px] object-contain rounded-lg absolute inset-0">
+                        <img src="images/service-6.webp" data-card="2" alt="Quick Repair &amp; Support" class="com-srv-img w-full h-[200px] sm:h-[420px] lg:h-[600px] object-contain rounded-lg absolute inset-0">
+                        <img src="images/service-5.webp" data-card="3" alt="Cold Room" class="com-srv-img w-full h-[200px] sm:h-[420px] lg:h-[600px] object-contain rounded-lg absolute inset-0">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq-section" class="w-full bg-[#030304] overflow-hidden lg:min-h-screen section-snap">
+        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto pt-28 lg:pt-36 pb-4 relative">
+
+            <div class="absolute top-[25%] left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-[#5896F6]/10 blur-[160px] rounded-full pointer-events-none ambient-glow z-0"></div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start mb-16 relative z-10">
+                <div class="lg:col-span-4 flex items-center gap-2 pt-2">
+                    <span class="w-2 h-2 rounded-full bg-[#5896F6] shadow-[0_0_12px_rgba(88,150,246,0.6)]"></span>
+                    <p class="text-xs font-black uppercase tracking-[0.25em] text-[#5896F6]">FAQ</p>
+                </div>
+                <div class="lg:col-span-8">
+                    <h1 class="text-3xl sm:text-5xl lg:text-[3.5rem] font-extrabold tracking-tight text-white mb-5 leading-[1.05]">Frequently Asked Questions</h1>
+                    <p class="text-zinc-400 text-sm sm:text-base leading-relaxed max-w-[550px] font-normal">Getting your AC back on track is easier than you think &mdash; just five simple steps and comfort returns.</p>
+                </div>
+            </div>
+
+            <div class="max-w-[1100px] ml-auto w-full lg:w-[83.3%] space-y-0 relative z-10">
+
+                <div class="accordion-item hover:bg-zinc-950/10 transition-colors group cursor-pointer" onclick="toggleAccordion(0)">
+                    <div class="grid grid-cols-12 items-start pt-6 sm:pt-8 pb-4">
+                        <span class="col-span-2 sm:col-span-1 text-xs sm:text-sm font-medium text-zinc-600 pt-1 -ml-0 sm:-ml-16 md:-ml-48 transition-colors group-hover:text-zinc-400">01</span>
+                        <div class="col-span-10 sm:col-span-11 lg:pl-[130px] xl:pl-[190px] flex items-start justify-between">
+                            <div class="flex-grow pr-4">
+                                <h3 class="text-base sm:text-lg font-semibold text-zinc-100 transition-colors group-hover:text-white">Is there a service call fee?</h3>
+                                <div class="accordion-content">
+                                    <p class="text-sm sm:text-base text-zinc-400 leading-relaxed font-normal">We charge a nominal diagnostic fee for site visits to cover travel and visual diagnosis. If you authorize the proposed solution, this diagnostic fee is fully waived from your final invoice.</p>
+                                </div>
+                            </div>
+                            <button class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-zinc-900/40 border border-zinc-900 hover:border-zinc-800 text-zinc-400 flex items-center justify-center transition-all duration-300 transform">
+                                <i class="fa-solid fa-plus text-[11px] transition-transform duration-300"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item hover:bg-zinc-950/10 transition-colors group cursor-pointer" onclick="toggleAccordion(1)">
+                    <div class="grid grid-cols-12 items-start pt-6 sm:pt-8 pb-4">
+                        <span class="col-span-2 sm:col-span-1 text-xs sm:text-sm font-medium text-zinc-600 pt-1 -ml-0 sm:-ml-16 md:-ml-48 transition-colors group-hover:text-zinc-400">02</span>
+                        <div class="col-span-10 sm:col-span-11 lg:pl-[130px] xl:pl-[190px] flex items-start justify-between">
+                            <div class="flex-grow pr-4">
+                                <h3 class="text-base sm:text-lg font-semibold text-zinc-100 transition-colors group-hover:text-white">Do you offer warranties?</h3>
+                                <div class="accordion-content">
+                                    <p class="text-sm sm:text-base text-zinc-400 leading-relaxed font-normal">Absolutely. All cooling installation, repair, and part replacement services come backed by our robust corporate warranty standards. Standard repair actions carry a 90-day comprehensive labor guarantee.</p>
+                                </div>
+                            </div>
+                            <button class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-zinc-900/40 border border-zinc-900 hover:border-zinc-800 text-zinc-400 flex items-center justify-center transition-all duration-300 transform">
+                                <i class="fa-solid fa-plus text-[11px] transition-transform duration-300"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border-b border-zinc-900/80 hover:bg-zinc-950/10 transition-colors group cursor-pointer" onclick="toggleAccordion(2)">
+                    <div class="grid grid-cols-12 items-start pt-6 sm:pt-8 pb-4">
+                        <span class="col-span-2 sm:col-span-1 text-xs sm:text-sm font-medium text-zinc-600 pt-1 -ml-0 sm:-ml-16 md:-ml-48 transition-colors group-hover:text-zinc-400">03</span>
+                        <div class="col-span-10 sm:col-span-11 lg:pl-[130px] xl:pl-[190px] flex items-start justify-between">
+                            <div class="flex-grow pr-4">
+                                <h3 class="text-base sm:text-lg font-semibold text-zinc-100 transition-colors group-hover:text-white">Do you offer regular maintenance?</h3>
+                                <div class="accordion-content">
+                                    <p class="text-sm sm:text-base text-zinc-400 leading-relaxed font-normal">We do! Our seasonal maintenance plans help extend your system&rsquo;s life, improve energy efficiency, and prevent sudden costly breakdowns. Our premium maintenance packages cover comprehensive dry cleanings, compressor tuning, and leak detections.</p>
+                                </div>
+                            </div>
+                            <button class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-zinc-900/40 border border-zinc-900 hover:border-zinc-800 text-zinc-400 flex items-center justify-center transition-all duration-300 transform">
+                                <i class="fa-solid fa-plus text-[11px] transition-transform duration-300"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item hover:bg-zinc-950/10 transition-colors group cursor-pointer" onclick="toggleAccordion(3)">
+                    <div class="grid grid-cols-12 items-start pt-6 sm:pt-8 pb-4">
+                        <span class="col-span-2 sm:col-span-1 text-xs sm:text-sm font-medium text-zinc-600 pt-1 -ml-0 sm:-ml-16 md:-ml-48 transition-colors group-hover:text-zinc-400">04</span>
+                        <div class="col-span-10 sm:col-span-11 lg:pl-[130px] xl:pl-[190px] flex items-start justify-between">
+                            <div class="flex-grow pr-4">
+                                <h3 class="text-base sm:text-lg font-semibold text-zinc-100 transition-colors group-hover:text-white">Do you work on all AC brands?</h3>
+                                <div class="accordion-content">
+                                    <p class="text-sm sm:text-base text-zinc-400 leading-relaxed font-normal">Yes, our highly certified appliance experts are well-equipped to service, calibrate, and resolve critical defaults across all residential, split inverter units, multi-vane ceiling systems, and heavy industrial scale cold room systems.</p>
+                                </div>
+                            </div>
+                            <button class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-zinc-900/40 border border-zinc-900 hover:border-zinc-800 text-zinc-400 flex items-center justify-center transition-all duration-300 transform">
+                                <i class="fa-solid fa-plus text-[11px] transition-transform duration-300"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex items-center justify-center gap-4 mt-12 relative z-10">
+                <a href="javascript:void(0)" onclick="navigateToWhatsApp('Assalam-o-Alaikum! I have a question about your services. Please assist.')" class="px-6 py-3 rounded-full bg-green-500 hover:bg-green-600 text-white font-semibold text-sm flex items-center gap-2 transition-all active:scale-95">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    WhatsApp Us
+                </a>
+                <a href="tel:03455137257" class="px-6 py-3 rounded-full bg-[#5896F6] hover:bg-blue-600 text-white font-semibold text-sm flex items-center gap-2 transition-all active:scale-95">
+                    <i class="fa-solid fa-phone text-lg"></i>
+                    Call Now
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- New Hero Section (below FAQ) -->
+    <section id="coolbreeze-hero" class="w-full bg-[#08090d] overflow-hidden relative min-h-screen flex flex-col section-snap">
+        <div class="absolute inset-0 w-full h-full z-0 overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-[60%_center] sm:bg-center transition-all duration-700 bg-no-repeat"
+                 style="background-image: linear-gradient(to bottom, rgba(8, 9, 13, 0.2), rgba(8, 9, 13, 0.5)), url('images/hero-2.webp');">
+            </div>
+            <div class="absolute bottom-[10%] right-[5%] w-[400px] h-[400px] bg-amber-500/10 blur-[120px] rounded-full pointer-events-none ambient-lamp"></div>
+            <div class="absolute top-[28%] right-[15%] lg:right-[35%] w-[300px] sm:w-[450px] h-[250px] sm:h-[350px] pointer-events-none z-10 overflow-visible">
+                <div id="breeze-container" class="relative w-full h-full">
+                    <div class="cool-breeze-stream absolute top-0 right-0 w-[160px] sm:w-[240px] h-[80px] sm:h-[120px] bg-gradient-to-bl from-blue-400/20 via-blue-500/10 to-transparent rounded-full origin-top-right pointer-events-none" style="--breeze-duration: 4.5s;"></div>
+                    <div class="cool-breeze-stream absolute top-4 sm:top-6 right-2 sm:right-4 w-[180px] sm:w-[280px] h-[90px] sm:h-[140px] bg-gradient-to-bl from-cyan-400/15 via-blue-400/10 to-transparent rounded-full origin-top-right pointer-events-none" style="--breeze-duration: 3.2s; animation-delay: 1.5s;"></div>
+                    <div class="cool-breeze-stream absolute top-8 sm:top-12 right-0 w-[150px] sm:w-[220px] h-[70px] sm:h-[100px] bg-gradient-to-bl from-sky-400/20 via-indigo-500/5 to-transparent rounded-full origin-top-right pointer-events-none" style="--breeze-duration: 5.5s; animation-delay: 0.7s;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto pt-0 pb-24 relative z-30 flex-grow flex flex-col justify-end">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-end mt-auto">
+                <div class="lg:col-span-7 xl:col-span-8 pb-2">
+                    <h1 class="text-3xl sm:text-5xl xl:text-[4.75rem] font-extrabold tracking-tight text-white leading-[1.05] drop-shadow-lg">
+                        Breathe Easy —<br class="hidden sm:inline"> We've Got This
+                    </h1>
+                </div>
+                <div class="lg:col-span-5 xl:col-span-4 space-y-6 -ml-0 sm:-ml-4 lg:-ml-16">
+                    <p class="text-zinc-200 text-sm sm:text-base leading-relaxed font-normal drop-shadow">
+                        Serving homes and small businesses with same-day AC repairs, installations, and maintenance. Trusted local service. Guaranteed results.
+                    </p>
+                    <div id="hero2-btns" class="flex flex-wrap items-center gap-3">
+                        <button onclick="navigateToWhatsApp('Assalam-o-Alaikum! I want to book a repair service for my appliance. Please assist.')" class="px-6 py-3 rounded-full bg-white hover:bg-blue-500 hover:text-white text-black font-normal text-xs sm:text-sm tracking-wide transition-all shadow-lg active:scale-95">
+                            Book a Repair
+                        </button>
+                        <button onclick="navigateToWhatsApp('Hi, i need some details on repairing can you calculate and estimate on my repairing services')" class="px-6 py-2 rounded-full border border-white/30 hover:border-white/60 hover:bg-white/5 text-white font-normal text-xs sm:text-sm tracking-wide transition-all">
+                            Get Estimate
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="w-full bg-[#000000] text-white px-4 sm:px-6 md:px-8 lg:min-h-screen flex flex-col section-snap">
+        <div class="flex-1"></div>
+        <div class="w-full px-0 grid grid-cols-1 md:grid-cols-12 gap-0 pt-12 lg:pt-16">
+            <div class="md:col-span-3 space-y-5 px-4 sm:px-6 md:px-8">
+                <h4 class="text-[11px] font-bold text-zinc-500 uppercase tracking-widest">Quick Links</h4>
+                <ul class="space-y-3.5 text-sm sm:text-base font-medium">
+                    <li><a href="javascript:void(0)" onclick="scrollToSection(3); return false;" class="text-white hover:text-zinc-300 transition-colors duration-200 block">Services</a></li>
+                    <li><a href="javascript:void(0)" onclick="scrollToSection(1); return false;" class="text-white hover:text-zinc-300 transition-colors duration-200 block">About Us</a></li>
+                    <li><a href="javascript:void(0)" onclick="scrollToSection(6); return false;" class="text-white hover:text-zinc-300 transition-colors duration-200 block">FAQ</a></li>
+                    <li><a href="javascript:void(0)" onclick="scrollToSection(4); return false;" class="text-white hover:text-zinc-300 transition-colors duration-200 block">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-3 space-y-5 pl-4 sm:pl-0">
+                <h4 class="text-[11px] font-bold text-zinc-500 uppercase tracking-widest pt-4 sm:pt-0">Social Media</h4>
+                <ul class="space-y-3.5 text-sm sm:text-base font-medium">
+                    <li><a href="https://www.facebook.com/KFalakCoolBreez/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-zinc-300 transition-colors duration-200 block">Facebook</a></li>
+                    <li><a href="#" class="text-white hover:text-zinc-300 transition-colors duration-200 block">Instagram</a></li>
+                    <li><a href="#" class="text-white hover:text-zinc-300 transition-colors duration-200 block">Youtube</a></li>
+                    <li><a href="#" class="text-white hover:text-zinc-300 transition-colors duration-200 block">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-6 space-y-6 pr-4 sm:pr-6 md:pr-8">
+                    <div class="flex items-center gap-2.5 opacity-60 hover:opacity-100 transition-opacity duration-300 select-none -mt-[10px] sm:-mt-[15px]">
+                        <img src="images/fbr-transparent.webp" alt="FBR" class="w-24 h-24 sm:w-28 sm:h-28 object-contain">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="w-full px-4 pt-0 pb-12 relative -mx-4 sm:-mx-6 md:-mx-8">
+            <div class="flex flex-col items-center md:items-start gap-4 mt-8 sm:mt-12">
+                <div class="flex items-center justify-start gap-0 sm:-ml-12">
+                    <img src="images/transparent-logo1.png" alt="Falak Cool Breeze" class="w-[80px] h-[80px] sm:w-[200px] sm:h-[200px] object-contain flex-shrink-0 mr-6 sm:mr-10 ml-[2.25rem] sm:ml-[4.5rem]">
+                    <div class="leading-none select-none sm:-ml-4">
+                        <h2 class="text-xl sm:text-5xl md:text-[3.25rem] font-black tracking-tight text-white leading-[1] uppercase">K Falak</h2>
+                        <h2 class="text-xl sm:text-5xl md:text-[3.25rem] font-black tracking-tight text-white leading-[1] uppercase">Cool Breeze</h2>
+                    </div>
+                </div>
+                <div class="self-stretch border-t border-white/10 ml-8 md:ml-12 mr-0"></div>
+                <div class="w-full flex flex-col md:flex-row items-center gap-4 pl-4 sm:pl-6 md:pl-8 pr-0">
+                    <p class="text-[10px] sm:text-[11px] font-bold text-zinc-600 uppercase tracking-widest md:ml-5 md:mr-auto">© 2026 K FALAK COOL BREEZE. ALL RIGHTS RESERVED.</p>
+                    <div class="flex flex-wrap items-center gap-6 sm:gap-10 text-[10px] sm:text-[11px] font-bold text-zinc-500 uppercase tracking-widest">
+                        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                        <a href="https://dmu.com.pk/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Powered by DMU (Pvt) LTD</a>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-0 left-0 w-[240px] sm:w-[320px] h-20 sm:h-28 pointer-events-none z-10 opacity-20 select-none overflow-hidden">
+                <svg class="w-full h-full text-zinc-950" viewBox="0 0 200 80" fill="currentColor">
+                    <path d="M15,80 L35,45 L27,45 L42,20 L35,20 L50,0 L65,20 L58,20 L73,45 L65,45 L85,80 Z" fill="#030406" />
+                    <path d="M55,80 L70,55 L64,55 L76,35 L70,35 L82,15 L94,35 L88,35 L100,55 L94,55 L109,80 Z" fill="#040507" />
+                    <path d="M90,80 L102,60 L97,60 L107,42 L102,42 L112,25 L122,42 L117,42 L127,60 L122,60 L134,80 Z" fill="#020304" />
+                </svg>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Estimate Modal -->
+    <div id="estimate-modal2" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-xs opacity-0 pointer-events-none transition-all duration-300">
+        <div id="estimate-card2" class="w-full max-w-md bg-[#0c0d12] rounded-2xl p-6 sm:p-8 relative shadow-2xl border border-white/10 transition-all duration-300 scale-95 opacity-0">
+            <button onclick="closeEstimateModal2()" class="absolute top-4 right-4 text-zinc-500 hover:text-white transition-colors">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div>
+                <h3 class="text-xl font-extrabold text-white tracking-tight mb-2">Service Estimate Calculator</h3>
+                <p class="text-xs text-zinc-500 mb-6">Get an immediate visual price projection based on your custom cooling specifications.</p>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-[11px] font-bold text-zinc-500 uppercase tracking-wider mb-1.5">AC Tonnage Size</label>
+                        <select id="est-tonnage2" onchange="calculateEstimate2()" class="w-full px-3 py-2.5 rounded-lg border border-white/10 text-sm bg-zinc-950 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option value="1.0">1.0 Ton Split System</option>
+                            <option value="1.5" selected>1.5 Ton Split System</option>
+                            <option value="2.0">2.0 Ton High-Capacity</option>
+                            <option value="3.0">3.0 Ton Ceiling Cassette</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-[11px] font-bold text-zinc-500 uppercase tracking-wider mb-1.5">Required Service Action</label>
+                        <select id="est-service2" onchange="calculateEstimate2()" class="w-full px-3 py-2.5 rounded-lg border border-white/10 text-sm bg-zinc-950 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option value="95">Diagnostic Run & Inspection ($95)</option>
+                            <option value="180" selected>Standard Deep Steam Cleaning ($180)</option>
+                            <option value="240">Chemical Cleaning & Gas Leak Fix ($240)</option>
+                            <option value="650">Brand New Unit Complete Installation ($650)</option>
+                        </select>
+                    </div>
+                    <div class="p-4 rounded-xl bg-zinc-950 border border-white/5 space-y-2 mt-4">
+                        <div class="flex justify-between text-xs text-zinc-400">
+                            <span>Base Service Charge</span>
+                            <span class="text-zinc-200" id="calc-base2">$180.00</span>
+                        </div>
+                        <div class="flex justify-between text-xs text-zinc-400">
+                            <span>Tonnage Multiplier Adjust</span>
+                            <span class="text-zinc-200" id="calc-mult2">x 1.2</span>
+                        </div>
+                        <hr class="border-white/5 my-2">
+                        <div class="flex justify-between text-sm font-bold text-white">
+                            <span>Total Estimated Investment</span>
+                            <span class="text-blue-400" id="calc-total2">$216.00</span>
+                        </div>
+                    </div>
+                    <button onclick="acceptEstimate2()" class="w-full py-3 mt-4 rounded-lg bg-blue-500 hover:bg-blue-400 text-white font-bold text-xs tracking-wider uppercase transition-colors">
+                        Proceed with this Estimate
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Side Drawer for New Hero -->
+    <div id="side-drawer2" class="fixed inset-0 z-50 flex justify-start pointer-events-none">
+        <div id="drawer-backdrop2" onclick="toggleMenuDrawer2(false)" class="absolute inset-0 bg-black/70 backdrop-blur-xs opacity-0 transition-opacity duration-300"></div>
+        <div id="drawer-box2" class="relative w-80 max-w-[85vw] h-full bg-[#0a0b0f] border-r border-white/10 p-6 flex flex-col justify-between transform -translate-x-full drawer-transition pointer-events-auto shadow-2xl">
+            <div>
+                <div class="flex items-center justify-between pb-6 border-b border-white/5">
+                    <div class="flex items-center gap-2">
+                        <div class="w-6 h-6 flex items-center justify-center bg-white text-black rounded">
+                            <span class="text-xs font-bold">K</span>
+                        </div>
+                    </div>
+                    <button onclick="toggleMenuDrawer2(false)" class="text-zinc-500 hover:text-white transition-colors">
+                        <i class="fa-solid fa-xmark text-sm"></i>
+                    </button>
+                </div>
+                <nav class="space-y-1.5 pt-6">
+                    <a href="#" class="block px-3 py-2.5 rounded-lg text-sm font-semibold text-zinc-400 hover:text-white hover:bg-white/5 transition-colors">Premium Home cooling</a>
+                    <a href="javascript:void(0)" onclick="navigateToWhatsApp('Assalam-o-Alaikum! I want to book a repair service for my appliance. Please assist.'); toggleMenuDrawer2(false);" class="block px-3 py-2.5 rounded-lg text-sm font-semibold text-zinc-400 hover:text-white hover:bg-white/5 transition-colors">Book Repair Service</a>
+                    <a href="#" onclick="triggerEstimateModal2(); toggleMenuDrawer2(false);" class="block px-3 py-2.5 rounded-lg text-sm font-semibold text-zinc-400 hover:text-white hover:bg-white/5 transition-colors">Cost Calculator</a>
+                    <a href="#" class="block px-3 py-2.5 rounded-lg text-sm font-semibold text-zinc-400 hover:text-white hover:bg-white/5 transition-colors">90-Day Service Guarantee</a>
+                </nav>
+            </div>
+            <div class="border-t border-white/5 pt-6">
+                <a href="tel:03455137257" class="flex items-center gap-3 px-3 py-2.5 rounded-xl border border-white/10 hover:bg-white/5 transition-colors">
+                    <div class="w-8 h-8 rounded-full bg-blue-950 flex items-center justify-center text-blue-400">
+                        <i class="fa-solid fa-phone text-xs"></i>
+                    </div>
+                    <div>
+                        <p class="text-[9px] font-bold text-zinc-600 uppercase tracking-wider">Emergency Line</p>
+                        <p class="text-xs font-black text-white">0345-5137257</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast for New Hero -->
+    <div id="toast-message2" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 px-5 py-3 rounded-full bg-blue-500 text-white font-bold text-xs tracking-wide shadow-2xl flex items-center gap-2 translate-y-24 opacity-0 transition-all duration-300">
+        <span id="toast-text2">Success!</span>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/95 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-500">
+        <button onclick="closeLightbox()" class="absolute top-5 right-5 z-10 w-11 h-11 rounded-full bg-white/5 hover:bg-white/15 border border-white/10 flex items-center justify-center text-white/60 hover:text-white transition-all active:scale-90">
+            <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+        <button onclick="navigateLightbox(-1)" id="lb-prev-btn" class="absolute left-5 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full bg-white/5 hover:bg-white/15 border border-white/10 flex items-center justify-center text-white/60 hover:text-white transition-all active:scale-90">
+            <i class="fa-solid fa-chevron-left text-sm"></i>
+        </button>
+        <button onclick="navigateLightbox(1)" id="lb-next-btn" class="absolute right-5 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full bg-white/5 hover:bg-white/15 border border-white/10 flex items-center justify-center text-white/60 hover:text-white transition-all active:scale-90">
+            <i class="fa-solid fa-chevron-right text-sm"></i>
+        </button>
+        <div class="w-full max-w-5xl mx-4 md:mx-8">
+            <div class="relative overflow-hidden rounded-xl bg-black/40">
+                <img id="lightbox-image" src="" alt="" class="w-full h-auto max-h-[78vh] object-contain mx-auto">
+            </div>
+            <div class="flex items-center justify-between mt-4 text-white/50 text-xs px-1">
+                <span id="lightbox-title" class="font-medium"></span>
+                <span id="lightbox-counter" class="font-mono tracking-wider"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Customizer Panel -->
+    <div id="customizer-panel" class="fixed top-24 right-4 z-50 w-80 glass-panel rounded-2xl p-5 shadow-2xl transition-all duration-500 transform translate-x-[calc(100%+20px)]">
+        <div class="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
+            <h4 class="font-bold text-white flex items-center gap-2">
+                <i class="fa-solid fa-sliders text-cyan-400 animate-spin-slow"></i>
+                <span>Hero Customizer</span>
+            </h4>
+            <button onclick="toggleCustomizer()" class="text-slate-400 hover:text-white">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+        </div>
+
+        <div class="space-y-4 max-h-[70vh] overflow-y-auto pr-1">
+            <div>
+                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">1. Background Graphic</label>
+                <div class="space-y-2">
+                    <div class="relative">
+                        <input type="file" id="bg-upload-input" accept="image/*" class="hidden" onchange="handleBgUpload(event)">
+                        <button onclick="document.getElementById('bg-upload-input').click()" class="w-full py-2.5 px-3 rounded-lg bg-cyan-500/20 hover:bg-cyan-500/30 border border-cyan-400/30 text-cyan-200 text-xs font-medium flex items-center justify-center gap-2 transition-all">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                            <span>Upload Your Custom Image</span>
+                        </button>
+                    </div>
+                    <p class="text-[10px] text-slate-400 italic text-center">Reference: "image_a8ebe3.webp" or upload yours to preview immediately.</p>
+                    <div class="grid grid-cols-2 gap-2">
+                        <button onclick="setBgPreset('workshop')" class="py-1 px-2 rounded bg-slate-800 text-slate-300 text-xs hover:bg-slate-700 transition-all">Modern Workshop</button>
+                        <button onclick="setBgPreset('digital-glow')" class="py-1 px-2 rounded bg-slate-800 text-slate-300 text-xs hover:bg-slate-700 transition-all">Digital Glow Room</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-2 border-t border-white/5">
+                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">2. Image Adjustments</label>
+                <div class="space-y-3">
+                    <div>
+                        <div class="flex justify-between text-[11px] text-slate-400 mb-1">
+                            <span>Background Blur</span>
+                            <span id="blur-val">2px</span>
+                        </div>
+                        <input type="range" id="blur-slider" min="0" max="24" value="2" oninput="updateBgBlur(this.value)" class="w-full h-1 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-cyan-400">
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-[11px] text-slate-400 mb-1">
+                            <span>Dark Overlay Tint</span>
+                            <span id="tint-val">30%</span>
+                        </div>
+                        <input type="range" id="tint-slider" min="0" max="100" value="30" oninput="updateBgTint(this.value)" class="w-full h-1 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-cyan-400">
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-2 border-t border-white/5 space-y-3">
+                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">3. Live Content Editor</label>
+                <div>
+                    <label class="block text-[10px] text-slate-400 mb-1">Brand Name Main</label>
+                    <input type="text" id="edit-brand-name" value="FALAK" oninput="updateBrandName(this.value)" class="w-full px-2.5 py-1.5 rounded bg-slate-950/80 border border-white/10 text-xs text-white focus:outline-none focus:border-cyan-400">
+                </div>
+                <div>
+                    <label class="block text-[10px] text-slate-400 mb-1">Main Heading</label>
+                    <textarea id="edit-main-title" rows="2" oninput="updateMainTitle(this.value)" class="w-full px-2.5 py-1.5 rounded bg-slate-950/80 border border-white/10 text-xs text-white focus:outline-none focus:border-cyan-400">Pakistan's Trusted Cooling & Appliance Repairing Experts</textarea>
+                </div>
+                <div>
+                    <label class="block text-[10px] text-slate-400 mb-1">Subtext Description</label>
+                    <textarea id="edit-sub-title" rows="2" oninput="updateSubTitle(this.value)" class="w-full px-2.5 py-1.5 rounded bg-slate-950/80 border border-white/10 text-xs text-white focus:outline-none focus:border-cyan-400">Same-day service. Certified technicians. 100% satisfaction guarantee.</textarea>
+                </div>
+                <div>
+                    <label class="block text-[10px] text-slate-400 mb-1">Phone Helpline</label>
+                    <input type="text" id="edit-phone" value="0345-5137257" oninput="updatePhone(this.value)" class="w-full px-2.5 py-1.5 rounded bg-slate-950/80 border border-white/10 text-xs text-white focus:outline-none focus:border-cyan-400">
+                </div>
+            </div>
+
+            <div class="pt-3 border-t border-white/10 text-center">
+                <p class="text-[10px] text-slate-400 leading-normal">
+                    This designer makes it simple to test any background image! Adjust settings, and copy the code.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300">
+        <div class="w-full max-w-lg glass-panel rounded-3xl p-6 sm:p-8 relative shadow-2xl scale-95 transition-all duration-300" id="booking-modal-card">
+
+            <button onclick="closeBookingModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+
+            <div class="mb-6">
+                <div class="flex justify-between text-xs text-slate-400 mb-2 uppercase tracking-wider font-semibold">
+                    <span id="booking-step-title">Step 1 of 3: Select Appliance</span>
+                    <span id="booking-step-percent">33%</span>
+                </div>
+                <div class="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden">
+                    <div id="booking-progress" class="h-full bg-gradient-to-r from-cyan-400 to-sky-500 w-1/3 transition-all duration-500"></div>
+                </div>
+            </div>
+
+            <div id="booking-step-1" class="space-y-4">
+                <h3 class="text-xl font-bold text-white mb-2">What appliance needs care?</h3>
+                <div class="grid grid-cols-2 gap-3">
+                    <button onclick="selectBookingAppliance('Air Conditioner', 'fa-wind')" class="p-4 rounded-xl border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-500/5 text-left transition-all group flex flex-col gap-2">
+                        <i class="fa-solid fa-wind text-cyan-400 text-xl group-hover:scale-110 transition-transform"></i>
+                        <span class="text-sm font-semibold text-white">Air Conditioner</span>
+                    </button>
+                    <button onclick="selectBookingAppliance('Refrigerator / Freezer', 'fa-snowflake')" class="p-4 rounded-xl border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-500/5 text-left transition-all group flex flex-col gap-2">
+                        <i class="fa-solid fa-snowflake text-cyan-400 text-xl group-hover:scale-110 transition-transform"></i>
+                        <span class="text-sm font-semibold text-white">Refrigerator</span>
+                    </button>
+                    <button onclick="selectBookingAppliance('Washing Machine', 'fa-soap')" class="p-4 rounded-xl border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-500/5 text-left transition-all group flex flex-col gap-2">
+                        <i class="fa-solid fa-soap text-cyan-400 text-xl group-hover:scale-110 transition-transform"></i>
+                        <span class="text-sm font-semibold text-white">Washing Machine</span>
+                    </button>
+                    <button onclick="selectBookingAppliance('Other cooling / appliance', 'fa-gears')" class="p-4 rounded-xl border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-500/5 text-left transition-all group flex flex-col gap-2">
+                        <i class="fa-solid fa-gears text-cyan-400 text-xl group-hover:scale-110 transition-transform"></i>
+                        <span class="text-sm font-semibold text-white">Other Appliance</span>
+                    </button>
+                </div>
+            </div>
+
+            <div id="booking-step-2" class="space-y-4 hidden">
+                <h3 class="text-xl font-bold text-white mb-2">Describe the cooling concern</h3>
+                <div class="space-y-2">
+                    <label class="block text-xs text-slate-300 font-medium">Common issues:</label>
+                    <div class="grid grid-cols-1 gap-2">
+                        <button onclick="setDiagnosticIssue('Not cooling / warming up')" class="py-2.5 px-4 rounded-lg bg-slate-900/50 hover:bg-slate-800 border border-white/10 text-left text-sm text-slate-200 hover:text-white transition-all">
+                            &#10052; Unit is not cooling / warming up
+                        </button>
+                        <button onclick="setDiagnosticIssue('Gas leakage & refill')" class="py-2.5 px-4 rounded-lg bg-slate-900/50 hover:bg-slate-800 border border-white/10 text-left text-sm text-slate-200 hover:text-white transition-all">
+                            &#10052; Gas refilling & leakage diagnostic
+                        </button>
+                        <button onclick="setDiagnosticIssue('Strange noise / vibration')" class="py-2.5 px-4 rounded-lg bg-slate-900/50 hover:bg-slate-800 border border-white/10 text-left text-sm text-slate-200 hover:text-white transition-all">
+                            &#10052; Strange noise or vibration during run
+                        </button>
+                        <button onclick="setDiagnosticIssue('General clean up service')" class="py-2.5 px-4 rounded-lg bg-slate-900/50 hover:bg-slate-800 border border-white/10 text-left text-sm text-slate-200 hover:text-white transition-all">
+                            &#10052; General servicing / Deep chemical washing
+                        </button>
+                    </div>
+                    <div class="pt-2">
+                        <label class="block text-xs text-slate-300 font-medium mb-1">Additional description (optional):</label>
+                        <textarea id="booking-extra-desc" placeholder="Let our technicians know the details..." rows="2" class="w-full rounded-lg bg-slate-900 border border-white/10 p-3 text-sm text-white focus:outline-none focus:border-cyan-400"></textarea>
+                    </div>
+                </div>
+                <div class="flex gap-2 pt-2">
+                    <button onclick="goToBookingStep(1)" class="w-1/3 py-2.5 rounded-xl border border-white/10 hover:bg-white/5 text-slate-300 text-sm font-medium">Back</button>
+                    <button onclick="goToBookingStep(3)" class="w-2/3 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-sm">Continue</button>
+                </div>
+            </div>
+
+            <div id="booking-step-3" class="space-y-4 hidden">
+                <h3 class="text-xl font-bold text-white mb-2">Who is requesting dispatch?</h3>
+                <div class="space-y-3">
+                    <div>
+                        <label class="block text-xs text-slate-300 font-medium mb-1">Your Name</label>
+                        <input type="text" id="booking-client-name" placeholder="E.g., Muhammad Ali" class="w-full rounded-lg bg-slate-900 border border-white/10 p-2.5 text-sm text-white focus:outline-none focus:border-cyan-400">
+                    </div>
+                    <div>
+                        <label class="block text-xs text-slate-300 font-medium mb-1">Mobile / Phone Number</label>
+                        <input type="tel" id="booking-client-phone" placeholder="E.g., 03001234567" class="w-full rounded-lg bg-slate-900 border border-white/10 p-2.5 text-sm text-white focus:outline-none focus:border-cyan-400">
+                    </div>
+                    <div>
+                        <label class="block text-xs text-slate-300 font-medium mb-1">Service Address / Location</label>
+                        <input type="text" id="booking-client-address" placeholder="E.g., Phase 6 DHA, Rawalpindi" class="w-full rounded-lg bg-slate-900 border border-white/10 p-2.5 text-sm text-white focus:outline-none focus:border-cyan-400">
+                    </div>
+                </div>
+                <div class="flex gap-2 pt-2">
+                    <button onclick="goToBookingStep(2)" class="w-1/3 py-2.5 rounded-xl border border-white/10 hover:bg-white/5 text-slate-300 text-sm font-medium">Back</button>
+                    <button onclick="submitBookingOrder()" class="w-2/3 py-2.5 rounded-xl bg-gradient-to-r from-cyan-400 to-sky-500 hover:from-cyan-300 hover:to-sky-400 text-slate-950 font-bold text-sm tracking-wide shadow-lg shadow-cyan-400/20">
+                        Dispatch Expert Now
+                    </button>
+                </div>
+            </div>
+
+            <div id="booking-success-state" class="text-center py-6 space-y-4 hidden">
+                <div class="w-16 h-16 rounded-full bg-emerald-500/10 border border-emerald-400/30 flex items-center justify-center text-emerald-400 text-3xl mx-auto animate-bounce">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white">Technician Dispatched!</h3>
+                    <p class="text-sm text-slate-300 mt-2 max-w-sm mx-auto">
+                        Your booking request has been locked in. Our certified specialist will call you in 15 minutes to confirm the exact arrival time.
+                    </p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900/70 border border-white/5 text-xs text-left text-slate-400 space-y-1">
+                    <p><strong class="text-slate-200">Appliance:</strong> <span id="summary-appliance">AC</span></p>
+                    <p><strong class="text-slate-200">Diagnosis Concern:</strong> <span id="summary-concern">Not Cooling</span></p>
+                    <p><strong class="text-slate-200">Phone Submitted:</strong> <span id="summary-phone">0300</span></p>
+                </div>
+                <button onclick="closeBookingModal()" class="w-full py-2.5 rounded-xl bg-white hover:bg-slate-100 text-slate-950 font-bold text-sm transition-all">
+                    Back to Homepage
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Side Menu Drawer -->
+    <div id="side-menu-drawer" class="fixed inset-y-0 left-0 w-[65vw] sm:w-80 z-50 bg-[#0a0b10]/95 backdrop-blur-xl border-r border-white/5 p-6 transform -translate-x-full transition-all duration-300 flex flex-col justify-between shadow-2xl">
+        <div class="space-y-6">
+            <div class="flex items-center justify-between border-b border-white/5">
+                <div class="flex items-center gap-0">
+                    <img src="images/transparent-logo1.png" alt="Falak Cool Breeze" class="w-16 h-16 sm:w-20 sm:h-20 object-contain flex-shrink-0 ml-2 sm:ml-0.5">
+                    <span class="font-bold text-white text-base sm:text-lg tracking-tight ml-1 sm:ml-0">K Falak Cool Breeze</span>
+                </div>
+                <button onclick="toggleSideMenu()" class="w-9 h-9 rounded-full flex items-center justify-center bg-white/5 hover:bg-white/10 text-zinc-400 hover:text-white transition-all mr-2">
+                    <i class="fa-solid fa-xmark text-sm"></i>
+                </button>
+            </div>
+
+            <nav class="flex flex-col gap-1.5">
+                <a href="#" onclick="setActiveNavLink(this); toggleSideMenu()" class="flex items-center gap-3.5 px-5 py-3.5 text-white font-semibold text-base bg-[#5896F6]/10 border border-[#5896F6]/20 hover:bg-[#5896F6]/20 transition-all">
+                    <span class="w-9 h-9 bg-[#5896F6]/20 flex items-center justify-center"><i class="fa-solid fa-house text-[#5896F6] text-sm"></i></span>
+                    Home
+                </a>
+                <a href="#services-overview" onclick="setActiveNavLink(this); toggleSideMenu(); smoothScrollToServices(event)" class="flex items-center gap-3.5 px-5 py-3.5 text-zinc-300 hover:text-white font-medium text-base hover:bg-white/5 transition-all">
+                    <span class="w-9 h-9 bg-white/5 flex items-center justify-center"><i class="fa-solid fa-info-circle text-zinc-500 text-sm"></i></span>
+                    About
+                </a>
+                <a href="#reviews-section" onclick="setActiveNavLink(this); toggleSideMenu()" class="flex items-center gap-3.5 px-5 py-3.5 text-zinc-300 hover:text-white font-medium text-base hover:bg-white/5 transition-all">
+                    <span class="w-9 h-9 bg-white/5 flex items-center justify-center"><i class="fa-solid fa-star text-zinc-500 text-sm"></i></span>
+                    Testimonials
+                </a>
+                <a href="#home-appliances-section" onclick="setActiveNavLink(this); toggleSideMenu()" class="flex items-center gap-3.5 px-5 py-3.5 text-zinc-300 hover:text-white font-medium text-base hover:bg-white/5 transition-all">
+                    <span class="w-9 h-9 bg-white/5 flex items-center justify-center"><i class="fa-solid fa-tools text-zinc-500 text-sm"></i></span>
+                    Services
+                </a>
+                <a href="javascript:void(0)" onclick="setActiveNavLink(this); toggleSideMenu(); var el = document.getElementById('testimonials-section'); if (el) { setTimeout(function() { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 150); }" class="flex items-center gap-3.5 px-5 py-3.5 text-zinc-300 hover:text-white font-medium text-base hover:bg-white/5 transition-all">
+                    <span class="w-9 h-9 bg-white/5 flex items-center justify-center"><i class="fa-solid fa-folder-open text-zinc-500 text-sm"></i></span>
+                    Projects
+                </a>
+                <a href="#faq-section" onclick="setActiveNavLink(this); toggleSideMenu()" class="flex items-center gap-3.5 px-5 py-3.5 text-zinc-300 hover:text-white font-medium text-base hover:bg-white/5 transition-all">
+                    <span class="w-9 h-9 bg-white/5 flex items-center justify-center"><i class="fa-solid fa-question-circle text-zinc-500 text-sm"></i></span>
+                    FAQ
+                </a>
+            </nav>
+        </div>
+
+        <div class="space-y-3 pt-6 border-t border-white/5">
+            <a href="javascript:void(0)" onclick="navigateToWhatsApp('Assalam-o-Alaikum! I want to book a repair service for my appliance. Please assist.'); toggleSideMenu()" class="flex items-center gap-3 px-4 py-3 bg-white/5 border border-white/5 hover:bg-white/10 transition-all group">
+                <div class="w-9 h-9 rounded-full bg-green-500/10 flex items-center justify-center group-hover:bg-green-500/20 transition-all">
+                    <i class="fa-brands fa-whatsapp text-green-500 text-sm"></i>
+                </div>
+                <div>
+                    <p class="text-[9px] text-zinc-500 uppercase tracking-widest font-bold">WhatsApp</p>
+                    <p class="text-sm font-bold text-white">Chat with Us</p>
+                </div>
+            </a>
+            <a href="tel:03455137257" class="flex items-center gap-3 px-4 py-3 bg-white/5 border border-white/5 hover:bg-white/10 transition-all group">
+                <div class="w-9 h-9 rounded-full bg-[#5896F6]/10 flex items-center justify-center group-hover:bg-[#5896F6]/20 transition-all">
+                    <i class="fa-solid fa-phone text-[#5896F6] text-sm"></i>
+                </div>
+                <div>
+                    <p class="text-[9px] text-zinc-500 uppercase tracking-widest font-bold">Helpline</p>
+                    <p class="text-sm font-bold text-white">0345-5137257</p>
+                </div>
+            </a>
+            <div class="text-center text-[10px] text-zinc-600 font-medium tracking-wide">
+                Authorized Repair Partners &bull; Rawalpindi / Islamabad
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="javascript:void(0)" onclick="navigateToWhatsApp('Assalam-o-Alaikum! I am interested in your cooling and repair services. Please guide me.')" class="fixed bottom-6 right-6 z-50 w-16 h-16 rounded-full bg-green-500 hover:bg-green-600 text-white flex items-center justify-center shadow-lg hover:shadow-xl transition-all active:scale-90">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Toast Notification -->
+    <div id="toast-message" class="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 px-5 py-3 rounded-full bg-cyan-500 text-slate-950 font-bold text-sm shadow-2xl flex items-center gap-2 translate-y-24 opacity-0 transition-all duration-300">
+        <i class="fa-solid fa-circle-info"></i>
+        <span id="toast-text">Customizer settings updated!</span>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+>>>>>>> 50b77ec (logo changes and scroll animation changes for mobile)
