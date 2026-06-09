@@ -408,3 +408,18 @@ body {
     }
 }
 
+/* Breathe Easy section - slow zoom + 3D parallax */
+@keyframes breatheZoom {
+    0% {
+        background-size: 100%;
+    }
+    100% {
+        background-size: 108%;
+    }
+}
+
+.breathe-zoom {
+    animation: breatheZoom 12s infinite alternate ease-in-out;
+    will-change: background-size, background-position;
+}
+

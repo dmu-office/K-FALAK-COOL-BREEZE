@@ -1146,3 +1146,36 @@ function registerSectionSteps(index, totalSteps, advanceFn) {
     window.scrollToSection = scrollToSection;
 })();
 
+/* ===== BREATHE EASY SECTION - 3D MOUSE PARALLAX ===== */
+(function() {
+    var section = document.getElementById('coolbreeze-hero');
+    var bgLayer = document.getElementById('breathe-bg-layer');
+    if (!section || !bgLayer) return;
+
+    var maxParallax = 3; // max % shift for background-position
+
+    function getBaseX() {
+        return window.innerWidth < 640 ? 60 : 50;
+    }
+
+    section.addEventListener('mousemove', function(e) {
+        var rect = section.getBoundingClientRect();
+        var x = (e.clientX - rect.left) / rect.width;
+        var y = (e.clientY - rect.top) / rect.height;
+        var xNorm = (x - 0.5) * 2;
+        var yNorm = (y - 0.5) * 2;
+
+        var baseX = getBaseX();
+        var moveX = baseX + xNorm * maxParallax;
+        var moveY = 50 + yNorm * maxParallax;
+
+        bgLayer.style.backgroundPosition = moveX + '% ' + moveY + '%';
+        bgLayer.style.transition = 'background-position 0.15s cubic-bezier(0.16, 1, 0.3, 1)';
+    });
+
+    section.addEventListener('mouseleave', function() {
+        bgLayer.style.backgroundPosition = getBaseX() + '% 50%';
+        bgLayer.style.transition = 'background-position 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
+    });
+})();
+
