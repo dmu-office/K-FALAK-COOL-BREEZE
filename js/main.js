@@ -398,13 +398,13 @@ function initReviewReveal() {
         return;
     }
 
-    registerSectionSteps(2, cards.length, function(data) {
+    registerSectionSteps(4, cards.length, function(data) {
         activateReview(data.current + 1);
     });
 }
 
 function activateReview(activeId) {
-    if (sectionStepData[2]) sectionStepData[2].current = activeId - 1;
+    if (sectionStepData[4]) sectionStepData[4].current = activeId - 1;
     for (var i = 1; i <= 5; i++) {
         var card = document.getElementById('review-card-' + i);
         if (!card) continue;
@@ -1068,7 +1068,7 @@ function registerSectionSteps(index, totalSteps, advanceFn) {
 
     function setHeaderForSection(index) {
         if (index === 0 || index === 7) { setHeaderHero(); if (index === 7) { var mi = document.getElementById('menu-icon'); if (mi) mi.className = 'fa-solid fa-bars-staggered text-lg text-white'; } return; }
-        if (index === 4 || index === 6 || index === 8) { setHeaderDark(); return; }
+        if (index === 2 || index === 6 || index === 8) { setHeaderDark(); return; }
         setHeaderLight();
     }
 
