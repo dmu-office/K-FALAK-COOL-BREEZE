@@ -259,7 +259,7 @@ function setHeaderHero() {
     phoneBtn.className = 'hidden md:flex items-center gap-2.5 px-4 py-2.5 rounded-full glass-button text-sm font-medium text-slate-200 hover:text-cyan-400';
     phoneIcon.className = 'fa-solid fa-phone text-xs text-white';
     bookBtn.className = 'px-5 py-2.5 sm:px-6 sm:py-2.5 rounded-full glass-button text-white text-sm tracking-wide active:scale-95 transition-all duration-300';
-    logo.src = 'images/transparent-logo1.png';
+    logo.src = 'images/transparent-logo1.webp';
 }
 
 function setHeaderLight() {
@@ -284,7 +284,7 @@ function setHeaderLight() {
     phoneBtn.className = 'hidden md:flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-white border border-slate-200 text-sm font-medium text-slate-700 hover:text-slate-900';
     phoneIcon.className = 'fa-solid fa-phone text-xs text-black';
     bookBtn.className = 'px-5 py-2.5 sm:px-6 sm:py-2.5 rounded-full bg-[#5896F6] hover:bg-[#5896F6] text-white text-sm tracking-wide active:scale-95 transition-all duration-300';
-    logo.src = 'images/transparent-logo2.png';
+    logo.src = 'images/transparent-logo2.webp';
 }
 
 function setHeaderDark() {
@@ -310,7 +310,7 @@ function setHeaderDark() {
 
     phoneIcon.className = 'fa-solid fa-phone text-xs text-white';
     bookBtn.className = 'px-5 py-2.5 sm:px-6 sm:py-2.5 rounded-full bg-white text-black text-sm tracking-wide active:scale-95 transition-all duration-300';
-    logo.src = 'images/transparent-logo1.png';
+    logo.src = 'images/transparent-logo1.webp';
 }
 
 function handleHeaderScroll() {
