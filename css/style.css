@@ -419,7 +419,7 @@ body {
     display: flex;
     gap: 10px;
     align-items: stretch;
-    height: 460px;
+    height: 420px;
 }
 
 .review-card {
@@ -462,11 +462,11 @@ body {
 
 .review-card.active .review-card-inner {
     justify-content: flex-start;
-    padding-top: 245px;
+    padding-top: 160px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
-    gap: 20px;
+    padding-bottom: 16px;
+    gap: 12px;
 }
 
 /* Step number — absolute at top-left in all states */
@@ -532,9 +532,9 @@ body {
 
 .review-card.active .review-content {
     transform: translateX(0);
-    max-height: 300px;
+    max-height: 600px;
     opacity: 1;
-    padding: 0;
+    padding: 0 0 8px 0;
     margin: 0;
     overflow: visible;
 }
@@ -570,6 +570,9 @@ body {
 
 .review-card.active .review-desc {
     color: rgba(255, 255, 255, 0.85);
+    -webkit-line-clamp: unset;
+    overflow: visible;
+    max-height: none;
 }
 
 .review-stars {
