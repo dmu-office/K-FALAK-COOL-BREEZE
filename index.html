@@ -24,7 +24,7 @@
             </button>
 
                 <a href="#" class="absolute left-1/2 -translate-x-1/2 flex items-center justify-center">
-                    <img id="header-logo" src="images/transparent-logo1.webp" alt="Falak Cool Breeze" class="h-16 sm:h-20 w-auto">
+                    <img id="header-logo" src="images/transparent-logo1.webp" alt="Falak Cool Breeze" class="h-20 sm:h-24 w-auto">
                 </a>
 
             <div class="flex items-center gap-2 sm:gap-3">
@@ -90,7 +90,7 @@
 
     <!-- About Us + Team Section -->
     <section id="services-overview" class="w-full bg-white lg:min-h-screen section-snap">
-        <div class="w-full px-6 sm:px-12 max-w-[1400px] mx-auto pt-8 lg:pt-12 pb-0">
+        <div class="w-full px-6 sm:px-12 max-w-[1400px] mx-auto pt-16 lg:pt-28 pb-16 lg:pb-20">
 
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div class="flex items-center gap-2">
@@ -114,7 +114,7 @@
                 </div>
             </div>
 
-            <div class="relative">
+            <div class="relative mt-10 lg:mt-16">
                 <div class="stat-card pt-[2.5rem] pb-4 px-8 group grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-24 lg:gap-32 items-center" data-index="0">
                     <span class="md:col-span-5 text-7xl sm:text-8xl lg:text-9xl font-semibold tracking-tight text-[#5896F6] select-none block transition-transform duration-300 group-hover:translate-x-1 -ml-2 md:-ml-4">23</span>
                     <p class="md:col-span-7 text-xs sm:text-sm font-bold tracking-[0.2em] text-slate-500 uppercase leading-relaxed text-center md:text-left md:pl-8 lg:pl-12">
@@ -149,106 +149,140 @@
 
     <!-- Projects Section -->
     <section id="testimonials-section" class="w-full bg-black overflow-hidden lg:min-h-screen section-snap">
-        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto pt-12 lg:pt-24 pb-4 relative">
+        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto pt-10 lg:pt-24 pb-16 relative flex flex-col">
 
             <div class="absolute top-[20%] left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#5896F6]/10 blur-[150px] rounded-full pointer-events-none ambient-glow z-0"></div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start mb-14 relative z-10">
-                <div class="lg:col-span-4 flex items-center gap-2 pt-2">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start mb-4 lg:mb-6 relative z-10">
+                <div class="lg:col-span-4 flex items-center gap-2">
                     <span class="w-2.5 h-2.5 rounded-full bg-[#5896F6] shadow-[0_0_12px_rgba(88,150,246,0.6)]"></span>
                     <p class="text-xs font-black uppercase tracking-[0.25em] text-[#5896F6]">Projects</p>
                 </div>
-                <div class="lg:col-span-8 ml-0 lg:ml-16 xl:ml-28">
-                    <h1 class="text-3xl sm:text-5xl lg:text-[3.5rem] font-extrabold tracking-tight text-white mb-4 leading-[1.05]">Look At Our Projects</h1>
-                    <p class="text-zinc-400 text-sm sm:text-base leading-relaxed max-w-[620px] font-normal">Every project reflects our commitment to quality. Browse through our completed work across residential and commercial services.</p>
+                <div class="lg:col-span-8 ml-0 lg:ml-64 xl:ml-80">
+                    <h1 class="text-3xl sm:text-5xl lg:text-[3.5rem] font-extrabold tracking-tight text-white mb-4 leading-[1.3]">Look At Our<br>Projects</h1>
+                    <p class="text-zinc-400 text-sm sm:text-base max-w-[620px] font-normal leading-[1.8] pb-6">Every project reflects our commitment to quality.<br>Browse through our completed work across residential<br>and commercial services.</p>
                 </div>
             </div>
 
+            <div class="mt-auto">
+
             <div class="relative w-full z-10">
-                <div id="testimonial-scroller" class="w-full flex gap-6 overflow-x-auto snap-x snap-mandatory pb-8 pt-2 no-scrollbar scroll-smooth">
+                <div id="testimonial-scroller" class="w-full flex gap-6 overflow-x-auto snap-x snap-mandatory pb-8 pt-2 no-scrollbar scroll-smooth md:ml-48 pr-4 sm:pr-8">
 
                     <!-- Card 1: AC-Outdoor Repair -->
-                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start relative min-h-[480px] flex flex-col bg-zinc-950 border border-zinc-700/30 rounded-none overflow-hidden group hover:border-zinc-500/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
+                    <div class="w-full sm:w-[320px] md:w-[360px] flex-shrink-0 snap-start relative min-h-[420px] flex flex-col bg-zinc-950 border border-zinc-700/30 rounded-none overflow-hidden group hover:border-zinc-500/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300 mt-20">
                         <img src="images/gallery-1.webp" alt="AC Repair 1" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/400x500/121215/ffffff?text=AC+Outdoor'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 via-35% to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 h-[45%] backdrop-blur-sm z-[1]" style="-webkit-mask-image:linear-gradient(to bottom,transparent 0%,black 25%);mask-image:linear-gradient(to bottom,transparent 0%,black 25%)"></div>
                         <div class="relative z-10 mt-auto p-5 sm:p-6">
-                            <h3 class="text-lg sm:text-xl font-extrabold text-[#5896F6] tracking-tight mb-2">AC-OUTDOOR</h3>
-                            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed font-normal">Complete outdoor unit maintenance and gas refill for optimal cooling performance.</p>
+                            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed font-normal mb-3 line-clamp-2">Complete outdoor unit maintenance and gas refill for optimal cooling performance.</p>
+                            <div class="flex items-center gap-2">
+                                <span class="w-6 h-0.5 bg-white/60"></span>
+                                <h3 class="text-white text-sm sm:text-base font-normal tracking-tight">AC-OUTDOOR</h3>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Card 2: Condensing Unit -->
-                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start relative min-h-[480px] flex flex-col bg-zinc-950 border border-zinc-700/30 rounded-none overflow-hidden group hover:border-zinc-500/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
+                    <div class="w-full sm:w-[320px] md:w-[360px] flex-shrink-0 snap-start relative min-h-[420px] flex flex-col bg-zinc-950 border border-zinc-700/30 rounded-none overflow-hidden group hover:border-zinc-500/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300 mt-20">
                         <img src="images/gallery-4.webp" alt="Condensing Unit 1" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/400x500/121215/ffffff?text=Condensing+Unit'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 via-35% to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 h-[45%] backdrop-blur-sm z-[1]" style="-webkit-mask-image:linear-gradient(to bottom,transparent 0%,black 25%);mask-image:linear-gradient(to bottom,transparent 0%,black 25%)"></div>
                         <div class="relative z-10 mt-auto p-5 sm:p-6">
-                            <h3 class="text-lg sm:text-xl font-extrabold text-[#5896F6] tracking-tight mb-2">CONDENSING UNIT</h3>
-                            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed font-normal">Professional condensing unit installation and servicing for optimal cooling system performance.</p>
+                            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed font-normal mb-3 line-clamp-2">Professional condensing unit installation and servicing for optimal cooling system performance.</p>
+                            <div class="flex items-center gap-2">
+                                <span class="w-6 h-0.5 bg-white/60"></span>
+                                <h3 class="text-white text-sm sm:text-base font-normal tracking-tight">CONDENSING UNIT</h3>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Card 3: Cold Room Plant -->
-                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start relative min-h-[480px] flex flex-col bg-zinc-950 border border-zinc-700/30 rounded-none overflow-hidden group hover:border-zinc-500/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
+                    <div class="w-full sm:w-[320px] md:w-[360px] flex-shrink-0 snap-start relative min-h-[420px] flex flex-col bg-zinc-950 border border-zinc-700/30 rounded-none overflow-hidden group hover:border-zinc-500/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300 mt-20">
                         <img src="images/gallery-6.webp" alt="Cold Room 1" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/400x500/121215/ffffff?text=Cold+Room'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 via-35% to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 h-[45%] backdrop-blur-sm z-[1]" style="-webkit-mask-image:linear-gradient(to bottom,transparent 0%,black 25%);mask-image:linear-gradient(to bottom,transparent 0%,black 25%)"></div>
                         <div class="relative z-10 mt-auto p-5 sm:p-6">
-                            <h3 class="text-lg sm:text-xl font-extrabold text-[#5896F6] tracking-tight mb-2">COLD ROOM PLANT</h3>
-                            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed font-normal">Complete cold room plant installation, maintenance, and temperature control system servicing.</p>
+                            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed font-normal mb-3 line-clamp-2">Complete cold room plant installation, maintenance, and temperature control system servicing.</p>
+                            <div class="flex items-center gap-2">
+                                <span class="w-6 h-0.5 bg-white/60"></span>
+                                <h3 class="text-white text-sm sm:text-base font-normal tracking-tight">COLD ROOM PLANT</h3>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Card 4: Mini Cold Room -->
-                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start relative min-h-[480px] flex flex-col bg-zinc-950 border border-zinc-700/30 rounded-none overflow-hidden group hover:border-zinc-500/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
+                    <div class="w-full sm:w-[320px] md:w-[360px] flex-shrink-0 snap-start relative min-h-[420px] flex flex-col bg-zinc-950 border border-zinc-700/30 rounded-none overflow-hidden group hover:border-zinc-500/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300 mt-20">
                         <img src="images/gallery-9.webp" alt="Mini Cold Room 1" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/400x500/121215/ffffff?text=Mini+Cold+Room'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 via-35% to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 h-[45%] backdrop-blur-sm z-[1]" style="-webkit-mask-image:linear-gradient(to bottom,transparent 0%,black 25%);mask-image:linear-gradient(to bottom,transparent 0%,black 25%)"></div>
                         <div class="relative z-10 mt-auto p-5 sm:p-6">
-                            <h3 class="text-lg sm:text-xl font-extrabold text-[#5896F6] tracking-tight mb-2">MINI COLD ROOM</h3>
-                            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed font-normal">Compact cold room installation and maintenance for small-scale storage and commercial use.</p>
+                            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed font-normal mb-3 line-clamp-2">Compact cold room installation and maintenance for small-scale storage and commercial use.</p>
+                            <div class="flex items-center gap-2">
+                                <span class="w-6 h-0.5 bg-white/60"></span>
+                                <h3 class="text-white text-sm sm:text-base font-normal tracking-tight">MINI COLD ROOM</h3>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Card 5: Bitzer Refrigeration Plant -->
-                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start relative min-h-[480px] flex flex-col bg-zinc-950 border border-zinc-700/30 rounded-none overflow-hidden group hover:border-zinc-500/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
+                    <div class="w-full sm:w-[320px] md:w-[360px] flex-shrink-0 snap-start relative min-h-[420px] flex flex-col bg-zinc-950 border border-zinc-700/30 rounded-none overflow-hidden group hover:border-zinc-500/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300 mt-20">
                         <img src="images/gallery-11.webp" alt="Bitzer 1" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/400x500/121215/ffffff?text=Bitzer+Refrig'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 via-35% to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 h-[45%] backdrop-blur-sm z-[1]" style="-webkit-mask-image:linear-gradient(to bottom,transparent 0%,black 25%);mask-image:linear-gradient(to bottom,transparent 0%,black 25%)"></div>
                         <div class="relative z-10 mt-auto p-5 sm:p-6">
-                            <h3 class="text-lg sm:text-xl font-extrabold text-[#5896F6] tracking-tight mb-2">BITZER REFRIGERATION PLANT</h3>
-                            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed font-normal">Professional Bitzer refrigeration plant installation, servicing, and maintenance for industrial cooling.</p>
+                            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed font-normal mb-3 line-clamp-2">Professional Bitzer refrigeration plant installation, servicing, and maintenance for industrial cooling.</p>
+                            <div class="flex items-center gap-2">
+                                <span class="w-6 h-0.5 bg-white/60"></span>
+                                <h3 class="text-white text-sm sm:text-base font-normal tracking-tight">BITZER REFRIGERATION PLANT</h3>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Card 6: Fridge Plant -->
-                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start relative min-h-[480px] flex flex-col bg-zinc-950 border border-zinc-700/30 rounded-none overflow-hidden group hover:border-zinc-500/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
+                    <div class="w-full sm:w-[320px] md:w-[360px] flex-shrink-0 snap-start relative min-h-[420px] flex flex-col bg-zinc-950 border border-zinc-700/30 rounded-none overflow-hidden group hover:border-zinc-500/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300 mt-20">
                         <img src="images/gallery-13.webp" alt="Fridge Plant 1" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/400x500/121215/ffffff?text=Fridge+Plant'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 via-35% to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 h-[45%] backdrop-blur-sm z-[1]" style="-webkit-mask-image:linear-gradient(to bottom,transparent 0%,black 25%);mask-image:linear-gradient(to bottom,transparent 0%,black 25%)"></div>
                         <div class="relative z-10 mt-auto p-5 sm:p-6">
-                            <h3 class="text-lg sm:text-xl font-extrabold text-[#5896F6] tracking-tight mb-2">FRIDGE PLANT</h3>
-                            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed font-normal">Complete fridge plant installation, compressor maintenance, and cooling system optimization.</p>
+                            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed font-normal mb-3 line-clamp-2">Complete fridge plant installation, compressor maintenance, and cooling system optimization.</p>
+                            <div class="flex items-center gap-2">
+                                <span class="w-6 h-0.5 bg-white/60"></span>
+                                <h3 class="text-white text-sm sm:text-base font-normal tracking-tight">FRIDGE PLANT</h3>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Card 7: Cooling Coil -->
-                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start relative min-h-[480px] flex flex-col bg-zinc-950 border border-zinc-700/30 rounded-none overflow-hidden group hover:border-zinc-500/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
+                    <div class="w-full sm:w-[320px] md:w-[360px] flex-shrink-0 snap-start relative min-h-[420px] flex flex-col bg-zinc-950 border border-zinc-700/30 rounded-none overflow-hidden group hover:border-zinc-500/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300 mt-20">
                         <img src="images/gallery-16.webp" alt="Cooling Coil 1" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/400x500/121215/ffffff?text=Cooling+Coil'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 via-35% to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 h-[45%] backdrop-blur-sm z-[1]" style="-webkit-mask-image:linear-gradient(to bottom,transparent 0%,black 25%);mask-image:linear-gradient(to bottom,transparent 0%,black 25%)"></div>
                         <div class="relative z-10 mt-auto p-5 sm:p-6">
-                            <h3 class="text-lg sm:text-xl font-extrabold text-[#5896F6] tracking-tight mb-2">COOLING COIL</h3>
-                            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed font-normal">Cooling coil cleaning, repair, and replacement services for optimal heat exchange efficiency.</p>
+                            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed font-normal mb-3 line-clamp-2">Cooling coil cleaning, repair, and replacement services for optimal heat exchange efficiency.</p>
+                            <div class="flex items-center gap-2">
+                                <span class="w-6 h-0.5 bg-white/60"></span>
+                                <h3 class="text-white text-sm sm:text-base font-normal tracking-tight">COOLING COIL</h3>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Card 8: Bitzer Plants -->
-                    <div class="w-full sm:w-[320px] md:w-[350px] flex-shrink-0 snap-start relative min-h-[480px] flex flex-col bg-zinc-950 border border-zinc-700/30 rounded-none overflow-hidden group hover:border-zinc-500/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300">
+                    <div class="w-full sm:w-[320px] md:w-[360px] flex-shrink-0 snap-start relative min-h-[420px] flex flex-col bg-zinc-950 border border-zinc-700/30 rounded-none overflow-hidden group hover:border-zinc-500/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] transition-all duration-300 mt-20">
                         <img src="images/gallery-18.webp" alt="Bitzer Plant 1" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/400x500/121215/ffffff?text=Bitzer+Plant'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 via-35% to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 h-[45%] backdrop-blur-sm z-[1]" style="-webkit-mask-image:linear-gradient(to bottom,transparent 0%,black 25%);mask-image:linear-gradient(to bottom,transparent 0%,black 25%)"></div>
                         <div class="relative z-10 mt-auto p-5 sm:p-6">
-                            <h3 class="text-lg sm:text-xl font-extrabold text-[#5896F6] tracking-tight mb-2">BITZER PLANTS</h3>
-                            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed font-normal">Bitzer plant installation, diagnostics, and maintenance for industrial refrigeration systems.</p>
+                            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed font-normal mb-3 line-clamp-2">Bitzer plant installation, diagnostics, and maintenance for industrial refrigeration systems.</p>
+                            <div class="flex items-center gap-2">
+                                <span class="w-6 h-0.5 bg-white/60"></span>
+                                <h3 class="text-white text-sm sm:text-base font-normal tracking-tight">BITZER PLANTS</h3>
+                            </div>
                         </div>
                     </div>
             </div>
 
-            <div id="testimonials-arrows" class="mt-8 flex flex-col sm:flex-row items-center justify-end gap-6 relative z-10">
+            <div id="testimonials-arrows" class="max-md:mt-8 lg:-mt-20 flex flex-col sm:flex-row items-center justify-start gap-6 relative z-10">
                 <div class="flex items-center gap-3">
                     <button onclick="scrollTestimonials('left')" class="w-12 h-12 rounded-full border border-zinc-800 bg-zinc-900/50 hover:bg-zinc-800 hover:border-zinc-700 text-white transition-all flex items-center justify-center active:scale-90">
                         <i class="fa-solid fa-arrow-left text-sm"></i>
@@ -259,10 +293,12 @@
                 </div>
             </div>
 
+            </div>
+
         </div>
     </section>
     <section id="home-appliances-section" class="w-full bg-white lg:min-h-screen section-snap">
-        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto pt-16 lg:pt-44 pb-16 lg:pb-4 relative">
+        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto py-16 lg:py-20 relative">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-14 xl:gap-20 items-center">
 
                 <!-- Left Column: Appliance Cluster Showcase -->
@@ -293,61 +329,61 @@
                         </p>
                     </div>
 
-                    <div class="space-y-4 max-w-[480px]" onmouseleave="resetApplianceGlow()">
+                    <div id="home-appliance-list" class="space-y-4 max-w-[480px] relative" onmouseleave="resetApplianceGlow()">
 
                         <!-- Service 1 -->
-                        <div id="srv-card-1" data-card-index="0" onmouseenter="focusAppliance('ac')" class="srv-card border-b border-slate-200 rounded-none bg-white p-4 sm:p-5 cursor-pointer">
+                        <div id="srv-card-1" data-card-index="0" onmouseenter="focusAppliance('ac')" class="srv-card bg-white p-4 sm:p-5 cursor-pointer">
                             <div class="flex-grow">
                                 <div class="flex items-center justify-between gap-2">
-                                    <h3 class="text-base sm:text-lg font-bold text-slate-900" id="srv-title-1">Diagnostics &amp; Repairs</h3>
+                                    <h3 class="text-base sm:text-lg font-semibold text-slate-900" id="srv-title-1">Diagnostics &amp; Repairs</h3>
                                         <button class="srv-arrow-btn w-8 h-8 rounded-full bg-slate-50 text-slate-400 flex items-center justify-center border border-slate-200 transition-colors">
                                         <i class="fa-solid fa-arrow-right text-sm"></i>
                                     </button>
                                 </div>
-                                <p class="text-xs sm:text-sm text-slate-500 mt-1 leading-relaxed srv-description transition-all duration-300 max-w-[380px]" id="srv-desc-1">
+                                <p class="text-xs sm:text-sm text-slate-500 mt-1 leading-relaxed srv-description max-w-[380px]" id="srv-desc-1">
                                     We find the issue fast and fix it on the first visit &mdash; no delays, no guesswork.
                                 </p>
                             </div>
                         </div>
 
                         <!-- Service 2 -->
-                        <div id="srv-card-2" data-card-index="1" onmouseenter="focusAppliance('heater')" class="srv-card border-b border-slate-200 rounded-none bg-white p-4 sm:p-5 cursor-pointer">
+                        <div id="srv-card-2" data-card-index="1" onmouseenter="focusAppliance('heater')" class="srv-card bg-white p-4 sm:p-5 cursor-pointer">
                             <div class="flex-grow">
                                 <div class="flex items-center justify-between gap-2">
-                                    <h3 class="text-base sm:text-lg font-bold text-slate-900" id="srv-title-2">Installation &amp; Replacement</h3>
+                                    <h3 class="text-base sm:text-lg font-semibold text-slate-900" id="srv-title-2">Installation &amp; Replacement</h3>
                                     <button class="srv-arrow-btn w-8 h-8 rounded-full bg-slate-50 text-slate-400 flex items-center justify-center border border-slate-200 transition-colors">
                                         <i class="fa-solid fa-arrow-right text-sm"></i>
                                     </button>
                                 </div>
-                                <p class="text-xs sm:text-sm text-slate-500 mt-1 leading-relaxed srv-description transition-all duration-300 max-w-[380px]" id="srv-desc-2">
+                                <p class="text-xs sm:text-sm text-slate-500 mt-1 leading-relaxed srv-description max-w-[380px]" id="srv-desc-2">
                                     Professional installation and genuine parts for long-lasting performance.
                                 </p>
                             </div>
                         </div>
 
                         <!-- Service 3 -->
-                        <div id="srv-card-3" data-card-index="2" onmouseenter="focusAppliance('washer')" class="srv-card border-b border-slate-200 rounded-none bg-white p-4 sm:p-5 cursor-pointer">
+                        <div id="srv-card-3" data-card-index="2" onmouseenter="focusAppliance('washer')" class="srv-card bg-white p-4 sm:p-5 cursor-pointer">
                             <div class="flex-grow">
                                 <div class="flex items-center justify-between gap-2">
-                                    <h3 class="text-base sm:text-lg font-bold text-slate-900" id="srv-title-3">Fully Automatic Washing Machine</h3>
+                                    <h3 class="text-base sm:text-lg font-semibold text-slate-900" id="srv-title-3">Fully Automatic Washing Machine</h3>
                                     <button class="srv-arrow-btn w-8 h-8 rounded-full bg-slate-50 text-slate-400 flex items-center justify-center border border-slate-200 transition-colors">
                                         <i class="fa-solid fa-arrow-right text-sm"></i>
                                     </button>
                                 </div>
-                                <p class="text-xs sm:text-sm text-slate-500 mt-1 leading-relaxed srv-description transition-all duration-300 max-w-[380px]" id="srv-desc-3">&star; Star Service</p>
+                                <p class="text-xs sm:text-sm text-slate-500 mt-1 leading-relaxed srv-description max-w-[380px]" id="srv-desc-3">&star; Star Service</p>
                             </div>
                         </div>
 
                         <!-- Service 4 -->
-                        <div id="srv-card-4" data-card-index="3" onmouseenter="focusAppliance('fridge')" class="srv-card border-b border-slate-200 rounded-none bg-white p-4 sm:p-5 cursor-pointer">
+                        <div id="srv-card-4" data-card-index="3" onmouseenter="focusAppliance('fridge')" class="srv-card bg-white p-4 sm:p-5 cursor-pointer">
                             <div class="flex-grow">
                                 <div class="flex items-center justify-between gap-2">
-                                    <h3 class="text-base sm:text-lg font-bold text-slate-900" id="srv-title-4">Non Frost Refrigerator</h3>
+                                    <h3 class="text-base sm:text-lg font-semibold text-slate-900" id="srv-title-4">Non Frost Refrigerator</h3>
                                     <button class="srv-arrow-btn w-8 h-8 rounded-full bg-slate-50 text-slate-400 flex items-center justify-center border border-slate-200 transition-colors">
                                         <i class="fa-solid fa-arrow-right text-sm"></i>
                                     </button>
                                 </div>
-                                <p class="text-xs sm:text-sm text-slate-500 mt-1 leading-relaxed srv-description transition-all duration-300 max-w-[380px]" id="srv-desc-4">&star; Star Service</p>
+                                <p class="text-xs sm:text-sm text-slate-500 mt-1 leading-relaxed srv-description max-w-[380px]" id="srv-desc-4">&star; Star Service</p>
                             </div>
                         </div>
 
@@ -361,210 +397,140 @@
 
     <!-- Reviews Section -->
     <section id="reviews-section" class="w-full bg-white lg:min-h-screen section-snap">
-        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto pt-20 lg:pt-28 pb-4 relative">
+        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto pt-20 lg:pt-28 pb-16 lg:pb-20 relative">
 
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start mb-16 relative z-10">
-                <div class="lg:col-span-4 flex items-center gap-2 pt-2">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start mb-16 lg:mb-24 relative z-10">
+                <div class="lg:col-span-4 flex items-center gap-2 pt-4">
                     <span class="w-2.5 h-2.5 rounded-full bg-blue-500 animate-pulse"></span>
                     <p class="text-xs font-black uppercase tracking-[0.25em] text-blue-500">Testimonials</p>
                 </div>
-                <div class="lg:col-span-8 ml-0 lg:ml-16 xl:ml-28">
-                    <h1 class="text-3xl sm:text-5xl lg:text-[3.5rem] font-extrabold tracking-tight text-slate-900 mb-4 leading-[1.05]">What Our Customers Say</h1>
-                    <p class="text-slate-500 text-sm sm:text-base leading-relaxed max-w-[620px] font-normal">Real reviews from real people who trust us with their cooling and appliance needs.</p>
+                <div class="lg:col-span-8 ml-0 lg:ml-48 xl:ml-64">
+                    <h1 class="text-3xl sm:text-5xl lg:text-[3.5rem] font-extrabold tracking-tight text-slate-900 mb-4 leading-[1.05]">What Our<br>Customers Say</h1>
+                    <p class="text-slate-500 text-sm sm:text-base leading-relaxed max-w-[620px] font-normal">Real reviews from real people who trust us with their<br>cooling and appliance needs.</p>
                 </div>
             </div>
 
-            <!-- 5-Card Grid -->
-            <div id="reviews-grid" class="grid grid-cols-1 md:grid-cols-5 gap-4 relative z-10 mb-4">
+            <!-- 5-Card Flex Row -->
+            <div id="reviews-grid" class="reviews-flex relative z-10 mb-0">
 
                 <!-- Card 1: SARAH M. -->
-                <div onclick="activateReview(1)" id="review-card-1" class="process-card relative overflow-hidden rounded-sm cursor-pointer p-4 sm:p-8 flex flex-col justify-between min-h-[200px] sm:min-h-[320px] md:h-[420px] bg-[#F5F5F7] text-[#3A3A3C] hover:bg-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all">
-                    <div class="z-10">
-                        <span class="step-num text-xs font-semibold tracking-widest text-[#8E8E93] uppercase">01. SARAH M.</span>
-                    </div>
-                    <div class="illustration-container z-10 my-auto flex flex-col justify-center h-0 opacity-0 scale-75 overflow-hidden transition-all duration-500">
-                        <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center text-white text-2xl font-bold">S</div>
-                    </div>
-                    <div class="text-block z-10 transition-all duration-500 transform translate-y-0 md:translate-y-4">
-                        <h3 class="text-lg md:text-xl font-semibold tracking-tight text-slate-800 transition-colors mb-2 leading-tight">Quick & Professional</h3>
-                        <p class="text-sm text-white leading-relaxed font-light hidden transition-opacity duration-500">Very professional team. Arrived on time and completed the job perfectly. Highly recommend!</p>
-                        <div class="flex gap-1 mt-2 hidden">
-                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
-                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
-                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
-                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
-                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                <div onclick="activateReview(1)" id="review-card-1" class="review-card active">
+                    <div class="review-card-inner">
+                        <span class="step-num">01. SARAH M.</span>
+                        <div class="review-icon-wrap">
+                            <i class="fa-solid fa-face-smile"></i>
+                        </div>
+                        <div class="review-content">
+                            <h3 class="review-heading">Quick & Professional</h3>
+                            <p class="review-desc">Very professional team. Arrived on time and completed the job perfectly. Highly recommend!</p>
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 2: AHMED K. -->
-                <div onclick="activateReview(2)" id="review-card-2" class="process-card relative overflow-hidden rounded-sm cursor-pointer p-4 sm:p-8 flex flex-col justify-between min-h-[200px] sm:min-h-[320px] md:h-[420px] bg-[#F5F5F7] text-[#3A3A3C] hover:bg-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all">
-                    <div class="z-10">
-                        <span class="step-num text-xs font-semibold tracking-widest text-[#8E8E93] uppercase">02. AHMED K.</span>
-                    </div>
-                    <div class="illustration-container z-10 my-auto flex flex-col justify-center h-0 opacity-0 scale-75 overflow-hidden transition-all duration-500">
-                        <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center text-white text-2xl font-bold">A</div>
-                    </div>
-                    <div class="text-block z-10 transition-all duration-500 transform translate-y-0 md:translate-y-4">
-                        <h3 class="text-lg md:text-xl font-semibold tracking-tight text-slate-800 transition-colors mb-2 leading-tight">Fair & Skilled</h3>
-                        <p class="text-sm text-white leading-relaxed font-light hidden transition-opacity duration-500">Best AC repair service in town. Fair prices and great workmanship. Fixed my AC in under 2 hours!</p>
-                        <div class="flex gap-1 mt-2 hidden">
-                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
-                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
-                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
-                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
-                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                <div onclick="activateReview(2)" id="review-card-2" class="review-card">
+                    <div class="review-card-inner">
+                        <span class="step-num">02. AHMED K.</span>
+                        <div class="review-icon-wrap">
+                            <i class="fa-solid fa-snowflake"></i>
+                        </div>
+                        <div class="review-content">
+                            <h3 class="review-heading">Fair & Skilled</h3>
+                            <p class="review-desc">Best AC repair service in town. Fair prices and great workmanship. Fixed my AC in under 2 hours!</p>
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 3: FATIMA S. -->
-                <div onclick="activateReview(3)" id="review-card-3" class="process-card relative overflow-hidden rounded-sm cursor-pointer p-4 sm:p-8 flex flex-col justify-between min-h-[200px] sm:min-h-[320px] md:h-[420px] bg-[#F5F5F7] text-[#3A3A3C] hover:bg-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all">
-                    <div class="z-10">
-                        <span class="step-num text-xs font-semibold tracking-widest text-[#8E8E93] uppercase">03. FATIMA S.</span>
-                    </div>
-                    <div class="illustration-container z-10 my-auto flex flex-col justify-center h-0 opacity-0 scale-75 overflow-hidden transition-all duration-500">
-                        <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center text-white text-2xl font-bold">F</div>
-                    </div>
-                    <div class="text-block z-10 transition-all duration-500 transform translate-y-0 md:translate-y-4">
-                        <h3 class="text-lg md:text-xl font-semibold tracking-tight text-slate-800 transition-colors mb-2 leading-tight">Always Reliable</h3>
-                        <p class="text-sm text-white leading-relaxed font-light hidden transition-opacity duration-500">I have been using their services for years. Always reliable, trustworthy, and responsive to emergency calls.</p>
-                        <div class="flex gap-1 mt-2 hidden">
-                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
-                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
-                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
-                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
-                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                <div onclick="activateReview(3)" id="review-card-3" class="review-card">
+                    <div class="review-card-inner">
+                        <span class="step-num">03. FATIMA S.</span>
+                        <div class="review-icon-wrap">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <div class="review-content">
+                            <h3 class="review-heading">Always Reliable</h3>
+                            <p class="review-desc">I have been using their services for years. Always reliable, trustworthy, and responsive to emergency calls.</p>
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 4: JOHN D. -->
-                <div onclick="activateReview(4)" id="review-card-4" class="process-card relative overflow-hidden rounded-sm cursor-pointer p-4 sm:p-8 flex flex-col justify-between min-h-[200px] sm:min-h-[320px] md:h-[420px] bg-[#F5F5F7] text-[#3A3A3C] hover:bg-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all">
-                    <div class="z-10">
-                        <span class="step-num text-xs font-semibold tracking-widest text-[#8E8E93] uppercase">04. JOHN D.</span>
-                    </div>
-                    <div class="illustration-container z-10 my-auto flex flex-col justify-center h-0 opacity-0 scale-75 overflow-hidden transition-all duration-500">
-                        <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center text-white text-2xl font-bold">J</div>
-                    </div>
-                    <div class="text-block z-10 transition-all duration-500 transform translate-y-0 md:translate-y-4">
-                        <h3 class="text-lg md:text-xl font-semibold tracking-tight text-slate-800 transition-colors mb-2 leading-tight">Excellent Service</h3>
-                        <p class="text-sm text-white leading-relaxed font-light hidden transition-opacity duration-500">Excellent service! They helped me with my refrigerator repair. Quick response and affordable rates.</p>
-                        <div class="flex gap-1 mt-2 hidden">
-                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
-                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
-                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
-                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
-                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                <div onclick="activateReview(4)" id="review-card-4" class="review-card">
+                    <div class="review-card-inner">
+                        <span class="step-num">04. JOHN D.</span>
+                        <div class="review-icon-wrap">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                        </div>
+                        <div class="review-content">
+                            <h3 class="review-heading">Excellent Service</h3>
+                            <p class="review-desc">Excellent service! They helped me with my refrigerator repair. Quick response and affordable rates.</p>
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 5: OVERALL -->
-                <div onclick="activateReview(5)" id="review-card-5" class="process-card relative overflow-hidden rounded-sm cursor-pointer p-4 sm:p-8 flex flex-col justify-between min-h-[200px] sm:min-h-[320px] md:h-[420px] bg-[#F5F5F7] text-[#3A3A3C] hover:bg-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all">
-                    <div class="z-10">
-                        <span class="step-num text-xs font-semibold tracking-widest text-[#8E8E93] uppercase">05. OVERALL</span>
-                    </div>
-                    <div class="illustration-container z-10 my-auto flex flex-col justify-center h-0 opacity-0 scale-75 overflow-hidden transition-all duration-500">
-                        <span class="text-4xl font-black text-white">4.9</span>
-                    </div>
-                    <div class="text-block z-10 transition-all duration-500 transform translate-y-0 md:translate-y-4">
-                        <h3 class="text-lg md:text-xl font-semibold tracking-tight text-slate-800 transition-colors mb-2 leading-tight">Exceptional</h3>
-                        <p class="text-sm text-white leading-relaxed font-light hidden transition-opacity duration-500">Rated excellent by 166+ happy customers. We take pride in delivering top-quality repair services.</p>
-                        <div class="flex gap-1 mt-2 hidden">
-                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
-                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
-                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
-                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
-                            <i class="fa-solid fa-star text-yellow-400 text-sm"></i>
+                <div onclick="activateReview(5)" id="review-card-5" class="review-card">
+                    <div class="review-card-inner">
+                        <span class="step-num">05. OVERALL</span>
+                        <div class="review-icon-wrap">
+                            <i class="fa-solid fa-crown"></i>
                         </div>
-                        <a href="https://www.google.com/maps/place/K+Falak+Cool+Breeze/@33.6231875,73.0644876,17z/data=!4m8!3m7!1s0x38df9580e2466ce3:0xf3b6250df421b433!8m2!3d33.6231875!4d73.0670625!9m1!1b1!16s%2Fg%2F11kqwlp8sg?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="mt-2 text-xs flex items-center gap-1 text-white font-bold hover:underline hidden transition-opacity">
-                            Read All Reviews <i class="fa-solid fa-chevron-right text-[10px]"></i>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="text-center relative z-10 pt-4">
-                <span class="text-xs font-black uppercase tracking-[0.25em] text-[#5896F6]">Our Partners</span>
-            </div>
-
-            <div class="relative z-10 mt-0">
-                <div class="overflow-hidden" style="width: 100vw; margin-left: calc(-50vw + 50%);">
-                    <div class="marquee-track-right flex items-center py-0">
-                        <div class="flex-shrink-0 flex items-center justify-center w-40 sm:w-52 md:w-60 mx-2 sm:mx-4 transition-all duration-500 group">
-                            <img src="images/bravo-transparent.webp" alt="Bravo" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-40 sm:w-52 md:w-60 mx-2 sm:mx-4 transition-all duration-500 group">
-                            <img src="images/afit-transparent.webp" alt="Afit" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-40 sm:w-52 md:w-60 mx-2 sm:mx-4 transition-all duration-500 group">
-                            <img src="images/shams-transparent.webp" alt="Shams" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-40 sm:w-52 md:w-60 mx-2 sm:mx-4 transition-all duration-500 group">
-                            <img src="images/ffc-transparent.webp" alt="FFC" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-40 sm:w-52 md:w-60 mx-2 sm:mx-4 transition-all duration-500 group">
-                            <img src="images/jazeera-transparent.webp" alt="Jazeera" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-40 sm:w-52 md:w-60 mx-2 sm:mx-4 transition-all duration-500 group">
-                            <img src="images/icecream-transparent.webp" alt="Ice Cream" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-40 sm:w-52 md:w-60 mx-2 sm:mx-4 transition-all duration-500 group">
-                            <img src="images/faiz-ul-islam-transparent.webp" alt="Faiz ul Islam" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-36 h-36 md:w-44 md:h-44 mx-2 sm:mx-4 transition-all duration-500 group">
-                            <img src="images/coffee-transparent.webp" alt="Coffee Bean" class="w-24 h-24 md:w-28 md:h-28 object-contain transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-36 h-36 md:w-44 md:h-44 mx-2 sm:mx-4 transition-all duration-500 group">
-                            <img src="images/paco-transparent.webp" alt="Paco" class="w-24 h-24 md:w-28 md:h-28 object-contain transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-40 sm:w-52 md:w-60 mx-2 sm:mx-4 transition-all duration-500 group">
-                            <img src="images/engro-foods-transparent.webp" alt="Engro Foods" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
-                        </div>
-                        <!-- Duplicate -->
-                        <div class="flex-shrink-0 flex items-center justify-center w-40 sm:w-52 md:w-60 mx-2 sm:mx-4 transition-all duration-500 group">
-                            <img src="images/bravo-transparent.webp" alt="Bravo" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-40 sm:w-52 md:w-60 mx-2 sm:mx-4 transition-all duration-500 group">
-                            <img src="images/afit-transparent.webp" alt="Afit" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-40 sm:w-52 md:w-60 mx-2 sm:mx-4 transition-all duration-500 group">
-                            <img src="images/shams-transparent.webp" alt="Shams" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-40 sm:w-52 md:w-60 mx-2 sm:mx-4 transition-all duration-500 group">
-                            <img src="images/ffc-transparent.webp" alt="FFC" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-40 sm:w-52 md:w-60 mx-2 sm:mx-4 transition-all duration-500 group">
-                            <img src="images/jazeera-transparent.webp" alt="Jazeera" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-40 sm:w-52 md:w-60 mx-2 sm:mx-4 transition-all duration-500 group">
-                            <img src="images/icecream-transparent.webp" alt="Ice Cream" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-40 sm:w-52 md:w-60 mx-2 sm:mx-4 transition-all duration-500 group">
-                            <img src="images/faiz-ul-islam-transparent.webp" alt="Faiz ul Islam" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-36 h-36 md:w-44 md:h-44 mx-2 sm:mx-4 transition-all duration-500 group">
-                            <img src="images/coffee-transparent.webp" alt="Coffee Bean" class="w-24 h-24 md:w-28 md:h-28 object-contain transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-36 h-36 md:w-44 md:h-44 mx-2 sm:mx-4 transition-all duration-500 group">
-                            <img src="images/paco-transparent.webp" alt="Paco" class="w-24 h-24 md:w-28 md:h-28 object-contain transition-all duration-500">
-                        </div>
-                        <div class="flex-shrink-0 flex items-center justify-center w-40 sm:w-52 md:w-60 mx-2 sm:mx-4 transition-all duration-500 group">
-                            <img src="images/engro-foods-transparent.webp" alt="Engro Foods" class="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500">
+                        <div class="review-content">
+                            <h3 class="review-heading">Exceptional</h3>
+                            <p class="review-desc">Rated excellent by 166+ happy customers. We take pride in delivering top-quality repair services.</p>
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <a href="https://www.google.com/maps/place/K+Falak+Cool+Breeze/@33.6231875,73.0644876,17z/data=!4m8!3m7!1s0x38df9580e2466ce3:0xf3b6250df421b433!8m2!3d33.6231875!4d73.0670625!9m1!1b1!16s%2Fg%2F11kqwlp8sg?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="read-all-link">
+                                Read All Reviews <i class="fa-solid fa-chevron-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
+
             </div>
+
+
 
         </div>
     </section>
 
     <!-- Commercial Appliances Section -->
     <section id="commercial-appliances-section" class="w-full bg-white lg:min-h-screen section-snap">
-        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto pt-16 lg:pt-36 pb-4 relative">
+        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto py-16 lg:py-20 relative">
             <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
 
                 <!-- Left Column: Services list -->
@@ -579,13 +545,13 @@
                         </p>
                     </div>
 
-                    <div class="space-y-4 max-w-[480px]">
+                    <div id="commercial-appliance-list" class="space-y-4 max-w-[480px] relative">
 
                         <!-- Service 1 -->
-                        <div id="com-srv-card-1" data-card-index="0" class="srv-card border-b border-slate-200 rounded-none bg-white p-4 sm:p-5 cursor-pointer">
+                        <div id="com-srv-card-1" data-card-index="0" class="srv-card bg-white p-4 sm:p-5 cursor-pointer">
                             <div class="flex-grow">
                                 <div class="flex items-center justify-between gap-2">
-                                    <h3 class="text-base sm:text-lg font-bold text-slate-900" id="com-srv-title-1">Expert Installation</h3>
+                                    <h3 class="text-base sm:text-lg font-semibold text-slate-900" id="com-srv-title-1">Expert Installation</h3>
                                     <button class="srv-arrow-btn w-8 h-8 rounded-full bg-slate-50 text-slate-400 flex items-center justify-center border border-slate-200 transition-colors">
                                         <i class="fa-solid fa-arrow-right text-sm"></i>
                                     </button>
@@ -597,10 +563,10 @@
                         </div>
 
                         <!-- Service 2 -->
-                        <div id="com-srv-card-2" data-card-index="1" class="srv-card border-b border-slate-200 rounded-none bg-white p-4 sm:p-5 cursor-pointer">
+                        <div id="com-srv-card-2" data-card-index="1" class="srv-card bg-white p-4 sm:p-5 cursor-pointer">
                             <div class="flex-grow">
                                 <div class="flex items-center justify-between gap-2">
-                                    <h3 class="text-base sm:text-lg font-bold text-slate-900" id="com-srv-title-2">Preventive Maintenance</h3>
+                                    <h3 class="text-base sm:text-lg font-semibold text-slate-900" id="com-srv-title-2">Preventive Maintenance</h3>
                                     <button class="srv-arrow-btn w-8 h-8 rounded-full bg-slate-50 text-slate-400 flex items-center justify-center border border-slate-200 transition-colors">
                                         <i class="fa-solid fa-arrow-right text-sm"></i>
                                     </button>
@@ -612,10 +578,10 @@
                         </div>
 
                         <!-- Service 3 -->
-                        <div id="com-srv-card-3" data-card-index="2" class="srv-card border-b border-slate-200 rounded-none bg-white p-4 sm:p-5 cursor-pointer">
+                        <div id="com-srv-card-3" data-card-index="2" class="srv-card bg-white p-4 sm:p-5 cursor-pointer">
                             <div class="flex-grow">
                                 <div class="flex items-center justify-between gap-2">
-                                    <h3 class="text-base sm:text-lg font-bold text-slate-900" id="com-srv-title-3">Quick Repair &amp; Support</h3>
+                                    <h3 class="text-base sm:text-lg font-semibold text-slate-900" id="com-srv-title-3">Quick Repair &amp; Support</h3>
                                     <button class="srv-arrow-btn w-8 h-8 rounded-full bg-slate-50 text-slate-400 flex items-center justify-center border border-slate-200 transition-colors">
                                         <i class="fa-solid fa-arrow-right text-sm"></i>
                                     </button>
@@ -627,10 +593,10 @@
                         </div>
 
                         <!-- Service 4 -->
-                        <div id="com-srv-card-4" data-card-index="3" class="srv-card border-b border-slate-200 rounded-none bg-white p-4 sm:p-5 cursor-pointer">
+                        <div id="com-srv-card-4" data-card-index="3" class="srv-card bg-white p-4 sm:p-5 cursor-pointer">
                             <div class="flex-grow">
                                 <div class="flex items-center justify-between gap-2">
-                                    <h3 class="text-base sm:text-lg font-bold text-slate-900" id="com-srv-title-4">Cold Room</h3>
+                                    <h3 class="text-base sm:text-lg font-semibold text-slate-900" id="com-srv-title-4">Cold Room</h3>
                                     <button class="srv-arrow-btn w-8 h-8 rounded-full bg-slate-50 text-slate-400 flex items-center justify-center border border-slate-200 transition-colors">
                                         <i class="fa-solid fa-arrow-right text-sm"></i>
                                     </button>
@@ -659,7 +625,7 @@
 
     <!-- FAQ Section -->
     <section id="faq-section" class="w-full bg-[#030304] overflow-hidden lg:min-h-screen section-snap">
-        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto pt-28 lg:pt-36 pb-4 relative">
+        <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto py-16 lg:py-20 relative">
 
             <div class="absolute top-[25%] left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-[#5896F6]/10 blur-[160px] rounded-full pointer-events-none ambient-glow z-0"></div>
 
@@ -750,9 +716,9 @@
     </section>
 
     <!-- New Hero Section (below FAQ) -->
-    <section id="coolbreeze-hero" class="w-full bg-[#08090d] overflow-hidden relative min-h-screen flex flex-col section-snap">
+    <section id="coolbreeze-hero" class="w-full bg-[#08090d] overflow-hidden relative min-h-screen flex flex-col pt-12 lg:pt-20 section-snap">
         <div class="absolute inset-0 w-full h-full z-0 overflow-hidden">
-            <div id="breathe-bg-layer" class="absolute inset-0 bg-cover bg-[60%_center] sm:bg-center bg-no-repeat breathe-zoom"
+            <div id="breathe-bg-layer" class="absolute inset-0 bg-cover bg-[60%_center] sm:bg-center bg-no-repeat"
                  style="background-image: linear-gradient(to bottom, rgba(8, 9, 13, 0.2), rgba(8, 9, 13, 0.5)), url('images/hero-2.webp');">
             </div>
             <div class="absolute bottom-[10%] right-[5%] w-[400px] h-[400px] bg-amber-500/10 blur-[120px] rounded-full pointer-events-none ambient-lamp"></div>
@@ -768,8 +734,8 @@
         <div class="w-full px-4 sm:px-8 md:px-12 max-w-[1400px] mx-auto pt-0 pb-24 relative z-30 flex-grow flex flex-col justify-end">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-end mt-auto">
                 <div class="lg:col-span-7 xl:col-span-8 pb-2">
-                    <h1 class="text-3xl sm:text-5xl xl:text-[4.75rem] font-extrabold tracking-tight text-white leading-[1.05] drop-shadow-lg">
-                        Breathe Easy —<br class="hidden sm:inline"> We've Got This
+                    <h1 class="text-[1.75rem] sm:text-5xl xl:text-[4.75rem] font-extrabold tracking-tight text-white leading-[1.15] sm:leading-[1.05] drop-shadow-lg">
+                        Breathe Easy —<br> We've Got This
                     </h1>
                 </div>
                 <div class="lg:col-span-5 xl:col-span-4 space-y-6 -ml-0 sm:-ml-4 lg:-ml-16">
@@ -790,16 +756,82 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="w-full bg-[#000000] text-white px-4 sm:px-6 md:px-8 lg:min-h-screen flex flex-col section-snap">
-        <div class="flex-1"></div>
-        <div class="w-full px-0 grid grid-cols-2 md:grid-cols-12 gap-0 pt-12 lg:pt-16">
+    <footer class="w-full bg-[#000000] text-white px-4 sm:px-6 md:px-8 min-h-screen flex flex-col section-snap">
+        <div class="w-screen pt-16 lg:pt-24 pb-8 bg-black flex-shrink-0" style="margin-left: calc(-50vw + 50%);">
+            <div class="overflow-hidden">
+                <div class="marquee-track-right flex items-center py-0">
+                    <div class="flex-shrink-0 flex items-center justify-center w-24 sm:w-28 md:w-32 mx-8 sm:mx-10 transition-all duration-500 group">
+                        <img src="images/bravo-transparent.webp" alt="Bravo" class="w-28 h-28 md:w-32 md:h-32 object-contain transition-all duration-500 grayscale-[0.95] hover:grayscale-0 pt-1">
+                    </div>
+                    <div class="flex-shrink-0 flex items-center justify-center w-24 sm:w-28 md:w-32 mx-8 sm:mx-10 transition-all duration-500 group">
+                        <img src="images/afit-transparent.webp" alt="Afit" class="w-28 h-28 md:w-32 md:h-32 object-contain transition-all duration-500 grayscale-[0.95] hover:grayscale-0 pt-1">
+                    </div>
+                    <div class="flex-shrink-0 flex items-center justify-center w-24 sm:w-28 md:w-32 mx-8 sm:mx-10 transition-all duration-500 group">
+                        <img src="images/shams-transparent.webp" alt="Shams" class="w-28 h-28 md:w-32 md:h-32 object-contain transition-all duration-500 grayscale-[0.95] hover:grayscale-0 pt-1">
+                    </div>
+                    <div class="flex-shrink-0 flex items-center justify-center w-24 sm:w-28 md:w-32 mx-8 sm:mx-10 transition-all duration-500 group">
+                        <img src="images/ffc-transparent.webp" alt="FFC" class="w-28 h-28 md:w-32 md:h-32 object-contain transition-all duration-500 grayscale-[0.95] hover:grayscale-0 pt-1">
+                    </div>
+                    <div class="flex-shrink-0 flex items-center justify-center w-24 sm:w-28 md:w-32 mx-8 sm:mx-10 transition-all duration-500 group">
+                        <img src="images/jazeera-transparent.webp" alt="Jazeera" class="w-28 h-28 md:w-32 md:h-32 object-contain transition-all duration-500 grayscale-[0.95] hover:grayscale-0 pt-1">
+                    </div>
+                    <div class="flex-shrink-0 flex items-center justify-center w-24 sm:w-28 md:w-32 mx-8 sm:mx-10 transition-all duration-500 group">
+                        <img src="images/icecream-transparent.webp" alt="Ice Cream" class="w-28 h-28 md:w-32 md:h-32 object-contain transition-all duration-500 grayscale-[0.95] hover:grayscale-0 pt-1">
+                    </div>
+                    <div class="flex-shrink-0 flex items-center justify-center w-24 sm:w-28 md:w-32 mx-8 sm:mx-10 transition-all duration-500 group">
+                        <img src="images/faiz-ul-islam-transparent.webp" alt="Faiz ul Islam" class="w-28 h-28 md:w-32 md:h-32 object-contain transition-all duration-500 grayscale-[0.95] hover:grayscale-0 pt-1">
+                    </div>
+                    <div class="flex-shrink-0 flex items-center justify-center w-20 h-20 md:w-24 md:h-24 mx-8 sm:mx-10 transition-all duration-500 group">
+                        <img src="images/coffee-transparent.webp" alt="Coffee Bean" class="w-28 h-28 md:w-32 md:h-32 object-contain transition-all duration-500 grayscale-[0.95] hover:grayscale-0 pt-1">
+                    </div>
+                    <div class="flex-shrink-0 flex items-center justify-center w-20 h-20 md:w-24 md:h-24 mx-8 sm:mx-10 transition-all duration-500 group">
+                        <img src="images/paco-transparent.webp" alt="Paco" class="w-28 h-28 md:w-32 md:h-32 object-contain transition-all duration-500 grayscale-[0.95] hover:grayscale-0 pt-1">
+                    </div>
+                    <div class="flex-shrink-0 flex items-center justify-center w-24 sm:w-28 md:w-32 mx-8 sm:mx-10 transition-all duration-500 group">
+                        <img src="images/engro-foods-transparent.webp" alt="Engro Foods" class="w-28 h-28 md:w-32 md:h-32 object-contain transition-all duration-500 grayscale-[0.95] hover:grayscale-0 pt-1">
+                    </div>
+                    <!-- Duplicate -->
+                    <div class="flex-shrink-0 flex items-center justify-center w-24 sm:w-28 md:w-32 mx-8 sm:mx-10 transition-all duration-500 group">
+                        <img src="images/bravo-transparent.webp" alt="Bravo" class="w-28 h-28 md:w-32 md:h-32 object-contain transition-all duration-500 grayscale-[0.95] hover:grayscale-0 pt-1">
+                    </div>
+                    <div class="flex-shrink-0 flex items-center justify-center w-24 sm:w-28 md:w-32 mx-8 sm:mx-10 transition-all duration-500 group">
+                        <img src="images/afit-transparent.webp" alt="Afit" class="w-28 h-28 md:w-32 md:h-32 object-contain transition-all duration-500 grayscale-[0.95] hover:grayscale-0 pt-1">
+                    </div>
+                    <div class="flex-shrink-0 flex items-center justify-center w-24 sm:w-28 md:w-32 mx-8 sm:mx-10 transition-all duration-500 group">
+                        <img src="images/shams-transparent.webp" alt="Shams" class="w-28 h-28 md:w-32 md:h-32 object-contain transition-all duration-500 grayscale-[0.95] hover:grayscale-0 pt-1">
+                    </div>
+                    <div class="flex-shrink-0 flex items-center justify-center w-24 sm:w-28 md:w-32 mx-8 sm:mx-10 transition-all duration-500 group">
+                        <img src="images/ffc-transparent.webp" alt="FFC" class="w-28 h-28 md:w-32 md:h-32 object-contain transition-all duration-500 grayscale-[0.95] hover:grayscale-0 pt-1">
+                    </div>
+                    <div class="flex-shrink-0 flex items-center justify-center w-24 sm:w-28 md:w-32 mx-8 sm:mx-10 transition-all duration-500 group">
+                        <img src="images/jazeera-transparent.webp" alt="Jazeera" class="w-28 h-28 md:w-32 md:h-32 object-contain transition-all duration-500 grayscale-[0.95] hover:grayscale-0 pt-1">
+                    </div>
+                    <div class="flex-shrink-0 flex items-center justify-center w-24 sm:w-28 md:w-32 mx-8 sm:mx-10 transition-all duration-500 group">
+                        <img src="images/icecream-transparent.webp" alt="Ice Cream" class="w-28 h-28 md:w-32 md:h-32 object-contain transition-all duration-500 grayscale-[0.95] hover:grayscale-0 pt-1">
+                    </div>
+                    <div class="flex-shrink-0 flex items-center justify-center w-24 sm:w-28 md:w-32 mx-8 sm:mx-10 transition-all duration-500 group">
+                        <img src="images/faiz-ul-islam-transparent.webp" alt="Faiz ul Islam" class="w-28 h-28 md:w-32 md:h-32 object-contain transition-all duration-500 grayscale-[0.95] hover:grayscale-0 pt-1">
+                    </div>
+                    <div class="flex-shrink-0 flex items-center justify-center w-20 h-20 md:w-24 md:h-24 mx-8 sm:mx-10 transition-all duration-500 group">
+                        <img src="images/coffee-transparent.webp" alt="Coffee Bean" class="w-28 h-28 md:w-32 md:h-32 object-contain transition-all duration-500 grayscale-[0.95] hover:grayscale-0 pt-1">
+                    </div>
+                    <div class="flex-shrink-0 flex items-center justify-center w-20 h-20 md:w-24 md:h-24 mx-8 sm:mx-10 transition-all duration-500 group">
+                        <img src="images/paco-transparent.webp" alt="Paco" class="w-28 h-28 md:w-32 md:h-32 object-contain transition-all duration-500 grayscale-[0.95] hover:grayscale-0 pt-1">
+                    </div>
+                    <div class="flex-shrink-0 flex items-center justify-center w-24 sm:w-28 md:w-32 mx-8 sm:mx-10 transition-all duration-500 group">
+                        <img src="images/engro-foods-transparent.webp" alt="Engro Foods" class="w-28 h-28 md:w-32 md:h-32 object-contain transition-all duration-500 grayscale-[0.95] hover:grayscale-0 pt-1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full px-0 grid grid-cols-2 md:grid-cols-12 gap-0 pt-12 lg:pt-16 flex-1">
             <div class="col-span-1 md:col-span-3 space-y-5 px-4 sm:px-6 md:px-8">
                 <h4 class="text-[11px] font-bold text-zinc-500 uppercase tracking-widest">Quick Links</h4>
                 <ul class="space-y-3.5 text-sm sm:text-base font-medium">
                     <li><a href="javascript:void(0)" onclick="scrollToSection(3); return false;" class="text-white hover:text-zinc-300 transition-colors duration-200 block">Services</a></li>
                     <li><a href="javascript:void(0)" onclick="scrollToSection(1); return false;" class="text-white hover:text-zinc-300 transition-colors duration-200 block">About Us</a></li>
                     <li><a href="javascript:void(0)" onclick="scrollToSection(6); return false;" class="text-white hover:text-zinc-300 transition-colors duration-200 block">FAQ</a></li>
-                    <li><a href="javascript:void(0)" onclick="scrollToSection(4); return false;" class="text-white hover:text-zinc-300 transition-colors duration-200 block">Gallery</a></li>
+                    <li><a href="javascript:void(0)" onclick="scrollToSection(2); return false;" class="text-white hover:text-zinc-300 transition-colors duration-200 block">Projects</a></li>
                 </ul>
             </div>
             <div class="col-span-1 md:col-span-3 space-y-5 pl-4 sm:pl-0">
@@ -807,8 +839,7 @@
                 <ul class="space-y-3.5 text-sm sm:text-base font-medium">
                     <li><a href="https://www.facebook.com/KFalakCoolBreez/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-zinc-300 transition-colors duration-200 block">Facebook</a></li>
                     <li><a href="#" class="text-white hover:text-zinc-300 transition-colors duration-200 block">Instagram</a></li>
-                    <li><a href="#" class="text-white hover:text-zinc-300 transition-colors duration-200 block">Youtube</a></li>
-                    <li><a href="#" class="text-white hover:text-zinc-300 transition-colors duration-200 block">LinkedIn</a></li>
+
                 </ul>
             </div>
             <div class="col-span-2 md:col-span-6 space-y-6 pr-4 sm:pr-6 md:pr-8">
@@ -820,7 +851,7 @@
             </div>
         </div>
         <div class="w-full px-4 pt-0 pb-20 sm:pb-12 relative -mx-2 sm:mx-4 sm:-mx-6 md:-mx-8">
-            <div class="flex flex-col items-center md:items-start gap-4 -mt-6 sm:mt-12">
+            <div class="flex flex-col items-center md:items-start gap-4 max-md:mt-8 sm:mt-12">
                 <div class="flex items-center justify-start gap-0 sm:-ml-12">
                     <img src="images/transparent-logo1.webp" alt="Falak Cool Breeze" class="w-[80px] h-[80px] sm:w-[200px] sm:h-[200px] object-contain flex-shrink-0 mr-6 sm:mr-10 ml-[2.25rem] sm:ml-[4.5rem]">
                     <div class="leading-none select-none sm:-ml-4">
@@ -1179,17 +1210,17 @@
                     <span class="w-9 h-9 bg-white/5 flex items-center justify-center"><i class="fa-solid fa-info-circle text-zinc-500 text-sm"></i></span>
                     About
                 </a>
-                <a href="#reviews-section" onclick="setActiveNavLink(this); toggleSideMenu()" class="flex items-center gap-3.5 px-5 py-3.5 text-zinc-300 hover:text-white font-medium text-base hover:bg-white/5 transition-all">
-                    <span class="w-9 h-9 bg-white/5 flex items-center justify-center"><i class="fa-solid fa-star text-zinc-500 text-sm"></i></span>
-                    Testimonials
+                <a href="javascript:void(0)" onclick="setActiveNavLink(this); toggleSideMenu(); var el = document.getElementById('testimonials-section'); if (el) { setTimeout(function() { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 150); }" class="flex items-center gap-3.5 px-5 py-3.5 text-zinc-300 hover:text-white font-medium text-base hover:bg-white/5 transition-all">
+                    <span class="w-9 h-9 bg-white/5 flex items-center justify-center"><i class="fa-solid fa-folder-open text-zinc-500 text-sm"></i></span>
+                    Projects
                 </a>
                 <a href="#home-appliances-section" onclick="setActiveNavLink(this); toggleSideMenu()" class="flex items-center gap-3.5 px-5 py-3.5 text-zinc-300 hover:text-white font-medium text-base hover:bg-white/5 transition-all">
                     <span class="w-9 h-9 bg-white/5 flex items-center justify-center"><i class="fa-solid fa-tools text-zinc-500 text-sm"></i></span>
                     Services
                 </a>
-                <a href="javascript:void(0)" onclick="setActiveNavLink(this); toggleSideMenu(); var el = document.getElementById('testimonials-section'); if (el) { setTimeout(function() { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 150); }" class="flex items-center gap-3.5 px-5 py-3.5 text-zinc-300 hover:text-white font-medium text-base hover:bg-white/5 transition-all">
-                    <span class="w-9 h-9 bg-white/5 flex items-center justify-center"><i class="fa-solid fa-folder-open text-zinc-500 text-sm"></i></span>
-                    Projects
+                <a href="#reviews-section" onclick="setActiveNavLink(this); toggleSideMenu()" class="flex items-center gap-3.5 px-5 py-3.5 text-zinc-300 hover:text-white font-medium text-base hover:bg-white/5 transition-all">
+                    <span class="w-9 h-9 bg-white/5 flex items-center justify-center"><i class="fa-solid fa-star text-zinc-500 text-sm"></i></span>
+                    Testimonials
                 </a>
                 <a href="#faq-section" onclick="setActiveNavLink(this); toggleSideMenu()" class="flex items-center gap-3.5 px-5 py-3.5 text-zinc-300 hover:text-white font-medium text-base hover:bg-white/5 transition-all">
                     <span class="w-9 h-9 bg-white/5 flex items-center justify-center"><i class="fa-solid fa-question-circle text-zinc-500 text-sm"></i></span>

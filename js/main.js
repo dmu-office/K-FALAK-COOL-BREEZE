@@ -329,7 +329,7 @@ function handleHeaderScroll() {
     }
 
     if (closest === 0 || closest === 7) { setHeaderHero(); return; }
-    if (closest === 4 || closest === 6 || closest === 8) { setHeaderDark(); return; }
+    if (closest === 2 || closest === 6 || closest === 8) { setHeaderDark(); return; }
     setHeaderLight();
 }
 
@@ -371,33 +371,24 @@ function initScrollReveal() {
 
 function initReviewReveal() {
     var section = document.getElementById('reviews-section');
-    var cards = section.querySelectorAll('.process-card');
+    var cards = document.querySelectorAll('.review-card');
     if (!section || !cards.length) return;
 
-    if (window.innerWidth < 640) {
-        for (var i = 1; i <= cards.length; i++) {
-            var card = document.getElementById('review-card-' + i);
-            if (!card) continue;
-            card.classList.remove('bg-[#F5F5F7]', 'text-[#3A3A3C]', 'hover:bg-slate-200', 'hover:shadow-lg', 'hover:-translate-y-1');
-            card.classList.add('bg-[#5197E9]', 'text-white', 'shadow-lg', 'shadow-blue-500/10');
-            var stepNum = card.querySelector('.step-num');
-            if (stepNum) { stepNum.classList.remove('text-[#8E8E93]'); stepNum.classList.add('text-blue-50/90'); }
-            var title = card.querySelector('h3');
-            if (title) { title.classList.remove('text-slate-800', 'text-lg', 'md:text-xl'); title.classList.add('text-white', 'text-2xl'); }
-            var description = card.querySelector('p');
-            if (description) description.classList.remove('hidden');
-            var stars = card.querySelector('.text-block .flex.gap-1');
-            if (stars) stars.classList.remove('hidden');
-            var readLink = card.querySelector('.text-block a');
-            if (readLink) readLink.classList.remove('hidden');
-            var textBlock = card.querySelector('.text-block');
-            if (textBlock) { textBlock.classList.remove('md:translate-y-4'); textBlock.classList.add('translate-y-0'); }
-            var illustration = card.querySelector('.illustration-container');
-            if (illustration) { illustration.classList.remove('h-0', 'opacity-0', 'scale-75'); illustration.classList.add('h-24', 'opacity-100', 'scale-100'); }
-        }
-        return;
+    // Auto-activate first card when section scrolls into view (desktop only)
+    if (window.innerWidth >= 768) {
+        var activated = false;
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting && !activated) {
+                    activated = true;
+                    activateReview(1);
+                }
+            });
+        }, { threshold: 0.3 });
+        observer.observe(section);
     }
 
+    // Register with the snap scroller system
     registerSectionSteps(4, cards.length, function(data) {
         activateReview(data.current + 1);
     });
@@ -408,54 +399,10 @@ function activateReview(activeId) {
     for (var i = 1; i <= 5; i++) {
         var card = document.getElementById('review-card-' + i);
         if (!card) continue;
-        var stepNum = card.querySelector('.step-num');
-        var title = card.querySelector('h3');
-        var description = card.querySelector('p');
-        var illustration = card.querySelector('.illustration-container');
-        var treeOverlay = card.querySelector('.tree-silhouette');
-        var bottomIcon = card.querySelector('.bottom-icon-container');
-        var textBlock = card.querySelector('.text-block');
-        var stars = card.querySelector('.text-block .flex.gap-1');
-        var readLink = card.querySelector('.text-block a');
-
         if (i === activeId) {
-            card.classList.remove('bg-[#F5F5F7]', 'text-[#3A3A3C]', 'hover:bg-slate-200', 'hover:shadow-lg', 'hover:-translate-y-1');
-            card.classList.add('bg-[#5197E9]', 'text-white', 'shadow-lg', 'shadow-blue-500/10');
-            stepNum.classList.remove('text-[#8E8E93]');
-            stepNum.classList.add('text-blue-50/90');
-            title.classList.remove('text-slate-800', 'text-lg', 'md:text-xl');
-            title.classList.add('text-white', 'text-2xl');
-            if (description) description.classList.remove('hidden');
-            if (stars) stars.classList.remove('hidden');
-            if (readLink) readLink.classList.remove('hidden');
-            textBlock.classList.remove('md:translate-y-4');
-            textBlock.classList.add('translate-y-0');
-            illustration.classList.remove('h-0', 'opacity-0', 'scale-75');
-            illustration.classList.add('h-24', 'opacity-100', 'scale-100');
-            if (treeOverlay) treeOverlay.classList.remove('opacity-0');
-            if (treeOverlay) treeOverlay.classList.add('opacity-20');
-            if (bottomIcon) {
-                bottomIcon.classList.add('opacity-0', 'scale-75', 'h-0');
-            }
+            card.classList.add('active');
         } else {
-            card.classList.remove('bg-[#5197E9]', 'text-white', 'shadow-lg', 'shadow-blue-500/10');
-            card.classList.add('bg-[#F5F5F7]', 'text-[#3A3A3C]', 'hover:bg-slate-200', 'hover:shadow-lg', 'hover:-translate-y-1');
-            stepNum.classList.remove('text-blue-50/90');
-            stepNum.classList.add('text-[#8E8E93]');
-            title.classList.remove('text-white', 'text-2xl');
-            title.classList.add('text-slate-800', 'text-lg', 'md:text-xl');
-            if (description) description.classList.add('hidden');
-            if (stars) stars.classList.add('hidden');
-            if (readLink) readLink.classList.add('hidden');
-            textBlock.classList.remove('translate-y-0');
-            textBlock.classList.add('md:translate-y-4');
-            illustration.classList.remove('h-24', 'opacity-100', 'scale-100');
-            illustration.classList.add('h-0', 'opacity-0', 'scale-75');
-            if (treeOverlay) treeOverlay.classList.remove('opacity-20');
-            if (treeOverlay) treeOverlay.classList.add('opacity-0');
-            if (bottomIcon) {
-                bottomIcon.classList.remove('opacity-0', 'scale-75', 'h-0');
-            }
+            card.classList.remove('active');
         }
     }
 }
@@ -1096,10 +1043,17 @@ function registerSectionSteps(index, totalSteps, advanceFn) {
                 scrolling = false;
                 // Set header state based on section
                 setHeaderForSection(index);
-                // Advance first step only when scrolling forward into a section
+                // Advance steps when entering a section
                 var stepData = sectionStepData[index];
-                if (distance > 0 && stepData && stepData.current < stepData.total) {
-                    stepData.advance();
+                if (stepData && stepData.current < stepData.total) {
+                    if (distance > 0) {
+                        stepData.advance();
+                    } else {
+                        // Scrolling backward into a section — reveal all cards
+                        while (stepData.current < stepData.total) {
+                            stepData.advance();
+                        }
+                    }
                 }
             }
         }
