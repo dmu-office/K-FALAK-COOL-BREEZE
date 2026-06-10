@@ -1,0 +1,115 @@
+# ============================================================
+# .htaccess — K Falak Cool Breeze
+# Apache server configuration for clean URLs, caching & SEO
+# ============================================================
+
+RewriteEngine On
+
+# -----------------------------------------------------------
+# 1. Remove .html extension from URLs (SEO-friendly clean URLs)
+# -----------------------------------------------------------
+
+# Redirect /page.html to /page (external redirect — 301 permanent)
+RewriteCond %{THE_REQUEST} \s/([^.]+)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
+
+# Internally rewrite /page back to /page.html (silent internal redirect)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+
+# -----------------------------------------------------------
+# 2. Redirect index.html / to root
+# -----------------------------------------------------------
+
+RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
+RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
+
+# -----------------------------------------------------------
+# 3. Canonical www → non-www (choose ONE — uncomment as needed)
+# -----------------------------------------------------------
+# Force www:
+# RewriteCond %{HTTP_HOST} !^www\. [NC]
+# RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+#
+# Force non-www:
+# RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+# RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# -----------------------------------------------------------
+# 4. Force HTTPS (uncomment when SSL is active)
+# -----------------------------------------------------------
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# -----------------------------------------------------------
+# 5. Browser caching — improve load speed
+# -----------------------------------------------------------
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    # Default: 1 month
+    ExpiresDefault "access plus 1 month"
+
+    # HTML — short cache (content may change)
+    ExpiresByType text/html "access plus 0 seconds"
+
+    # CSS & JS — 1 year (fingerprinted by ?v= param if needed)
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType application/x-javascript "access plus 1 year"
+
+    # Images — 1 year
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+
+    # Fonts — 1 year
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType application/font-woff "access plus 1 year"
+</IfModule>
+
+# -----------------------------------------------------------
+# 6. Gzip compression — smaller transfers
+# -----------------------------------------------------------
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/json image/svg+xml
+</IfModule>
+
+# -----------------------------------------------------------
+# 7. Security headers
+# -----------------------------------------------------------
+<IfModule mod_headers.c>
+    # Prevent MIME-type sniffing
+    Header always set X-Content-Type-Options "nosniff"
+
+    # Enable XSS filter in older browsers
+    Header always set X-XSS-Protection "1; mode=block"
+
+    # Prevent clickjacking
+    Header always set X-Frame-Options "SAMEORIGIN"
+
+    # Referrer policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# -----------------------------------------------------------
+# 8. Prevent directory listing
+# -----------------------------------------------------------
+Options -Indexes
+
+# -----------------------------------------------------------
+# 9. Protect hidden files
+# -----------------------------------------------------------
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+# -----------------------------------------------------------
+# 10. Custom 404 error page
+# -----------------------------------------------------------
+ErrorDocument 404 /404.html
